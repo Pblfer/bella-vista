@@ -1,68 +1,71 @@
 <template>
   <div id="types">
     <div
-      class="overflow-hidden flex flex-col items-center justify-center content-center bg-secondary text-primary py-20  md:px-[1%] lg:px-[4%]">
+      class="overflow-hidden flex flex-col items-center justify-center content-center bg-primary text-secondary py-5  md:px-[1%] lg:px-[4%]">
       <div class="mx-auto w-full px-5 md:px-4 lg:px-14">
         <div class="">
-          <div class="px-4 flex flex-col items-center justify-center content-center md:px-0 lg:pr-4 lg:pt-4">
-            <div class="w-full lg:mx-0 flex flex-col items-center justify-center content-center ">
-              <h3 class="font-light text-base ml-1">
-                Proin cursus
+          <div class="px-4 flex flex-col items-center justify-center content-center md:px-0 lg:pr-4 lg:pt-0">
+            <div class="w-full lg:mx-0 flex flex-col justify-center content-center ">
+              <h3 class="text-base ml-1 text-right text-third font-bold">
+                Bella Vista - Puerto Barrios
               </h3>
-              <p class="font-abrilFat text-4xl md:text-5xl xl:text-5xl font-bold tracking-tight">
+              <p class="font-badScript text-4xl md:text-5xl xl:text-5xl font-bold tracking-tight mt-4">
                 Apartamentos
               </p>
-              <p class="  mt-4 max-w-[660px] w-[90%] tracking-wide text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus elit nec lectus ornare tincidunt.
+              <p class="  mt-4 max-w-[660px] w-[90%] tracking-wide text-center md:text-left">
+                Apartamentos de 2, 3 y 4 Habitaciones en Puesto Barrios.
 
               </p>
               <div class="grid grid-cols gap-4 pt-8 w-full text-2xl tracking-wider">
 
-                <div class="flex items-center justify-center content-center ">
+                <div class="flex  ">
                   <button @click="selectType(0)" :class="typeSelected === 0 ? activeClass : inactiveClass">
-                    2 Habitaciones
+                   Tipo A
                   </button>
                   <button @click="selectType(1)" :class="typeSelected === 1 ? activeClass : inactiveClass">
-                    3 Habitaciones
+                  Tipo B
+                  </button>
+                  <button @click="selectType(2)" :class="typeSelected === 2 ? activeClass : inactiveClass">
+                  Tipo C
                   </button>
                 </div>
                 <div v-if="typeSelected === 0" class="flex justify-evenly tracking-wider gap-1 pt-1">
-
+<!---
                   <button @click="subTypeSelected = 0" :class="subTypeSelected === 0 ? activeClass : inactiveClass">
                     1A
-                  </button>
+                  </button>--->
+
                 </div>
 
 
                 <div v-if="typeSelected === 1" class="flex justify-center tracking-wider gap-1 pt-1">
+                  <!---
                   <button @click="subTypeSelected = 1" :class="subTypeSelected === 3 ? activeClass : inactiveClass">
                     2A
                   </button>
                   <button @click="subTypeSelected = 0" :class="subTypeSelected === 0 ? activeClass : inactiveClass">
                     2B
-                  </button>
+                  </button> --->  
 
                 </div>
+             
               </div>
             </div>
-            <div class=" flex w-auto m-4 ">
-
-
-              <a href="#" @click="toScroll('cotizar')"
-                class="borde underline md:flex hidden md:mt-6 mt-4 leading-4  w-auto items-center border-transparent px-8 pt-0 md:text-base tracking-widest text-primary shadow-xl duration-500 ease-in-out  hover:text-white ">
-                Cotizar apartamento
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
-                  stroke="currentColor" class="size-6 mt-1">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
-              </a>
-            </div>
+            
           </div>
         </div>
       </div>
-      <div class="flex justify-center w-full m-4">
-        <img class="md:h-[32rem] h-auto px-6 md:px-0" :src="selectedImage" alt=" ">
+      <div class="flex flex-col content-center items-center justify-center w-full md:px-4 lg:px-14">
+        <img class="w-full h-auto px-[0%] md:px-[12%] lg:px-[14%]" :src="selectedImage" alt=" ">
+        <p class=" text-xl my-2 md:my-4 text-center px-[5%]">
+                    Sit deserunt proident consectetur aute anim enim occaecat labore cupidatat Lorem velit pariatur tempor ut sunt sit Lorem. Eiusmod ad fugiat occaecat ex exercitation eiusmod voluptate elit do ut reprehenderit anim deserunt duis enim enim tempor ut. 
+
+                </p>
+                <button @click="toScroll('cotizar')"
+                    class="mb-2 px-12 py-2 bg-secondary text-white border-2 duration-600 ">Obtener detalles</button>
       </div>
+      
+                
     </div>
   </div>
 </template>
@@ -74,9 +77,9 @@ export default {
       typeSelected: 0,
       subTypeSelected: 0,
       types: [
-        { type: 1, img: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny" },
-        { type: 2, img: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny" },
-        { type: 3, img: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny" },
+        { type: 1, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+a.png" },
+        { type: 2, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+b.png" },
+        { type: 3, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+c.png" },
         { type: 4, img: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny" },
       ]
     }
@@ -89,10 +92,10 @@ export default {
       return this.types[this.typeSelected].img;
     },
     activeClass() {
-      return 'min-w-[80px] text-base mx-1 py-2 px-6 flex font-semibold justify-center border ease-in-out duration-500  bg-primary border-primary text-secondary';
+      return 'min-w-[80px] text-white text-base mx-1 py-2 px-6 flex font-semibold justify-center ease-in-out duration-500  bg-four text-secondary rounded-md ';
     },
     inactiveClass() {
-      return 'min-w-[80px] bg-white/5 text-base mx-1 py-2 px-6 flex font-semibold justify-center border border-gray-200/70 ease-in-out duration-500 border-secondary  hover:bg-primary hover:border-primary hover:text-secondary ';
+      return 'min-w-[80px] bg-fifth text-base mx-1 py-2 px-6 flex font-semibold justify-center ease-in-out duration-500 border-secondary bg-fifth hover:bg-bg-four hover:text-primary rounded-md';
     }
   },
   methods: {

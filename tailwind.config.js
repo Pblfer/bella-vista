@@ -7,14 +7,16 @@ module.exports = {
     extend: {
       colors:{
         primary:"#ffffff",
-        secondary:"#000000",
-        third:"#dddddd",
-        four:"#eeeeee"
+        secondary:"#122347",
+        third:"#171a459e",
+        four:"#1c3b6d",
+        fifth:"#e8ebf0",
+
       },
       fontFamily: {
         sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
-        raleway: ['"Raleway"', ...defaultTheme.fontFamily.sans],
-        abrilFat: ['"Abril Fat"', ...defaultTheme.fontFamily.sans],
+        badScript: ['"BadScript"', ...defaultTheme.fontFamily.sans],
+        mont: ['"Mont', ...defaultTheme.fontFamily.sans],
       },
     },
   },

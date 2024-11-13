@@ -1,204 +1,161 @@
 <template>
-  
-  <div class="relative z-10" aria-labelledby="slide-over-title" role="dialog" aria-modal="true" v-if="showMenu">
+  <div id="Home">
+      <div class="absolute w-full">
+          <header class=" absolute inset-x-0 z-50">
+              <nav class="bg-secondary mx-auto flex items-center justify-between px-3 pt-[3.5%] pb-[5%] md:pt-[2%] md:pb-[2%] lg:px-14 w-full"
+                  aria-label="Global">
+                  <div class="absolute flex lg:flex-1 ">
+                      <a href="/" class=" pt-2 px-4 bg-secondary">
+                          <span class="sr-only">Landitap</span>
+                          <img class="h-16 md:h-32 mt-10 w-auto"
+                              src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
+                              alt="BELLA VISTA - Club Residencial" />
+                      </a>
+                  </div>
+                  <div class="flex lg:hidden bg-third/5">
+                      <button type="button" @click="showMenu = true"
+                          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
+                          <span class="sr-only">Open main menu</span>
+                          <svg class="h-10 w-10 text-third ease-linear duration-300 hover:text-white" fill="none"
+                              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                      </button>
+                  </div>
+                  <div class="w-full content-end justify-end hidden lg:flex lg:gap-x-4 -mt-2">
+                      <a href="#" @click="toScroll('Home')"
+                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-third px-4 hover:text-secondary rounded-md py-2 leading-6 text-white">Inicio</a>
 
-  <div class="fixed inset-0 bg-four bg-opacity-10 backdrop-blur-sm transition-opacity" aria-hidden="true"></div>
-
-  <div class="fixed inset-0 overflow-hidden">
-    <div class="absolute inset-0 overflow-hidden">
-      <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
-        <div class="pointer-events-auto w-screen max-w-md">
-          <div class="flex h-full flex-col overflow-y-scroll bg-secondary py-6 shadow-xl">
-            <div class="px-4 sm:px-6">
-              <div class="flex items-start justify-between">
-                <div class="ml-3 flex h-7 items-center">
-                  <button type="button" @click="showMenu = false" class="relative rounded-sm bg-primary text-secondary hover:text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
-                    <span class="absolute -inset-2.5"></span>
-                    <span class="sr-only">Close panel</span>
-                    <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                </div>
+                      <a href="#" @click="toScroll('Amenidades')"
+                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-third px-4 hover:text-secondary rounded-md py-2 leading-6 text-white">Amenidades</a>
+                      <a href="#" @click="toScroll('Newsletter')"
+                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-third px-4 hover:text-secondary rounded-md py-2 leading-6 text-white">Newslatter</a>
+                      <a href="#" @click="toScroll('cotizar')"
+                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-third px-4 hover:text-secondary rounded-md py-2 leading-6 text-white">Contáctanos</a>
+                  </div>
+              </nav>
+              <!-- Mobile menu, show/hide based on menu open state. -->
+              <div class="lg:hidden" role="dialog" aria-modal="true" v-if="showMenu">
+                  <!-- Background backdrop, show/hide based on slide-over state. -->
+                  <div class="fixed inset-0 z-50"></div>
+                  <div
+                      class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-primary ease-linear duration-300 px-8 py-10 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                      <div class="flex items-end justify-end">
+                          
+                          <button @click="showMenu = false" type="button"
+                              class="-m-2.5 rounded-md p-2.5 text-white hover:text-third ease-linear duration-300">
+                              <span class="sr-only">Close menu</span>
+                              <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                                  stroke="currentColor" aria-hidden="true">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                          </button>
+                      </div>
+                      <div class="mt-10 w-full flex flex-col items-center">
+                          <router-link to="/" class="-m-1.5 p-1.5">
+                              <span class="sr-only">Boulevar</span>
+                              <img class="h-24 w-auto"
+                                  src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
+                                  alt="BELLA VISTA - Club Residencial" />
+                          </router-link>
+                          <div class="-my-6 divide-y divide-gray-500/10">
+                              <div class="space-y-4 py-6 grid justify-center text-center mt-4 -ml-4 text-white">
+                                  <a href="#" @click="toScroll('Home')"
+                                      class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Inicio</a>
+                                  <a href="#" @click="toScroll('Amenidades')"
+                                      class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Amenidades</a>
+                                  <a href="#" @click="toScroll('Newsletter')"
+                                      class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Newsletter</a>
+                                  <a href="#" @click="toScroll('cotizar')"
+                                      class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Contáctanos</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="relative mt-6 flex-1 px-4 sm:px-6">
-              <div
-          class="ease-in-out duration-300"
-          role="dialog"
-          aria-modal="true"
+          </header>
 
-        >
-          
-            <div class="flex justify-center  mt-10">
-              <a href="/">
-                <img
-                  src="https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny"
-                  alt=" Apartamentos Zona "
-                  class="h-32 mx-auto fl"
-                />
-              </a>
-             
-            </div>
-            <div
-              class="mt-6 flow-root"
-              v-show="showMenu"
-              role="dialog"
-              aria-modal="true"
-            >
-              <div class="-my-6 divide-y divide-primary/25">
-                <div class="space-y-2 py-6 text-center text-white">
-                  <a
-                    href="#" @click="toScroll('Ubicacion')"
-                    class="-mx-3 block rounded-sm px-3 py-2 text-lg font-semibold leading-7 text-primary hover:text-secondary hover:bg-four"
-                    >Ubicación</a
-                  >
-                  <a
-                    href="#" @click="toScroll('entorno')"
- class="-mx-3 block rounded-sm px-3 py-2 text-lg font-semibold leading-7 text-primary hover:text-secondary hover:bg-four"
-                    >Tu Entorno</a
-                  >
-                  <a
-                    href="#" @click="toScroll('Amenidades')"
-                     class="-mx-3 block rounded-sm px-3 py-2 text-lg font-semibold leading-7 text-primary hover:text-secondary hover:bg-four"
-                    >Amenidades</a
-                  >
-                  <a
-                    href="#" @click="toScroll('types')"
-                     class="-mx-3 block rounded-sm px-3 py-2 text-lg font-semibold leading-7 text-primary hover:text-secondary hover:bg-four"
-                    >Apartamentos</a
-                  >
-                  
-                  <!-- <a
-                    href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-third"
-                    >IA</a
-                  > -->
-                </div>
-                <div class="py-6 text-center text-white">
-                  <a
-                    @click="toScroll('cotizar')"
-                                        class="-mx-3 block rounded-sm px-3 py-2 text-lg font-semibold leading-7 text-secondary bg-primary hover:text-secondary hover:bg-four"
-                    >Cotizar apartamento →</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+
+  </div>
+  <div class="relative flex justify-center flex-col lg:flex-row" >
+      <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/banner.jpg"
+          alt=" " class="relative m-auto object-cover -z-10 " />
+  </div>
+
+  <div class="relative flex justify-center flex-col lg:flex-row mb-10 z-10" >
+   
+      <div class="flex flex-col md:flex-row flex-grow relative -mt-[15%] md:-mt-[10%] w-[100%] lg:w-[680px] p-[5%] lg:p-[3%]  z-10">
+        <div class="w-[100%] shadow-2xl p-[5%] m-2 bg-primary z-10">
+            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center">79 </div>
+            <div class="font-refile text-secondary font-bold text-lg md:text-xl lg:text-1xl text-center">Apartamentos </div>
+        </div>
+        <div class="w-[100%] shadow-2xl p-[5%] m-2 bg-primary z-10">
+            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center">133</div>
+            <div class="font-refile text-secondary font-bold text-lg md:text-xl lg:text-1xl text-center">Parqueos de vehículos</div>
+        </div>
+        <div class="w-[100%] shadow-2xl p-[5%] m-2 bg-primary z-10">
+            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center">88 </div>
+            <div class="font-refile text-secondary font-bold text-lg md:text-xl lg:text-1xl text-center">Parqueos de motocicleta</div>
+        </div>
+
+
     
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
   </div>
-</div>
 
-
-  <div class="bg-secondary p-[5%] pt-[0%]">
-    <div
-        class="flex justify-end justify-content-end pt-5 pb-0 w-full"
-      >
-    <button
-          @click="showMenu = true"
-          type="button"
-          class="-m-1.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="h-10 w-10 text-primary"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-        </button>
-      </div>
-    <div class="flex justify-center mb-4 h-auto w-2/1">
-      <img src="https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny" alt=" Apartamentos Zona "
-        class="w-full max-w-[600px] h-full object-cover " />
-    </div>
-    <div class="">
-      <!-- Imagen principal (parte superior izquierda) grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 -->
-      <div class="flex flex-col md:flex-row pb-[1%] md:pb-[1%]">
-
-        <div class="w-full md:w-3/5 mb-[2%] md:mb-0 row-span-10 relative ">
-          <img src="https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny"
-            alt=" " class="w-full h-full object-cover " />
-          <div class="absolute bottom-0 w-full bg-white bg-opacity-80 p-4">
-            <h2 class="text-xl font-semibold text-gray-900">Consectetur</h2>
-            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-          </div>
-        </div>
-
-        <!-- Imagen superior derecha -->
-        <div class="relative w-full mb-[2%] md:mb-[0%] md:w-2/5 md:pl-[1%]">
-          <img src="https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny"
-            alt=" " class="w-full h-full object-cover " />
-        </div>
-
-
-      </div>
-      <div class="flex flex-col md:flex-row justify-between pb-[1%]">
-
-        <!-- Imagenes inferiores -->
-        <div class="relative mb-[2%] md:mb-[0%]">
-          <img src="https://fakeimg.pl/1500x1200/171a1f/9d7ee7?text=Owwny"
-            alt=" " class="w-full h-full object-cover " />
-        </div>
-        <div class="relative mb-[2%] md:mb-[0%] md:mx-[1%]">
-          <img src="https://fakeimg.pl/1500x1200/171a1f/9d7ee7?text=Owwny"
-            alt=" " class="w-full h-full object-cover " />
-        </div>
-        <div class="relative">
-          <img
-            src="https://fakeimg.pl/1500x1200/171a1f/9d7ee7?text=Owwny"
-            alt=" " class="w-full h-full object-cover " />
-          <div class="absolute bottom-0 w-full bg-white bg-opacity-80 p-4">
-            <h2 class="text-xl font-semibold text-gray-900">Consectetur</h2>
-            <p class="text-gray-600">Lorem ipsum dolor sit amet </p>
-          </div>
-        </div>
-
-      </div>
-
-
-    </div>
-  </div>
 </template>
 
 <script>
 export default {
-
   data() {
-    return {
-      showMenu: false,
-
-    };
+      return {
+          showMenu: false,
+          currentSlide: 0,
+          totalSlides: 3,
+      };
   },
   methods: {
+      toScroll(v) {
+          const myEl = document.getElementById(v);
+          this.$smoothScroll({
+              scrollTo: myEl,
+              duration: 300,
+              offset: -50,
+          });
+          this.showMenu = false
+      },
+      prevSlide() {
+          if (this.currentSlide === 0) {
+              this.currentSlide = this.totalSlides - 1;
+          } else {
+              this.currentSlide--;
+          }
+      },
+      // Ir a la diapositiva siguiente
+      nextSlide() {
+          if (this.currentSlide === this.totalSlides - 1) {
+              this.currentSlide = 0;
+          } else {
+              this.currentSlide++;
+          }
+      },
+      goToSlide(index) {
+          this.currentSlide = index;
+      },
+      toScroll(v) {
+          const myEl = document.getElementById(v);
+          this.$smoothScroll({
+              scrollTo: myEl,
+              duration: 1000,
+              offset: 10,
+          });
+          this.showMenu = false;
+      },
 
-    toScroll(v) {
-      const myEl = document.getElementById(v);
-      this.$smoothScroll({
-        scrollTo: myEl,
-        duration: 1000,
-        offset: 10,
-      });
-      this.showMenu = false;
-    },
-  },
-
+  }
 };
 </script>
 
-<style scoped>
-/* Puedes añadir estilos adicionales si es necesario */
-</style>
+<style lang="scss" scoped></style>

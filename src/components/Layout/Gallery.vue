@@ -1,37 +1,65 @@
 <template>
-    <div class="bg-secondary p-0 pt-3">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-        <!-- Itera sobre el array de imágenes y crea un elemento para cada una -->
-        <div v-for="(image, index) in images" :key="index" class="relative">
-          <img :src="image.src" :alt="image.alt" class="w-full h-full object-cover rounded-sm" />
-        </div>
-      </div>
+  <div id="" class="w-full pt-[1%] lg:pt-[0.5%]">
+    <div class="w-full relative">
+      <swiper :slidesPerView="1" :spaceBetween="8" :freeMode="true" :pagination="{
+        clickable: true,
+      }" :breakpoints="{
+      '640': {
+        slidesPerView: 1,
+        spaceBetween: 8,
+      },
+      '768': {
+        slidesPerView: 3,
+        spaceBetween: 8,
+      },
+      '1024': {
+        slidesPerView: 4,
+        spaceBetween: 8,
+      },
+    }" :modules="modules" class="mySwiper">
+        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-1.jpg"
+            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-2.jpg"
+            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-3.jpg"
+            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+
+        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-4.jpg"
+            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-5.jpg"
+            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-6.jpg"
+            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-7.jpg"
+            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-8.jpg"
+            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+      </swiper>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: "ImageGallery",
-    data() {
-      return {
-        // Lista de imágenes con URLs y descripciones
-        images: [
-          { src: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny", alt: "Imagen 1" },
-          { src: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny", alt: "Imagen 2" },
-          { src: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny", alt: "Imagen 3" },
-          { src: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny", alt: "Imagen 4" },
-          { src: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny", alt: "Imagen 5" },
-          { src: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny", alt: "Imagen 6" },
-          { src: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny", alt: "Imagen 7" },
-          { src: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny", alt: "Imagen 8" },
-          { src: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny", alt: "Imagen 9" },
-        ]
-      };
-    }
-  };
-  </script>
-  
-  <style scoped>
-  /* Estilos adicionales si es necesario */
-  </style>
-  
+  </div>
+</template>
+<script>
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Pagination],
+    };
+  },
+};
+</script>

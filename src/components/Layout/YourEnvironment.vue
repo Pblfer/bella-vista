@@ -1,45 +1,20 @@
 <template>
-    <div id="entorno" class="bg-primary p-[5%] py-[5%]">
+    <div id="entorno" class="bg-primary p-[4%] py-[1%]">
         <div class="flex flex-col-reverse lg:flex-row">
-            <div class="w-full flex flex-col justify-center lg:w-1/2 ">
-
-                <div class="flex justify-between mb-[2%] md:pb-[0.5%]">
-                    <img src="https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny"
-                        alt=" " class="w-full h-full object-cover " />
-                </div>
-
-
-                <div class="flex flex-col md:flex-row justify-between pb-[1%]">
-                    <!-- Imagenes inferiores -->
-                    <div class="w-full md:w-1/2 mb-[2%]  md:mb-[0%]">
-                        <img src="https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny"
-                            alt=" " class="w-full h-full object-fill object-center " />
-                    </div>
-
-                    <div class=" w-full md:w-1/2 pl-[0%] md:pl-[2%]">
-                        <img src="https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny"
-                            alt=" " class="w-full h-full object-center object-cover " />
-
-                    </div>
-                </div>
-            </div>
+            
             <div
-                class="flex flex-col justify-center items-center lg:items-end w-full lg:w-1/2 p-[8%] lg:px-[4%] lg:py-[0%] text-center lg:text-right text-secondary">
+                class="flex flex-col justify-center items-center lg:items-center w-full  p-[8%] lg:px-[4%] lg:py-[0%] text-center lg:text-center text-secondary">
                 <h1 class="text-sm md:text-base font-normal">
                     Proin cursus
                 </h1>
 
-                <div class=" font-abrilFat text-4xl md:text-5xl xl:text-5xl font-bold mb-2 xl:mb-10 ">Tu Entorno</div>
+                <div class=" font-badScript text-4xl md:text-5xl xl:text-5xl font-bold mb-2 xl:mb-10 ">Tu Entorno</div>
                 <p class=" text-xl mb-2 md:mb-4">
-                    Nunc semper orci ut ex porta, eget consequat augue vestibulum. Sed eget quam quis ligula gravida lacinia ut at odio. Praesent nec aliquam nisl.Aliquam erat volutpat. 
-                </p>
-                <p class=" text-xl mb-2 md:mb-4">
-                    Integer sit amet nisi nec mauris sollicitudin auctor ac eu orci. Aliquam erat volutpat. Fusce enim mauris, ullamcorper sit amet ultricies ut, venenatis id nibh. Mauris non lacinia.
-
+                    Sit deserunt proident consectetur aute anim enim occaecat labore cupidatat Lorem velit pariatur tempor ut sunt sit Lorem. Eiusmod ad fugiat occaecat ex exercitation eiusmod voluptate elit do ut reprehenderit anim deserunt duis enim enim tempor ut. 
 
                 </p>
                 <button @click="toScroll('cotizar')"
-                    class="mb-2 px-12 py-2 bg-secondary text-white border-2 duration-600 ">Más información</button>
+                    class="mb-2 px-12 py-2 bg-secondary text-white border-2 duration-600 ">Obtener detalles</button>
 
             </div>
 
@@ -50,8 +25,8 @@
 
 
     </div>
-    <img src="https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny"
-        alt=" " class=" w-full m-auto " />
+    <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Bella-vista-pisina-zona-8.jpg"
+        alt=" " class=" w-full m-auto object-cover" />
 </template>
 
 <script>

@@ -7,14 +7,11 @@
         <div class="lg:mt-12 mt-10 flex justify-center">
           <div class="w-full rounded-sm  p-2  md:w-2/5 ">
            <div class="flex flex-col items-center justify-center">
-            <img
-                src="https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny"
-                alt=" Apartamentos Zona "
-                class="w-[300px]"
-              />
-              <p class="text-primary text-center py-5">
-                Nuestro equipo está listo para responder sus preguntas y ayudarte en cada paso del proceso.
-              </p>
+            
+              <img class="w-[240px]"
+                                  src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
+                                  alt="BELLA VISTA - Club Residencial" />
+             
            </div>
           <div
             class="relative mb-2 border-0  border-b  shadow-sm focus-within:border-primary focus-within:ring-1 focus-within:ring-secondary mt-14"
@@ -193,7 +190,7 @@
   };
   </script>
 
-<style lang="css">
+<style lang="css"> 
 .vue-country-intl-input{
     background-color: transparent!important;
 }
@@ -201,7 +198,7 @@
 .vue-country-intl-input .country-intl-label {
   border-color: #16232d !important;
   height: 2.4rem !important;
-  background-color: #16232d !important;
+  background-color: #122347 !important;
   color: #ffffff !important;
   border-radius: 0px !important;
   border: none !important;
@@ -214,7 +211,6 @@
 .vue-country-intl-input .country-intl-input {
  
   height: 2.4rem !important;
-  background-color: #16232d !important;
   color: #ffffff !important;
   border-top:0 solid #16232d !important;
   border-left: 0 solid #16232d !important;

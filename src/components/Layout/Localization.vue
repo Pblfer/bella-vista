@@ -1,4 +1,5 @@
 <template>
+    <!--  
     <div id="Lorem Ipsum" class="bg-primary p-[5%] py-[5%]">
         <div class="flex flex-col lg:flex-row">
             <div
@@ -7,7 +8,7 @@
                     Proin cursus
                 </h4>
 
-                <div class="font-abrilFat text-4xl md:text-5xl xl:text-5xl font-bold mb-2 xl:mb-10 ">Ubicación</div>
+                <div class="font-badScript text-4xl md:text-5xl xl:text-5xl font-bold mb-2 xl:mb-10 ">Ubicación</div>
                 <p class=" text-xl mb-2 md:mb-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus elit nec lectus ornare tincidunt. Quisque vel quam ex. Aenean vestibulum ligula dignissim urna tristique,
                 </p>
@@ -27,8 +28,25 @@
         </div>
 
 
+    </div>-->
+    <div class="bg-primarey md:mt-[4%] w-[100%] p-[4%] lg:p-[2%]">
+        <div class="flex flex-col md:flex-row place-items-center justify-between px-[2%] text-center md:text-left">
+            <div class="font-badScript max-w-[580px] text-4xl md:text-4xl xl:text-4xl font-bold mb-2 xl:mb-10 ">En la mejor ubicación de Puerto Barrios 
+                <div class="font-badScript max-w-[580px] text-4xl md:text-4xl xl:text-4xl font-bold mb-2 xl:mb-10 leading-loose -mt-[10px] md:mt-[12px]">Colonia EX-UFCO</div>
+            </div>
+            <h1 class="flex text-third text-sm md:text-base font-bold">
+                Ir con waze
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 ml-2 mt-[5px] text-secondary">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+
+
+            </h1>
+  
+        </div>
     </div>
-    <img src="https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny"
+    <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/localizacion.png"
                     alt=" " class=" w-full m-auto " />
 </template>
 
