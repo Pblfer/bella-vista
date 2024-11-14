@@ -25,39 +25,6 @@
 
 
 
-   <!--
-    <div id="Amenidades" class="bg-primary ">
-        <div class="flex flex-col lg:flex-row">
-            <div
-                class="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 p-[8%] lg:px-[6%] lg:py-[2%] text-center lg:text-left text-secondary">
-                <h4 class="text-sm md:text-base font-normal">
-                    Proin cursus
-                </h4>
-
-                <div class="font-badScript text-4xl md:text-5xl xl:text-5xl font-bold mb-2 xl:mb-10 ">Amenidades</div>
-                <p class=" text-xl mb-2 md:mb-4">
-                    Vestibulum tempus quam pretium rutrum lacinia. <strong class="text-black">Etiam nulla</strong>
-                    Maecenas efficitur scelerisque odio in faucibus. Nam orci augue, fringilla eu vulputate eu,
-                    consectetur sed diam. Curabitur a pulvinar erat.
-                </p>
-                <p class=" text-xl mb-2 md:mb-4">
-                    Nam et ante id nulla fringilla pulvinar. Donec tristique hendrerit quam, ac lacinia leo tincidunt
-                    quis. Praesent consectetur non eros eget commodo.
-                </p>
-                <button @click="toScroll('cotizar')"
-                    class="mb-2 px-12 py-2 bg-secondary text-white border-2 duration-600 ">Conocer más →</button>
-
-            </div>
-
-            <div class="w-full flex justify-center lg:w-1/2 ">
-                <img src="https://fakeimg.pl/1200x1200/171a1f/9d7ee7?text=Owwny" alt=" " class=" w-full m-auto " />
-            </div>
-
-
-        </div>
-
-
-    </div>-->
 
 </template>
 
@@ -68,14 +35,14 @@ export default {
         return {
             showMenu: false,
             images: [
-                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amenidades-1.png", alt: "Piscinas", title: "Piscinas" },
-                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amenidades-2.png", alt: "Áreas verdes", title: "Áreas verdes" },
+                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amenidades-6.png", alt: "Piscinas", title: "Piscinas" },
+                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amenidades-5.png", alt: "Áreas verdes", title: "Áreas verdes" },
                 { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amenidades-3.png", alt: "Juegos infantiles", title: "Juegos infantiles" },
-                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amenidades-4.png", alt: "Áreas para eventos", title: "Áreas para eventos" },
-                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amenidades-5.png", alt: "Gimnasio y Pilates", title: "Gimnasio y Pilates" },
-                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amenidades-6.png", alt: "Terrazas", title: "Terrazas" },
-                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amenidades-7.png", alt: "Churrasqueras", title: "Churrasqueras" },
-                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amenidades-8.png", alt: "Ludoteca", title: "Ludoteca" },
+                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Area+Eventos.jpeg", alt: "Áreas para eventos", title: "Áreas para eventos" },
+                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amenidades-7.png", alt: "Gimnasio y Pilates", title: "Gimnasio y Pilates" },
+                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/terraza-a.png", alt: "Terrazas", title: "Terrazas" },
+                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Churrasqueras.jpg", alt: "Churrasqueras", title: "Churrasqueras" },
+                { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Ludoteca.jpg", alt: "Ludoteca", title: "Ludoteca" },
             ]
 
         };
