@@ -82,85 +82,125 @@
               </div>
           </header>
 
-      </div>
+                            <button @click="showMenu = false" type="button"
+                                class="-m-2.5 rounded-md p-2.5 text-white hover:text-third ease-linear duration-300">
+                                <span class="sr-only">Close menu</span>
+                                <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-10 w-full flex flex-col items-center">
+                            <router-link to="/" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Bella Vista</span>
+                                <img class="h-24 w-auto"
+                                    src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
+                                    alt="BELLA VISTA - Club Residencial" />
+                            </router-link>
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-4 py-6 grid justify-center text-center mt-4 -ml-4 text-white">
+                                    <a href="#" @click="toScroll('Home')"
+                                        class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Inicio</a>
+                                    <a href="#" @click="toScroll('Amenidades')"
+                                        class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Amenidades</a>
+                                    <a href="#" @click="toScroll('Newsletter')"
+                                        class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Newsletter</a>
+                                    <a href="#" @click="toScroll('cotizar')"
+                                        class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Contáctanos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-  </div>
-  <div class="relative flex justify-center flex-col lg:flex-row" >
-      <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/banner.jpg"
-          alt=" " class="relative m-auto object-cover -z-10 " />
-  </div>
-
-  <div class="relative flex justify-center flex-col lg:flex-row mb-10 z-10" >
-   
-      <div class="flex flex-col md:flex-row flex-grow relative -mt-[15%] md:-mt-[10%] w-[100%] lg:w-[680px] px-[4.5%] lg:px-[2.5%]  z-10">
-        <div class="w-[100%] shadow-2xl p-[14%] md:p-[5%] m-2 bg-primary z-10">
-            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center mb-4">79 </div>
-            <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Apartamentos </div>
         </div>
-        <div class="w-[100%] shadow-2xl p-[14%] md:p-[5%] m-2 bg-primary z-10">
-            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center mb-4">133</div>
-            <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Parqueos de vehículos</div>
-        </div>
-        <div class="w-[100%] shadow-2xl p-[14%] md:p-[5%] m-2 bg-primary z-10">
-            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center mb-4">88 </div>
-            <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Parqueos de motocicleta</div>
-        </div>
+
+    </div>
+    <div class="relative flex justify-center flex-col lg:flex-row pt-20">
+        <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/banner.jpg" alt=" "
+            class="relative m-auto object-cover -z-10 " />
+    </div>
+
+    <div class="relative flex justify-center flex-col lg:flex-row mb-10 z-10 mt-14">
+
+        <div
+            class="flex flex-col md:flex-row flex-grow relative -mt-[15%] md:-mt-[10%] w-[100%] lg:w-[680px] px-[4.5%] lg:px-[2.5%]  z-10">
+            <div class="w-[100%] shadow-2xl p-[14%] md:p-[5%] m-2 bg-primary z-10">
+                <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center mb-4">79
+                </div>
+                <div class="font-semibold  text-secondary text-xl md:text-1xl lg:text-2xl text-center">
+                    Apartamentos </div>
+            </div>
+            <div class="w-[100%] shadow-2xl p-[14%] md:p-[5%] m-2 bg-primary z-10">
+                <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center mb-4">133
+                </div>
+                <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Parqueos
+                    de vehículos</div>
+            </div>
+            <div class="w-[100%] shadow-2xl p-[14%] md:p-[5%] m-2 bg-primary z-10">
+                <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center mb-4">88
+                </div>
+                <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Parqueos
+                    de motocicleta</div>
+            </div>
 
 
-    
-      </div>
-  </div>
+
+        </div>
+    </div>
 
 </template>
 
 <script>
 export default {
-  data() {
-      return {
-          showMenu: false,
-          currentSlide: 0,
-          totalSlides: 3,
-      };
-  },
-  methods: {
-      toScroll(v) {
-          const myEl = document.getElementById(v);
-          this.$smoothScroll({
-              scrollTo: myEl,
-              duration: 300,
-              offset: -50,
-          });
-          this.showMenu = false
-      },
-      prevSlide() {
-          if (this.currentSlide === 0) {
-              this.currentSlide = this.totalSlides - 1;
-          } else {
-              this.currentSlide--;
-          }
-      },
-      // Ir a la diapositiva siguiente
-      nextSlide() {
-          if (this.currentSlide === this.totalSlides - 1) {
-              this.currentSlide = 0;
-          } else {
-              this.currentSlide++;
-          }
-      },
-      goToSlide(index) {
-          this.currentSlide = index;
-      },
-      toScroll(v) {
-          const myEl = document.getElementById(v);
-          this.$smoothScroll({
-              scrollTo: myEl,
-              duration: 1000,
-              offset: 10,
-          });
-          this.showMenu = false;
-      },
+    data() {
+        return {
+            showMenu: false,
+            currentSlide: 0,
+            totalSlides: 3,
+        };
+    },
+    methods: {
+        toScroll(v) {
+            const myEl = document.getElementById(v);
+            this.$smoothScroll({
+                scrollTo: myEl,
+                duration: 300,
+                offset: -50,
+            });
+            this.showMenu = false
+        },
+        prevSlide() {
+            if (this.currentSlide === 0) {
+                this.currentSlide = this.totalSlides - 1;
+            } else {
+                this.currentSlide--;
+            }
+        },
+        // Ir a la diapositiva siguiente
+        nextSlide() {
+            if (this.currentSlide === this.totalSlides - 1) {
+                this.currentSlide = 0;
+            } else {
+                this.currentSlide++;
+            }
+        },
+        goToSlide(index) {
+            this.currentSlide = index;
+        },
+        toScroll(v) {
+            const myEl = document.getElementById(v);
+            this.$smoothScroll({
+                scrollTo: myEl,
+                duration: 1000,
+                offset: 10,
+            });
+            this.showMenu = false;
+        },
 
-  }
+    }
 };
 </script>
 

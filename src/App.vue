@@ -46,11 +46,11 @@ export default {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #16232d;
+  background: #1c3b6d;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #16232d;
+  background: #1c3b6d;
 }
 </style>

@@ -14,9 +14,9 @@ module.exports = {
 
       },
       fontFamily: {
-        sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
-        badScript: ['"BadScript"', ...defaultTheme.fontFamily.sans],
-        mont: ['"Mont', ...defaultTheme.fontFamily.sans],
+        sans: ['"mont"', ...defaultTheme.fontFamily.sans],
+        badScript: ['"collectionfreeregular"', ...defaultTheme.fontFamily.sans],
+        mont: ['"montregular', ...defaultTheme.fontFamily.sans],
       },
     },
   },
