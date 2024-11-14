@@ -21,7 +21,7 @@
         </div>
     </div>
     <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/localizacion.png"
-        alt="bella vista puerto barrios aeropuerto" class=" w-full m-auto " />
+        alt="bella vista puerto barrios aeropuerto" class=" w-full h-auto" />
 </template>
 
 <script>

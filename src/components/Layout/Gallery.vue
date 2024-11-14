@@ -1,6 +1,6 @@
 <template>
   <div class="w-full pt-[1%] lg:pt-[0.5%]">
-    <div class="w-full relative h-[24rem]">
+    <div class="w-full relative h-auto">
       <swiper :slidesPerView="1" :spaceBetween="8" :freeMode="true" :pagination="{
         clickable: true,
       }" :breakpoints="{

@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-primary border-four md:flex grid justify-center md:flex-row px-[4%] ">
+  <div class="bg-primary border-four md:flex grid justify-center md:flex-row px-[4%] mt-4">
 
-    <div class="flex items-center content-center justify-center  w-full md:w-1/3 bg-opacity-80 p-4 ">
+    <div class="flex items-center justify-center w-full  bg-opacity-80 p-4 ">
 
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
         class="w-6 text-four mt-0 mr-2">
@@ -12,9 +12,17 @@
 
       <a href="tel:+50238575712" class="w-full text-four text-lg font-bold">(+502) 3857 - 5712</a>
     </div>
-    <div class="relative w-full md:w-[32rem]">
-      <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/loggo-.png" alt="Logo"
-        class="w-full object-cover " />
+    <div class="relative w-full  flex justify-center gap-4">
+      <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/fha2.jpg" class="h-12"
+        alt="fha">
+      <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/bi.jpg" class="h-12"
+        alt="fha">
+    </div>
+    <div class="relative w-full justify-end flex gap-4">
+      <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amg.jpg" class="h-12"
+        alt="fha">
+      <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/activa.jpg" class="h-12"
+        alt="fha">
     </div>
 
   </div>
