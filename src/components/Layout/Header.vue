@@ -30,11 +30,11 @@
 
                         <a href="#" @click="toScroll('Amenidades')"
                             class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[12px] px-6 hover:text-fifth  rounded-sm leading-6 text-white">Amenidades</a>
-                        <a href="#" @click="toScroll('Newsletter')"
+                        <a href="#" @click="toScroll('Ubicacion')"
                             class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[12px] px-6 hover:text-fifth  rounded-sm leading-6 text-white">Ubicación</a>
-                        <a href="#" @click="toScroll('Newsletter')"
+                        <a href="#" @click="toScroll('types')"
                             class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[12px] px-6 hover:text-fifth  rounded-sm leading-6 text-white">Apartamentos</a>
-                        <a href="#" @click="toScroll('Home')"
+                        <a href="#" @click="toScroll('respaldo')"
                             class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[12px] px-6 hover:text-fifth rounded-sm leading-6 text-white">Respaldo</a>
                         <a href="#" @click="toScroll('cotizar')"
                             class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 duration-600 bg-four hover:bg-four py-[12px] px-10 hover:text-fifth rounded-sm leading-6 text-white">Cotizar</a>
@@ -69,11 +69,11 @@
 
                                     <a href="#" @click="toScroll('Amenidades')"
                                         class="text-lg font-semibold  duration-600 hover:bg-four px-10 tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-sm py-2 leading-6 hover:text-white">Amenidades</a>
-                                    <a href="#" @click="toScroll('Newsletter')"
+                                    <a href="#" @click="toScroll('Ubicacion')"
                                         class="text-lg font-semibold  duration-600 hover:bg-four px-4 tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-sm py-2 leading-6 hover:text-white">Ubicación</a>
-                                    <a href="#" @click="toScroll('Home')"
+                                    <a href="#" @click="toScroll('types')"
                                         class="text-lg font-semibold  duration-600 hover:bg-four px-4 tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-sm py-2 leading-6 hover:text-white">Apartamentos</a>
-                                    <a href="#" @click="toScroll('cotizar')"
+                                    <a href="#" @click="toScroll('respaldo')"
                                         class="text-lg font-semibold  duration-600 hover:bg-four px-10 tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-sm py-2 leading-6 hover:text-white">Respaldo</a>
                                     <a href="#" @click="toScroll('cotizar')"
                                         class="text-lg tracking-wide font-semibold  hover:shadow duration-600 bg-four shadow-lg ease-in-out duration-700 shadow-white/5 hover:bg-four py-[12px] px-10 hover:text-fifth rounded-sm leading-6 text-white">Cotizar</a>
@@ -87,7 +87,7 @@
         </div>
 
     </div>
-    <div class="relative flex justify-center flex-col lg:flex-row md:pt-[6.5rem] pt-[5.5rem] xl:pt-[6.5rem]">
+    <div class="relative flex justify-center flex-col lg:flex-row md:pt-[4rem] pt-[4rem] xl:pt-[5rem]">
         <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/banner.jpg"
             alt="Bella vista puerto barrios"
             class="relative m-auto object-cover md:object-center object-left -z-10 h-[30rem] md:h-auto" />

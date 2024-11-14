@@ -122,6 +122,17 @@ export default {
             modules: [Pagination, Navigation, Virtual],
         };
     },
+    methods: {
+    toScroll(v) {
+      this.showMenu = false
+      const myEl = document.getElementById(v)
+      this.$smoothScroll({
+        scrollTo: myEl,
+        duration: 1000,
+        offset: -50,
+      })
+    },
+  }
 };
 </script>
 <style lang="css">

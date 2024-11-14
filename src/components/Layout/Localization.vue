@@ -1,6 +1,6 @@
 <template>
 
-    <div class="md:mt-[4%] w-[100%] p-[4%] lg:p-[2%]">
+    <div class="md:mt-[4%] w-[100%] p-[4%] lg:p-[2%] " id="Ubicacion">
         <div class="flex flex-col md:flex-row place-items-center justify-between px-[2%] text-center md:text-left">
             <div class="font-sans max-w-[580px] text-3xl md:text-4xl xl:text-4xl font-bold mb-2 xl:mb-0 ">
                 En la mejor ubicación de Puerto Barrios

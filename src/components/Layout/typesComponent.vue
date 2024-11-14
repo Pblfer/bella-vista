@@ -68,7 +68,7 @@ export default {
       typeSelected: 0,
       subTypeSelected: 0,
       types: [
-        { type: 1, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+a.png" },
+        { type: 1, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo-a.png" },
         { type: 2, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+b.png" },
         { type: 3, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+c.png" },
      
@@ -77,9 +77,15 @@ export default {
   },
   computed: {
     selectedImage() {
+      // Caso para Tipo A
+      if (this.typeSelected === 0) {
+        return this.types[0].img;
+      }
+      // Caso para Tipo B
       if (this.typeSelected === 1) {
         return this.subTypeSelected === 0 ? this.types[1].img : this.types[2].img;
       }
+      // Caso para Tipo C
       return this.types[this.typeSelected].img;
     },
     activeClass() {

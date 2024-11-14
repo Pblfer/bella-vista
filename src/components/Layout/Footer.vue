@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary border-four md:flex grid justify-center md:flex-row px-[4%] mt-4">
+  <div class="bg-primary border-four md:flex grid justify-center md:flex-row px-[4%] mt-4" id="respaldo">
 
     <div class="flex items-center justify-center w-full  bg-opacity-80 p-4 ">
 
