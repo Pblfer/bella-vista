@@ -86,18 +86,18 @@
 
   <div class="relative flex justify-center flex-col lg:flex-row mb-10 z-10" >
    
-      <div class="flex flex-col md:flex-row flex-grow relative -mt-[15%] md:-mt-[10%] w-[100%] lg:w-[680px] p-[5%] lg:p-[3%]  z-10">
-        <div class="w-[100%] shadow-2xl p-[5%] m-2 bg-primary z-10">
-            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center">79 </div>
-            <div class="font-refile text-secondary font-bold text-lg md:text-xl lg:text-1xl text-center">Apartamentos </div>
+      <div class="flex flex-col md:flex-row flex-grow relative -mt-[15%] md:-mt-[10%] w-[100%] lg:w-[680px] px-[4.5%] lg:px-[2.5%]  z-10">
+        <div class="w-[100%] shadow-2xl p-[14%] md:p-[5%] m-2 bg-primary z-10">
+            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center mb-4">79 </div>
+            <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Apartamentos </div>
         </div>
-        <div class="w-[100%] shadow-2xl p-[5%] m-2 bg-primary z-10">
-            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center">133</div>
-            <div class="font-refile text-secondary font-bold text-lg md:text-xl lg:text-1xl text-center">Parqueos de vehículos</div>
+        <div class="w-[100%] shadow-2xl p-[14%] md:p-[5%] m-2 bg-primary z-10">
+            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center mb-4">133</div>
+            <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Parqueos de vehículos</div>
         </div>
-        <div class="w-[100%] shadow-2xl p-[5%] m-2 bg-primary z-10">
-            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center">88 </div>
-            <div class="font-refile text-secondary font-bold text-lg md:text-xl lg:text-1xl text-center">Parqueos de motocicleta</div>
+        <div class="w-[100%] shadow-2xl p-[14%] md:p-[5%] m-2 bg-primary z-10">
+            <div class="font-refile text-secondary font-bold text-3xl md:text-5xl lg:text-6xl text-center mb-4">88 </div>
+            <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Parqueos de motocicleta</div>
         </div>
 
 

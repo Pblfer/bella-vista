@@ -28,10 +28,13 @@
             
 
         </swiper>
-        <div class="w-full flex justify-center items-center -mt-12 z-50" >
-            <button @click="toScroll('cotizar')" class="mb-2 px-12 py-2 bg-secondary text-white border-0 duration-600 z-50">Óptima Centro de Negocios</button>
+        <div class="w-full flex justify-center items-center -mt-14 z-50" >
+            <button @click="toScroll('cotizar')" class="mb-2 px-14 py-2 bg-secondary text-white text-xl md:text-2xl border-0 duration-600 z-50">
+                Óptima Centro de Negocios</button>
 
         </div>
+
+        
         
     </div>
 

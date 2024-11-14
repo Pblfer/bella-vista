@@ -3,7 +3,7 @@
     <div class="bg-primarey md:mt-[1%] w-[100%] p-[4%] lg:p-[2%]">
         <div class="flex flex-col-reverse md:flex-row place-items-center justify-between px-[2%]">
             <div class="font-badScript text-4xl md:text-5xl xl:text-6xl font-bold mb-6 xl:mb-10 mt-2">Amenidades</div>
-            <h1 class="w-full text-base mb-4 md:mb-0 ml-1 text-right text-third font-bold">
+            <h1 class="w-full text-lg mb-4 md:mb-0 ml-1 text-right text-third ">
                 Bella Vista - Puerto Barrios
             </h1>
   
@@ -14,7 +14,7 @@
                 <img :src="image.src" :alt="image.alt" class="w-full h-full object-cover rounded-sm" />
                 <!-- Superposición de título y fondo -->
                 <div class="absolute bottom-0 left-0 w-full bg-secondary/90 text-white text-center py-2">
-                    <p>{{ image.title }}</p>
+                    <p class="font-bold text-xl p-2">{{ image.title }}</p>
                 </div>
             </div>
         </div>

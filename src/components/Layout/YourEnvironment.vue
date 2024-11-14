@@ -1,20 +1,38 @@
 <template>
-    <div id="entorno" class="bg-primary p-[4%] py-[1%]">
+    <div id="entorno" class="bg-primary p-[4%] py-[4%]">
         <div class="flex flex-col-reverse lg:flex-row">
-            
+
             <div
                 class="flex flex-col justify-center items-center lg:items-center w-full  p-[8%] lg:px-[4%] lg:py-[0%] text-center lg:text-center text-secondary">
-                <h1 class="text-sm md:text-base font-normal">
-                    Proin cursus
-                </h1>
 
-                <div class=" font-badScript text-4xl md:text-5xl xl:text-5xl font-bold mb-2 xl:mb-10 ">Tu Entorno</div>
+                <div class="flex w-full max-w-[70%] justify-around">
+                    <div class=" bg-fifth mb-2 xl:mb-10 rounded-full w-24 h-24">
+                    </div>
+                    <div class=" bg-fifth mb-2 xl:mb-10 rounded-full w-24 h-24">
+                    </div>
+                    <div class=" bg-fifth mb-2 xl:mb-10 rounded-full w-24 h-24">
+                    </div>
+                    <div class=" bg-fifth mb-2 xl:mb-10 rounded-full w-24 h-24">
+                    </div>
+                    <div class=" bg-fifth mb-2 xl:mb-10 rounded-full w-24 h-24">
+                    </div>
+                </div>
+
+
+
                 <p class=" text-xl mb-2 md:mb-4">
-                    Sit deserunt proident consectetur aute anim enim occaecat labore cupidatat Lorem velit pariatur tempor ut sunt sit Lorem. Eiusmod ad fugiat occaecat ex exercitation eiusmod voluptate elit do ut reprehenderit anim deserunt duis enim enim tempor ut. 
+                    Sit deserunt proident consectetur aute anim enim occaecat labore cupidatat Lorem velit pariatur
+                    tempor ut sunt sit Lorem. Eiusmod ad fugiat occaecat ex exercitation eiusmod voluptate elit do ut
+                    reprehenderit anim deserunt duis enim enim tempor ut.
 
                 </p>
                 <button @click="toScroll('cotizar')"
-                    class="mb-2 px-12 py-2 bg-secondary text-white border-2 duration-600 ">Obtener detalles</button>
+                    class="flex text-xl md:text-2xl my-2 px-14 py-4 bg-four text-white border-2 duration-600 rounded-md">
+                    Obtener detalles
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 ml-2 mt-[6px] text-primary">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </button>
 
             </div>
 

@@ -6,13 +6,13 @@
         <div class="">
           <div class="px-4 flex flex-col items-center justify-center content-center md:px-0 lg:pr-4 lg:pt-0">
             <div class="w-full lg:mx-0 flex flex-col justify-center content-center ">
-              <h3 class="text-base ml-1 text-right text-third font-bold">
+              <h3 class="text-lg ml-1 text-right text-third">
                 Bella Vista - Puerto Barrios
               </h3>
               <p class="font-badScript text-4xl md:text-5xl xl:text-5xl font-bold tracking-tight mt-4">
                 Apartamentos
               </p>
-              <p class="  mt-4 max-w-[660px] w-[90%] tracking-wide text-center md:text-left">
+              <p class="mt-4 max-w-[660px] w-[90%] tracking-wide text-center md:text-left">
                 Apartamentos de 2, 3 y 4 Habitaciones en Puesto Barrios.
 
               </p>
@@ -30,22 +30,10 @@
                   </button>
                 </div>
                 <div v-if="typeSelected === 0" class="flex justify-evenly tracking-wider gap-1 pt-1">
-<!---
-                  <button @click="subTypeSelected = 0" :class="subTypeSelected === 0 ? activeClass : inactiveClass">
-                    1A
-                  </button>--->
-
                 </div>
 
 
                 <div v-if="typeSelected === 1" class="flex justify-center tracking-wider gap-1 pt-1">
-                  <!---
-                  <button @click="subTypeSelected = 1" :class="subTypeSelected === 3 ? activeClass : inactiveClass">
-                    2A
-                  </button>
-                  <button @click="subTypeSelected = 0" :class="subTypeSelected === 0 ? activeClass : inactiveClass">
-                    2B
-                  </button> --->  
 
                 </div>
              
@@ -59,13 +47,15 @@
         <img class="w-full h-auto px-[0%] md:px-[12%] lg:px-[14%]" :src="selectedImage" alt=" ">
         <p class=" text-xl my-2 md:my-4 text-center px-[5%]">
                     Sit deserunt proident consectetur aute anim enim occaecat labore cupidatat Lorem velit pariatur tempor ut sunt sit Lorem. Eiusmod ad fugiat occaecat ex exercitation eiusmod voluptate elit do ut reprehenderit anim deserunt duis enim enim tempor ut. 
-
                 </p>
                 <button @click="toScroll('cotizar')"
-                    class="mb-2 px-12 py-2 bg-secondary text-white border-2 duration-600 ">Obtener detalles</button>
-      </div>
-      
-                
+                    class="flex text-xl md:text-2xl my-2 px-14 py-4 bg-four text-white border-2 duration-600 rounded-md">
+                    Obtener detalles
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 ml-2 mt-[6px] text-primary">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </button>
+      </div>          
     </div>
   </div>
 </template>
@@ -80,7 +70,7 @@ export default {
         { type: 1, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+a.png" },
         { type: 2, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+b.png" },
         { type: 3, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+c.png" },
-        { type: 4, img: "https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny" },
+     
       ]
     }
   },
