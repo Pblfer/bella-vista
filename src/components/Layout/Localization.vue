@@ -20,6 +20,7 @@
 
         </div>
     </div>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5431.173529702356!2d-88.59791906800001!3d15.728924981299013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f66d900057ee0d7%3A0xfec4f3e8ddb94397!2sBella%20Vista!5e0!3m2!1ses-419!2sgt!4v1731609509075!5m2!1ses-419!2sgt" class="w-full" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
     <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/localizacion.png"
         alt="bella vista puerto barrios aeropuerto" class=" w-full h-auto" />
 </template>
