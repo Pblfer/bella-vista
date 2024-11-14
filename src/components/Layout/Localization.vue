@@ -2,10 +2,10 @@
 
     <div class="md:mt-[4%] w-[100%] p-[4%] lg:p-[2%]">
         <div class="flex flex-col md:flex-row place-items-center justify-between px-[2%] text-center md:text-left">
-            <div class="font-sans max-w-[580px] text-4xl md:text-4xl xl:text-4xl font-bold mb-2 xl:mb-0 ">
+            <div class="font-sans max-w-[580px] text-3xl md:text-4xl xl:text-4xl font-bold mb-2 xl:mb-0 ">
                 En la mejor ubicación de Puerto Barrios
                 <div
-                    class="font-badScript max-w-[580px] text-4xl md:text-5xl text-secondary xl:text-5xl font-bold mb-2 xl:mb-10 leading-loose -mt-[10px] md:mt-[20px]">
+                    class="font-badScript max-w-[580px] text-5xl md:text-5xl text-secondary xl:text-5xl font-bold mb-2 xl:mb-10 leading-loose  md:mt-[20px]">
                     Colonia EX-UFCO</div>
             </div>
             <a href="#" target="_blank" class="flex hover:underline ease-in-out duration-700 text-black text-lg md:text-xl font-semibold">

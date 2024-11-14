@@ -6,17 +6,17 @@
         <div class="">
           <div class="px-4 flex flex-col items-center justify-center content-center md:px-0 lg:pr-4 lg:pt-0">
             <div class="w-full lg:mx-0 flex flex-col justify-center content-center ">
-              <h3 class="text-lg ml-1 text-right text-third">
+              <h2 class="text-lg ml-1 md:text-right text-third text-center">
                 Bella Vista - Puerto Barrios
-              </h3>
-              <p class="font-badScript text-4xl md:text-7xl xl:text-7xl font-bold tracking-tight mt-4">
+              </h2>
+              <p class="font-badScript text-7xl md:text-7xl xl:text-7xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 md:text-left text-center">
                 Apartamentos
               </p>
-              <p class="mt-4 max-w-[660px] w-[90%] tracking-wide text-center text-2xl md:text-left">
+              <p class="mt-4 max-w-[660px] w-[90%] tracking-wide text-center text-2xl md:text-left ">
                 Apartamentos de 2, 3 y 4 Habitaciones en Puesto Barrios.
 
               </p>
-              <div class="grid grid-cols gap-4 pt-8 w-full text-2xl tracking-wider">
+              <div class="grid grid-cols gap-4 pt-8 w-full text-2xl tracking-wider justify-center md:justify-start">
 
                 <div class="flex  ">
                   <button @click="selectType(0)" :class="typeSelected === 0 ? activeClass : inactiveClass">
@@ -49,7 +49,7 @@
           Bella Vista redefine la experiencia de vivienda en Puerto Barrios, brindando apartamentos diseñados para maximizar la funcionalidad y el confort. Con espacios bien optimizados y acabados de alta calidad, este es el lugar ideal para disfrutar de la comodidad que mereces y mejorar tu calidad de vida.
                 </p>
                 <button @click="toScroll('cotizar')"
-                    class="flex text-lg md:text-lg my-2 px-10 py-3 bg-secondary ease-in-out duration-700 text-white  duration-600 rounded-sm shadow-lg hover:bg-four hover:shadow-none">
+                    class="flex text-lg md:text-lg my-2 px-10 py-3 mt-4 bg-secondary ease-in-out duration-700 text-white  duration-600 rounded-sm shadow-lg hover:bg-four hover:shadow-none">
                     Obtener cotización
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-6 ml-2 mt-0.5 text-primary">

@@ -4,7 +4,7 @@
             <div
                 class="flex flex-col justify-center items-center lg:items-center w-full  p-[8%] lg:px-[4%] lg:py-[0%] text-center md:text-left text-secondary">
 
-                <div class="w-full font-badScript text-4xl md:text-7xl xl:text-7xl font-bold mb-2 ">Activa Desarrollos
+                <div class="w-full font-badScript text-6xl md:text-7xl xl:text-7xl font-bold mb-2 ">Activa Desarrollos
                 </div>
                 <p class=" text-xl mb-4 md:mb-10 mt-2">
                     Con una trayectoria sólida en el desarrollo de proyectos inmobiliarios de alta calidad, ACTIVA
