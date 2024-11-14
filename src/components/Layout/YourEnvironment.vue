@@ -18,29 +18,22 @@
                     </div>
                 </div>
 
-
-
                 <p class=" text-xl mb-2 md:mb-4">
-                    Sit deserunt proident consectetur aute anim enim occaecat labore cupidatat Lorem velit pariatur
-                    tempor ut sunt sit Lorem. Eiusmod ad fugiat occaecat ex exercitation eiusmod voluptate elit do ut
-                    reprehenderit anim deserunt duis enim enim tempor ut.
+                    Descubre un nuevo estilo de vida en el proyecto residencial Bella Vista, ubicado estratégicamente en
+                    <span class="font-bold">la Colonia ExUFCO</span> de Puerto Barrios. Este desarrollo inmobiliario combina modernidad, accesibilidad
+                    y seguridad para ofrecer un entorno perfecto para ti y tu familia.
 
                 </p>
                 <button @click="toScroll('cotizar')"
-                    class="flex text-xl md:text-2xl my-2 px-14 py-4 bg-four text-white border-2 duration-600 rounded-md">
+                    class="flex text-lg md:text-lg my-2 px-10 py-3 bg-secondary ease-in-out duration-700 text-white  duration-600 rounded-sm shadow-lg hover:bg-four hover:shadow-none">
                     Obtener detalles
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 ml-2 mt-[6px] text-primary">
-                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 ml-2 mt-0.5 text-primary">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
                 </button>
-
             </div>
-
-
-
-
         </div>
-
 
     </div>
     <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Bella-vista-pisina-zona-8.jpg"

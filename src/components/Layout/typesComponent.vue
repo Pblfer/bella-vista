@@ -9,10 +9,10 @@
               <h3 class="text-lg ml-1 text-right text-third">
                 Bella Vista - Puerto Barrios
               </h3>
-              <p class="font-badScript text-4xl md:text-5xl xl:text-5xl font-bold tracking-tight mt-4">
+              <p class="font-badScript text-4xl md:text-7xl xl:text-7xl font-bold tracking-tight mt-4">
                 Apartamentos
               </p>
-              <p class="mt-4 max-w-[660px] w-[90%] tracking-wide text-center md:text-left">
+              <p class="mt-4 max-w-[660px] w-[90%] tracking-wide text-center text-2xl md:text-left">
                 Apartamentos de 2, 3 y 4 Habitaciones en Puesto Barrios.
 
               </p>
@@ -46,13 +46,14 @@
       <div class="flex flex-col content-center items-center justify-center w-full md:px-4 lg:px-14">
         <img class="w-full h-auto px-[0%] md:px-[12%] lg:px-[14%]" :src="selectedImage" alt=" ">
         <p class=" text-xl my-2 md:my-4 text-center px-[5%]">
-                    Sit deserunt proident consectetur aute anim enim occaecat labore cupidatat Lorem velit pariatur tempor ut sunt sit Lorem. Eiusmod ad fugiat occaecat ex exercitation eiusmod voluptate elit do ut reprehenderit anim deserunt duis enim enim tempor ut. 
+          Bella Vista redefine la experiencia de vivienda en Puerto Barrios, brindando apartamentos diseñados para maximizar la funcionalidad y el confort. Con espacios bien optimizados y acabados de alta calidad, este es el lugar ideal para disfrutar de la comodidad que mereces y mejorar tu calidad de vida.
                 </p>
                 <button @click="toScroll('cotizar')"
-                    class="flex text-xl md:text-2xl my-2 px-14 py-4 bg-four text-white border-2 duration-600 rounded-md">
-                    Obtener detalles
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 ml-2 mt-[6px] text-primary">
-                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    class="flex text-lg md:text-lg my-2 px-10 py-3 bg-secondary ease-in-out duration-700 text-white  duration-600 rounded-sm shadow-lg hover:bg-four hover:shadow-none">
+                    Obtener cotización
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 ml-2 mt-0.5 text-primary">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
                 </button>
       </div>          
@@ -82,10 +83,10 @@ export default {
       return this.types[this.typeSelected].img;
     },
     activeClass() {
-      return 'min-w-[80px] text-white text-base mx-1 py-2 px-6 flex font-semibold justify-center ease-in-out duration-500  bg-four text-secondary rounded-md ';
+      return 'min-w-[80px] text-white text-xl mx-1 py-2 px-7 flex font-semibold justify-center ease-in-out duration-500  bg-four text-secondary rounded-sm ';
     },
     inactiveClass() {
-      return 'min-w-[80px] bg-fifth text-base mx-1 py-2 px-6 flex font-semibold justify-center ease-in-out duration-500 border-secondary bg-fifth hover:bg-bg-four hover:text-primary rounded-md';
+      return 'min-w-[80px] bg-fifth opacity-75 text-xl mx-1 py-2 px-6 flex font-semibold justify-center ease-in-out duration-500 border-secondary bg-fifth hover:bg-four hover:opacity-100 hover:text-primary rounded-sm';
     }
   },
   methods: {
