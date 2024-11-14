@@ -1,6 +1,6 @@
 <template>
-  <div id="" class="w-full pt-[1%] lg:pt-[0.5%]">
-    <div class="w-full relative">
+  <div class="w-full pt-[1%] lg:pt-[0.5%]">
+    <div class="w-full relative h-[24rem]">
       <swiper :slidesPerView="1" :spaceBetween="8" :freeMode="true" :pagination="{
         clickable: true,
       }" :breakpoints="{
@@ -18,7 +18,7 @@
       },
     }" :modules="modules" class="mySwiper">
         <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-1.jpg"
-            alt=" " class="relative m-auto object-fill -z-10 " /></swiper-slide>
+            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
         <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-2.jpg"
             alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
         <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-3.jpg"
@@ -44,7 +44,6 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 
 // Import Swiper styles
 import 'swiper/css';
-
 import 'swiper/css/pagination';
 
 
