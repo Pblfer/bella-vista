@@ -4,10 +4,12 @@
             <header class=" absolute inset-x-0 z-50">
                 <nav class="bg-secondary mx-auto flex items-center justify-end px-3 pt-[3.5%] pb-[5%] md:pt-[2%] md:pb-[2%] lg:px-14 w-full"
                     aria-label="Global">
+
                     <div class="absolute flex lg:flex-1 left-0">
-                        <a href="/" class=" pt-2 px-4 bg-secondary">
+
+                        <a href="/" class=" pt-2 px-4 bg-secondary w-auto ml-4 ">
                             <span class="sr-only">Bella Vista</span>
-                            <img class="h-16 md:h-32 mt-10 w-auto ml-4"
+                            <img class="h-24 md:h-32 mt-16 w-auto ml-4"
                                 src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
                                 alt="BELLA VISTA - Club Residencial" />
                         </a>
@@ -85,37 +87,34 @@
         </div>
 
     </div>
-    <div class="relative flex justify-center flex-col lg:flex-row md:pt-[5rem] pt-20 xl:pt-[6rem]">
+    <div class="relative flex justify-center flex-col lg:flex-row md:pt-[6.5rem] pt-[5.5rem] xl:pt-[6.5rem]">
         <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/banner.jpg"
             alt="Bella vista puerto barrios"
-            class="relative m-auto object-cover object-center -z-10 h-[30rem] md:h-auto" />
+            class="relative m-auto object-cover md:object-center object-left -z-10 h-[30rem] md:h-auto" />
     </div>
 
-    <div class="relative flex justify-center flex-col lg:flex-row mb-10 z-10 mt-10">
+    <div class="relative flex justify-center flex-col lg:flex-row mb-10 z-10 mt-14">
 
         <div
-            class="flex flex-col md:flex-row flex-grow relative -mt-[15%] md:-mt-[10%] w-[100%] lg:w-[680px] px-[4.5%] lg:px-[2.5%]  z-10">
-            <div class="w-[100%] shadow-2xl p-[8%] md:p-[8%] m-2 bg-primary z-10">
-                <div class="font-refile text-secondary font-bold text-6xl md:text-5xl lg:text-6xl text-center mb-4">79
+            class="flex flex-col md:flex-row flex-grow relative -mt-[15%] md:-mt-[10%] w-[100%] lg:w-[680px] px-[4.5%] lg:px-[2%] z-10">
+            <div class="w-[100%] shadow-2xl p-[7%] md:p-[6%] m-2 bg-primary z-10">
+                <div class="font-refile text-secondary font-bold text-5xl md:text-5xl lg:text-6xl text-center mb-4">79
                 </div>
-                <div class="font-refile text-secondary font-bold text-2xl md:text-1xl lg:text-2xl text-center">
+                <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">
                     Apartamentos </div>
             </div>
-            <div class="w-[100%] shadow-2xl p-[8%] md:p-[8%] m-2 bg-primary z-10">
-                <div class="font-refile text-secondary font-bold text-6xl md:text-5xl lg:text-6xl text-center mb-4">133
+            <div class="w-[100%] shadow-2xl p-[7%] md:p-[6%] m-2 bg-primary z-10">
+                <div class="font-refile text-secondary font-bold text-5xl md:text-5xl lg:text-6xl text-center mb-4">133
                 </div>
-                <div class="font-refile text-secondary font-bold text-2xl md:text-1xl lg:text-2xl text-center">Parqueos
+                <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Parqueos
                     de vehículos</div>
             </div>
-            <div class="w-[100%] shadow-2xl p-[8%] md:p-[8%] m-2 bg-primary z-10">
-                <div class="font-refile text-secondary font-bold text-6xl md:text-5xl lg:text-6xl text-center mb-4">88
+            <div class="w-[100%] shadow-2xl p-[7%] md:p-[6%] m-2 bg-primary z-10">
+                <div class="font-refile text-secondary font-bold text-5xl md:text-5xl lg:text-6xl text-center mb-4">88
                 </div>
-                <div class="font-refile text-secondary font-bold text-2xl md:text-1xl lg:text-2xl text-center">Parqueos
+                <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Parqueos
                     de motocicleta</div>
             </div>
-
-
-
         </div>
     </div>
 
