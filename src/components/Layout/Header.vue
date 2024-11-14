@@ -2,9 +2,9 @@
   <div id="Home">
       <div class="absolute w-full">
           <header class=" absolute inset-x-0 z-50">
-              <nav class="bg-secondary mx-auto flex items-center justify-between px-3 pt-[3.5%] pb-[5%] md:pt-[2%] md:pb-[2%] lg:px-14 w-full"
+              <nav class="bg-secondary mx-auto flex items-center justify-end px-3 pt-[3.5%] pb-[5%] md:pt-[2%] md:pb-[2%] lg:px-14 w-full"
                   aria-label="Global">
-                  <div class="absolute flex lg:flex-1 ">
+                  <div class="absolute flex lg:flex-1 left-0">
                       <a href="/" class=" pt-2 px-4 bg-secondary">
                           <span class="sr-only">Bella Vista</span>
                           <img class="h-16 md:h-32 mt-10 w-auto"
@@ -16,7 +16,7 @@
                       <button type="button" @click="showMenu = true"
                           class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
                           <span class="sr-only">Open main menu</span>
-                          <svg class="h-10 w-10 text-third ease-linear duration-300 hover:text-white" fill="none"
+                          <svg class="h-10 w-10 text-primary ease-linear duration-300 hover:text-white" fill="none"
                               viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                               <path stroke-linecap="round" stroke-linejoin="round"
                                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -43,7 +43,7 @@
                   <!-- Background backdrop, show/hide based on slide-over state. -->
                   <div class="fixed inset-0 z-50"></div>
                   <div
-                      class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-primary ease-linear duration-300 px-8 py-10 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                      class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-secondary ease-linear duration-300 px-8 py-10 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                       <div class="flex items-end justify-end">
                           
                           <button @click="showMenu = false" type="button"
@@ -58,20 +58,23 @@
                       <div class="mt-10 w-full flex flex-col items-center">
                           <router-link to="/" class="-m-1.5 p-1.5">
                               <span class="sr-only">Boulevar</span>
-                              <img class="h-24 w-auto"
+                              <img class="h-40 w-auto"
                                   src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
                                   alt="BELLA VISTA - Club Residencial" />
                           </router-link>
                           <div class="-my-6 divide-y divide-gray-500/10">
                               <div class="space-y-4 py-6 grid justify-center text-center mt-4 -ml-4 text-white">
-                                  <a href="#" @click="toScroll('Home')"
-                                      class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Inicio</a>
+                                 
                                   <a href="#" @click="toScroll('Amenidades')"
                                       class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Amenidades</a>
                                   <a href="#" @click="toScroll('Newsletter')"
-                                      class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Newsletter</a>
+                                      class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Ubicación</a>
+                                      <a href="#" @click="toScroll('Home')"
+                                      class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Apartamentos</a>
                                   <a href="#" @click="toScroll('cotizar')"
-                                      class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Contáctanos</a>
+                                      class="text-lg font-semibold ease-linear duration-600 hover:bg-third px-4 tracking-wider text-white rounded-md py-2 leading-6 hover:text-secondary">Respaldo</a>
+                                      <a href="#" @click="toScroll('cotizar')"
+                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 bg-four hover:bg-four py-[12px] px-10 hover:text-fifth rounded-md leading-6 text-white">Cotizar</a>
                               </div>
                           </div>
                       </div>
