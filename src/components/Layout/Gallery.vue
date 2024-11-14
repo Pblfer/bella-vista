@@ -9,16 +9,16 @@
         spaceBetween: 8,
       },
       '768': {
-        slidesPerView: 3,
+        slidesPerView: 2.5,
         spaceBetween: 8,
       },
       '1024': {
-        slidesPerView: 4,
+        slidesPerView: 3.5,
         spaceBetween: 8,
       },
     }" :modules="modules" class="mySwiper">
         <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-1.jpg"
-            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+            alt=" " class="relative m-auto object-fill -z-10 " /></swiper-slide>
         <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-2.jpg"
             alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
         <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-3.jpg"
@@ -63,3 +63,6 @@ export default {
   },
 };
 </script>
+<style>
+
+</style>

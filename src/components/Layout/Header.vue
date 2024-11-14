@@ -6,7 +6,7 @@
                   aria-label="Global">
                   <div class="absolute flex lg:flex-1 ">
                       <a href="/" class=" pt-2 px-4 bg-secondary">
-                          <span class="sr-only">Landitap</span>
+                          <span class="sr-only">Bella Vista</span>
                           <img class="h-16 md:h-32 mt-10 w-auto"
                               src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
                               alt="BELLA VISTA - Club Residencial" />
@@ -23,16 +23,19 @@
                           </svg>
                       </button>
                   </div>
-                  <div class="w-full content-end justify-end hidden lg:flex lg:gap-x-4 -mt-2">
-                      <a href="#" @click="toScroll('Home')"
-                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-third px-4 hover:text-secondary rounded-md py-2 leading-6 text-white">Inicio</a>
+                  <div class="w-full content-end justify-end hidden lg:flex lg:gap-x-2 ">
+                      
 
                       <a href="#" @click="toScroll('Amenidades')"
-                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-third px-4 hover:text-secondary rounded-md py-2 leading-6 text-white">Amenidades</a>
+                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-four py-[12px] px-6 hover:text-fifth  rounded-md leading-6 text-white">Amenidades</a>
                       <a href="#" @click="toScroll('Newsletter')"
-                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-third px-4 hover:text-secondary rounded-md py-2 leading-6 text-white">Newslatter</a>
+                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-four py-[12px] px-6 hover:text-fifth  rounded-md leading-6 text-white">Ubicación</a>
+                          <a href="#" @click="toScroll('Newsletter')"
+                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-four py-[12px] px-6 hover:text-fifth  rounded-md leading-6 text-white">Apartamentos</a>
+                          <a href="#" @click="toScroll('Home')"
+                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-four py-[12px] px-6 hover:text-fifth rounded-md leading-6 text-white">Respaldo</a>
                       <a href="#" @click="toScroll('cotizar')"
-                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 hover:bg-third px-4 hover:text-secondary rounded-md py-2 leading-6 text-white">Contáctanos</a>
+                          class="text-lg tracking-wide font-semibold ease-linear hover:shadow duration-600 bg-four hover:bg-four py-[12px] px-10 hover:text-fifth rounded-md leading-6 text-white">Cotizar</a>
                   </div>
               </nav>
               <!-- Mobile menu, show/hide based on menu open state. -->
