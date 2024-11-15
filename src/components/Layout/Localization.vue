@@ -34,10 +34,14 @@
 
                 
                 <p class=" text-xl mb-2 md:mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus elit nec lectus ornare tincidunt. Quisque vel quam ex. Aenean vestibulum ligula dignissim urna tristique,
+                    Descubre un nuevo estilo de vida en el proyecto residencial Bella Vista, ubicado estratégicamente en
+                    <span class="font-bold">la Colonia ExUFCO</span> de Puerto Barrios. Este desarrollo inmobiliario combina modernidad, accesibilidad
+                    y seguridad para ofrecer un entorno perfecto para ti y tu familia.
+
                 </p>
+                
                 <p class=" text-xl mb-2 md:mb-4">
-                    a ultrices ipsum lacinia. Integer congue placerat nisl, malesuada pulvinar sem auctor sed. Nullam pharetra nulla odio, vitae lacinia nunc dictum a. Nullam tempor massa in orci porttitor, ac hendrerit leo mollis. Nulla congue orci nulla, vel consequat justo luctus vitae. 
+                    brindando apartamentos diseñados para maximizar la funcionalidad y el confort. Con espacios bien optimizados y acabados de alta calidad, este es el lugar ideal para disfrutar de la comodidad que mereces y mejorar tu calidad de vida.
                 </p>
                 <button @click="toScroll('cotizar')" class="mb-2 px-12 py-2 bg-secondary text-white border-2 duration-600 ">Obtener cotización →</button>
 
