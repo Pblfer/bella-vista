@@ -1,5 +1,7 @@
 <template>
 
+    <!------
+
     <div class="md:mt-[4%] w-[100%] p-[4%] lg:p-[2%] " id="Ubicacion">
         <div class="flex flex-col md:flex-row place-items-center justify-between px-[2%] text-center md:text-left">
             <div class="font-sans max-w-[580px] text-3xl md:text-4xl xl:text-4xl font-bold mb-2 xl:mb-0 ">
@@ -20,9 +22,38 @@
 
         </div>
     </div>
+----->
+    <div class="flex flex-col lg:flex-row md:mt-[4%] w-[100%] p-[4%] lg:p-[2%] " id="Ubicacion">
+            <div
+                class="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 p-[8%] lg:px-[4%] lg:py-[0%] text-center lg:text-left text-secondary">
+                
+                <div class=" font-badScript text-6xl md:text-7xl xl:text-7xl font-bold text-secondary mb-6 xl:mb-10 mt-2">Ubicación</div>
+                <h4 class="text-sm md:text-base font-normal mb-2 xl:mb-10">
+                    En la mejor ubicación de Puerto Barrios  Colonia EX-UFCO
+                </h4>
+
+                
+                <p class=" text-xl mb-2 md:mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus elit nec lectus ornare tincidunt. Quisque vel quam ex. Aenean vestibulum ligula dignissim urna tristique,
+                </p>
+                <p class=" text-xl mb-2 md:mb-4">
+                    a ultrices ipsum lacinia. Integer congue placerat nisl, malesuada pulvinar sem auctor sed. Nullam pharetra nulla odio, vitae lacinia nunc dictum a. Nullam tempor massa in orci porttitor, ac hendrerit leo mollis. Nulla congue orci nulla, vel consequat justo luctus vitae. 
+                </p>
+                <button @click="toScroll('cotizar')" class="mb-2 px-12 py-2 bg-secondary text-white border-2 duration-600 ">Obtener cotización →</button>
+
+            </div>
+
+            <div class="w-full flex justify-center lg:w-1/2 overflow-hidden">
+                <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Mapa.png"
+                    alt=" " class=" h-auto object-cover " />
+            </div>
+
+
+        </div>
+
+
     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5431.173529702356!2d-88.59791906800001!3d15.728924981299013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f66d900057ee0d7%3A0xfec4f3e8ddb94397!2sBella%20Vista!5e0!3m2!1ses-419!2sgt!4v1731609509075!5m2!1ses-419!2sgt" class="w-full" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-    <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/localizacion.png"
-        alt="bella vista puerto barrios aeropuerto" class=" w-full h-auto" />
+   
 </template>
 
 <script>

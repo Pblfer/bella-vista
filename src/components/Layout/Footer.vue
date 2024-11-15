@@ -12,18 +12,29 @@
 
       <a href="tel:+50238575712" class="w-full text-four text-lg font-bold">(+502) 3857 - 5712</a>
     </div>
-    <div class="relative w-full  flex justify-center gap-4">
-      <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/fha2.jpg" class="h-12"
-        alt="fha">
-      <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/bi.jpg" class="h-12"
-        alt="fha">
-    </div>
-    <div class="relative w-full justify-end flex gap-4">
+    
+    <div class="relative w-full  justify-end flex flex-col gap-4">
+      <div class="flex justify-center text-xs">Estructura y Desarrolla:</div>
+      <div class="flex justify-center gap-4">
       <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amg.jpg" class="h-12"
         alt="fha">
       <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/activa.jpg" class="h-12"
         alt="fha">
+      </div>
+      
     </div>
+    <div class="relative w-full ">
+      <div class="flex justify-center text-xs">Con el respaldo:</div>
+      <div class="flex justify-center gap-4">
+        <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/fha2.jpg" class="h-12"
+        alt="fha">
+      <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/bi.jpg" class="h-12"
+        alt="fha">
+
+      </div>
+     
+    </div>
+    
 
   </div>
   <div

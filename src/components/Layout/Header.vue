@@ -1,7 +1,7 @@
 <template>
     <div id="Home">
         <div class="absolute w-full">
-            <header class=" absolute inset-x-0 z-50">
+            <header class=" fixed inset-x-0 z-50">
                 <nav class="bg-secondary mx-auto flex items-center justify-end px-3 pt-[3.5%] pb-[5%] md:pt-[2%] md:pb-[2%] lg:px-14 w-full"
                     aria-label="Global">
 
@@ -9,7 +9,7 @@
 
                         <a href="/" class=" pt-2 px-4 bg-secondary w-auto ml-4 ">
                             <span class="sr-only">Bella Vista</span>
-                            <img class="h-24 md:h-32 mt-16 w-auto ml-4"
+                            <img class="h-24 md:h-32 mt-16 w-auto m-2"
                                 src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
                                 alt="BELLA VISTA - Club Residencial" />
                         </a>

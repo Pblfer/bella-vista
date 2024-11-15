@@ -9,31 +9,36 @@
         spaceBetween: 8,
       },
       '768': {
-        slidesPerView: 2.5,
+        slidesPerView: 1.5,
         spaceBetween: 8,
       },
       '1024': {
-        slidesPerView: 3.5,
+        slidesPerView: 2.5,
         spaceBetween: 8,
       },
     }" :modules="modules" class="mySwiper">
-        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-1.jpg"
-            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
-        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-2.jpg"
-            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
-        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-3.jpg"
-            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+        <swiper-slide class="w-full flex justify-center lg:w-1/2 overflow-hidden">
+          <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-1.jpg"
+            alt=" " class="min-h-[60vh] object-cover "/>
+          </swiper-slide>
+        <swiper-slide class="w-full flex justify-center lg:w-1/2 overflow-hidden">
+          <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-2.jpg"
+            alt=" " class="min-h-[60vh] object-cover " /></swiper-slide>
+        <swiper-slide class="w-full flex justify-center lg:w-1/2 overflow-hidden">
+          <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-3.jpg"
+            alt=" " class="min-h-[60vh] object-cover " /></swiper-slide>
 
-        <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-4.jpg"
-            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+        <swiper-slide>
+          <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-4.jpg"
+            alt=" " class="min-h-[60vh] object-cover " /></swiper-slide>
         <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-5.jpg"
-            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+            alt=" " class="min-h-[60vh] object-cover " /></swiper-slide>
         <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-6.jpg"
-            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+            alt=" " class="min-h-[60vh] object-cover " /></swiper-slide>
         <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-7.jpg"
-            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+            alt=" " class="min-h-[60vh] object-cover " /></swiper-slide>
         <swiper-slide><img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-8.jpg"
-            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
+            alt=" " class="min-h-[60vh] object-cover " /></swiper-slide>
       </swiper>
     </div>
   </div>

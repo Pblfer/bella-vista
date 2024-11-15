@@ -6,9 +6,25 @@
   font-style: normal;
 
 }
+@font-face {
+  font-family: 'birthstone';
+  font-weight: 600 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Bold';
+  src: url('Birthstone-Regular.woff') format('woff');
+}
 
 
 
+@font-face {
+  font-family: 'badScript';
+  font-weight: 600 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Bold';
+  src: url('badScript-Regular.woff') format('woff');
+}
 
 @font-face {
   font-family: 'bodoni_ferrara_origin_regRg';

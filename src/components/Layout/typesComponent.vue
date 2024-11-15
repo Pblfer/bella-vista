@@ -9,7 +9,7 @@
               <h2 class="text-lg ml-1 md:text-right text-third text-center">
                 Bella Vista - Puerto Barrios
               </h2>
-              <p class="font-badScript text-7xl md:text-7xl xl:text-7xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 md:text-left text-center">
+              <p class="font-badScript text-6xl md:text-7xl xl:text-7xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 md:text-left text-center">
                 Apartamentos
               </p>
               <p class="mt-4 max-w-[660px] w-[90%] tracking-wide text-center text-2xl md:text-left ">
@@ -45,9 +45,7 @@
       </div>
       <div class="flex flex-col content-center items-center justify-center w-full md:px-4 lg:px-14">
         <img class="w-full h-auto px-[0%] md:px-[12%] lg:px-[14%]" :src="selectedImage" alt=" ">
-        <p class=" text-xl my-2 md:my-4 text-center px-[5%]">
-          Bella Vista redefine la experiencia de vivienda en Puerto Barrios, brindando apartamentos diseñados para maximizar la funcionalidad y el confort. Con espacios bien optimizados y acabados de alta calidad, este es el lugar ideal para disfrutar de la comodidad que mereces y mejorar tu calidad de vida.
-                </p>
+        
                 <button @click="toScroll('cotizar')"
                     class="flex text-lg md:text-lg my-2 px-10 py-3 mt-4 bg-secondary ease-in-out duration-700 text-white  duration-600 rounded-sm shadow-lg hover:bg-four hover:shadow-none">
                     Obtener cotización

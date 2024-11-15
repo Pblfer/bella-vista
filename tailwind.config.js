@@ -15,8 +15,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['"mont"', ...defaultTheme.fontFamily.sans],
-        badScript: ['"collectionfreeregular"', ...defaultTheme.fontFamily.sans],
+        badScript: ['"badScript"', ...defaultTheme.fontFamily.sans],
         mont: ['"montregular', ...defaultTheme.fontFamily.sans],
+        birthstone: ['"birthstone', ...defaultTheme.fontFamily.sans],
       },
     },
   },
