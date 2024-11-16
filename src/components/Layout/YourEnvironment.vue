@@ -4,7 +4,7 @@
 
             <div
                 class="flex flex-col justify-center items-center lg:items-center w-full  p-[8%] lg:px-[4%] lg:py-[0%] text-center lg:text-center text-secondary">
-
+<!-- 
                 <div class="flex w-full max-w-[70%] justify-around">
                     <div class=" bg-fifth mb-2 xl:mb-10 rounded-full w-24 h-24">
                     </div>
@@ -17,13 +17,8 @@
                     <div class=" bg-fifth mb-2 xl:mb-10 rounded-full w-24 h-24">
                     </div>
                 </div>
-
-                <p class=" text-xl mb-2 md:mb-4">
-                    Descubre un nuevo estilo de vida en el proyecto residencial Bella Vista, ubicado estratégicamente en
-                    <span class="font-bold">la Colonia ExUFCO</span> de Puerto Barrios. Este desarrollo inmobiliario combina modernidad, accesibilidad
-                    y seguridad para ofrecer un entorno perfecto para ti y tu familia.
-
-                </p>
+ -->
+               
                 <button @click="toScroll('cotizar')"
                     class="flex text-lg md:text-lg my-2 px-10 py-3 bg-secondary ease-in-out duration-700 text-white  duration-600 rounded-sm shadow-lg hover:bg-four hover:shadow-none">
                     Obtener detalles
