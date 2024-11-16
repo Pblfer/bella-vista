@@ -4,15 +4,15 @@
       <div class="flex justify-center">
         <img
           class="mt-32 h-full duration-700 ease-in-out md:mt-24 md:h-32 lg:mt-32 lg:h-60"
-          src="https://fakeimg.pl/1500x800/171a1f/9d7ee7?text=Owwny"
+          src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
           alt=""
         />
       </div>
       <div class="mt-12 w-full text-center text-2xl text-primary">
-        <p class="font-light px-12 lg:px-20 text-primary tracking-wider uppercase">
+        <p class="font-badScript text-3xl px-12 lg:px-20 text-primary tracking-wider uppercase">
           ¡Información enviada!
         </p>
-        <p class="font-light px-12 lg:px-20 text-white tracking-wider">
+        <p class="font-light px-12 mt-4 lg:px-20 text-white tracking-wider">
           Muy pronto obtendrá todos los detalles.
         </p>
       </div>
