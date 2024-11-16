@@ -9,7 +9,8 @@
               <h2 class="text-lg ml-1 md:text-right text-third text-center">
                 Bella Vista - Puerto Barrios
               </h2>
-              <p class="font-badScript text-6xl md:text-7xl xl:text-7xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 md:text-left text-center">
+              <p
+                class="font-badScript text-6xl md:text-7xl xl:text-7xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 md:text-left text-center">
                 Apartamentos
               </p>
               <p class="mt-4 max-w-[660px] w-[90%] tracking-wide text-center text-2xl md:text-left ">
@@ -20,13 +21,13 @@
 
                 <div class="flex  ">
                   <button @click="selectType(0)" :class="typeSelected === 0 ? activeClass : inactiveClass">
-                   Tipo A
+                    Tipo A
                   </button>
                   <button @click="selectType(1)" :class="typeSelected === 1 ? activeClass : inactiveClass">
-                  Tipo B
+                    Tipo B
                   </button>
                   <button @click="selectType(2)" :class="typeSelected === 2 ? activeClass : inactiveClass">
-                  Tipo C
+                    Tipo C
                   </button>
                 </div>
                 <div v-if="typeSelected === 0" class="flex justify-evenly tracking-wider gap-1 pt-1">
@@ -36,25 +37,25 @@
                 <div v-if="typeSelected === 1" class="flex justify-center tracking-wider gap-1 pt-1">
 
                 </div>
-             
+
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
       <div class="flex flex-col content-center items-center justify-center w-full md:px-4 lg:px-14">
         <img class="w-full h-auto px-[0%] md:px-[12%] lg:px-[14%]" :src="selectedImage" alt=" ">
-        
-                <button @click="toScroll('cotizar')"
-                    class="flex text-lg md:text-lg my-2 px-10 py-3 mt-4 bg-secondary ease-in-out duration-700 text-white  duration-600 rounded-sm shadow-lg hover:bg-four hover:shadow-none">
-                    Obtener cotización
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor" class="w-6 ml-2 mt-0.5 text-primary">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                </button>
-      </div>          
+
+        <button @click="toScroll('cotizar')"
+          class="flex text-lg md:text-lg my-2 px-10 py-3 mt-4 bg-secondary ease-in-out duration-700 text-white  duration-600 rounded-sm shadow-lg hover:bg-four hover:shadow-none">
+          Obtener cotización
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="w-6 ml-2 mt-0.5 text-primary">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -69,7 +70,7 @@ export default {
         { type: 1, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo-a.png" },
         { type: 2, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+b.png" },
         { type: 3, img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+c.png" },
-     
+
       ]
     }
   },
