@@ -1,5 +1,5 @@
 <template>
-    <div id="entorno" class="bg-primary p-[5%] pt-[5%] pb-[0%]">
+    <div id="respaldo" class="bg-primary p-[5%] pt-[5%] pb-[0%]">
         <div class="flex flex-col lg:flex-col">
             <div
                 class="flex flex-col justify-center items-center lg:items-center w-full  p-[8%] lg:px-[4%] lg:py-[0%] text-center md:text-left text-secondary">
