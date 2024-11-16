@@ -1,19 +1,27 @@
 <template>
-    <div id="entorno" class="bg-primary p-[5%] py-[5%]">
+    <div id="entorno" class="bg-primary p-[5%] pt-[5%] pb-[0%]">
         <div class="flex flex-col lg:flex-col">
             <div
                 class="flex flex-col justify-center items-center lg:items-center w-full  p-[8%] lg:px-[4%] lg:py-[0%] text-center md:text-left text-secondary">
 
                 <div class="w-full font-badScript text-6xl md:text-7xl xl:text-7xl font-bold mb-2 ">Activa Desarrollos
                 </div>
-                <p class=" text-xl mb-4 md:mb-10 mt-2">
+                <p class=" text-xl mb-0 mt-2">
                     Con una trayectoria sólida en el desarrollo de proyectos inmobiliarios de alta calidad, ACTIVA
                     Desarrollos se especializa en residencias que enriquecen la vida de sus habitantes. Nos enfocamos en
                     integrar sostenibilidad y modernidad en cada diseño, asegurando una inversión sólida que incrementa
                     su valor con el tiempo.
                 </p>
             </div>
-            <div class="relative">
+            <div class="">
+               
+                
+
+                 
+                
+<!-- End Slider -->
+            </div>
+            <div class="relative hidden">
                 <swiper :modules="modules" :slidesPerView="1" :centeredSlides="false" :spaceBetween="8" :freeMode="true"
                     :pagination="{
                         type: 'fraction',
