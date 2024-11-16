@@ -3,10 +3,9 @@
        <Header></Header>
        <Amenities></Amenities>
        <Localization></Localization>
-       <YourEnvironment></YourEnvironment>
+       <!-- <YourEnvironment></YourEnvironment> -->
        <Apartments></Apartments>
        <ActivaDesarrollos></ActivaDesarrollos>
-      
        <AmenitiesComponent></AmenitiesComponent>
        <LeadForm></LeadForm>
        <Gallery></Gallery>
@@ -28,10 +27,10 @@ import Header from '@/components/Layout/Header.vue';
 import LeadForm from '@/components/Layout/LeadForm.vue';
 import Localization from '@/components/Layout/Localization.vue';
 import TypesComponent from '@/components/Layout/typesComponent.vue';
-import YourEnvironment from '@/components/Layout/YourEnvironment.vue';
+///import YourEnvironment from '@/components/Layout/YourEnvironment.vue';
 
     export default {
-        components:{ Header, Footer, LeadForm, Localization, YourEnvironment, Amenities, Gallery, TypesComponent, ActivaDesarrollos, Apartments,AmenitiesComponent, GalleryDesarrollos }
+        components:{ Header, Footer, LeadForm, Localization, Amenities, Gallery, TypesComponent, ActivaDesarrollos, Apartments,AmenitiesComponent, GalleryDesarrollos }
         
     }
 </script>
