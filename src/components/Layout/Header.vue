@@ -2,15 +2,18 @@
     <div id="Home">
         <div class="absolute w-full">
             <header class=" fixed inset-x-0 z-50">
-                <nav class="bg-secondary mx-auto flex items-center justify-end px-3 pt-[3.5%] pb-[5%] md:pt-[2%] md:pb-[2%] lg:px-14 w-full"
+                <nav class="bg-secondary mx-auto content-center flex items-center justify-end px-3 pt-[4%] pb-[4%] md:pt-[2%] md:pb-[2%] lg:px-14 w-full"
                     aria-label="Global">
 
                     <div class="absolute flex lg:flex-1 left-0">
 
-                        <a href="/" class=" pt-2 px-4 bg-secondary w-auto ml-4 ">
+                        <a href="/" class=" pt-0 md:pt-2 px-4 bg-secondary w-auto ml-4 ">
                             <span class="sr-only">Bella Vista</span>
-                            <img class="h-24 md:h-32 mt-16 w-auto m-2"
+                            <img class="h-24 md:h-32 mt-16 w-auto m-2 hidden md:block"
                                 src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
+                                alt="BELLA VISTA - Club Residencial" />
+                            <img class="h-14 w-auto m-0 md:hidden "
+                                src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/logo+horizontal+blanco.png"
                                 alt="BELLA VISTA - Club Residencial" />
                         </a>
                     </div>
