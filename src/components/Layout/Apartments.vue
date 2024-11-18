@@ -7,17 +7,17 @@
         Bella Vista - Puerto Barrios
       </h2>
       <p
-        class="font-badScript text-6xl md:text-7xl xl:text-7xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 md:text-left text-center">
+        class="font-badScript text-6xl md:text-7xl xl:text-7xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 lg:text-left text-center">
         Apartamentos
       </p>
-      <p class="mt-4 max-w-[660px] w-[90%] tracking-wide text-center text-2xl md:text-left ">
+      <p class="mt-4 lg:max-w-[660px] w-[100%] px-[10%] lg:px-[0%] tracking-wide text-center text-2xl lg:text-left ">
         Apartamentos de 2, 3 y 4 Habitaciones en Puesto Barrios.
       </p>
 
       <!-- Lista de Tipos -->
       <div class="w-full">
         <fieldset class="mt-6">
-          <div class="flex flex-row items-center">
+          <div class="flex flex-row items-center justify-center lg:justify-start">
             <div
               v-for="(type, index) in types"
               :key="index"

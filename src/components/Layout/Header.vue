@@ -12,7 +12,7 @@
                             <img class="h-24 md:h-32 mt-16 w-auto m-2 hidden md:block"
                                 src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
                                 alt="BELLA VISTA - Club Residencial" />
-                            <img class="h-14 w-auto m-0 md:hidden "
+                            <img class="h-16 w-auto m-0 md:hidden "
                                 src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/logo+horizontal+blanco.png"
                                 alt="BELLA VISTA - Club Residencial" />
                         </a>
