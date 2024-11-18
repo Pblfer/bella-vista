@@ -100,19 +100,19 @@
 
         <div
             class="flex flex-col md:flex-row flex-grow relative justify-center -mt-[15%] md:-mt-[10%] w-[100%] lg:w-[680px] pl-[4%] pr-[6%] lg:px-[2%] z-10">
-            <div class="w-[97%] md:w-[100%] shadow-2xl p-[5%] md:p-[6%] m-2 bg-primary z-10">
+            <div class="w-[97%] md:w-[100%] shadow-2xl p-[7%] md:p-[6%] m-2 bg-primary z-10">
                 <div class="font-refile text-secondary font-bold text-5xl md:text-5xl lg:text-6xl text-center mb-4">79
                 </div>
                 <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">
                     Apartamentos </div>
             </div>
-            <div class="w-[97%] md:w-[100%] shadow-2xl p-[5%] md:p-[6%] m-2 bg-primary z-10">
+            <div class="w-[97%] md:w-[100%] shadow-2xl p-[7%] md:p-[6%] m-2 bg-primary z-10">
                 <div class="font-refile text-secondary font-bold text-5xl md:text-5xl lg:text-6xl text-center mb-4">133
                 </div>
                 <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Parqueos
                     de vehículos</div>
             </div>
-            <div class="w-[97%] md:w-[100%] shadow-2xl p-[5%] md:p-[6%] m-2 bg-primary z-10">
+            <div class="w-[97%] md:w-[100%] shadow-2xl p-[7%] md:p-[6%] m-2 bg-primary z-10">
                 <div class="font-refile text-secondary font-bold text-5xl md:text-5xl lg:text-6xl text-center mb-4">88
                 </div>
                 <div class="font-refile text-secondary font-bold text-xl md:text-1xl lg:text-2xl text-center">Parqueos
