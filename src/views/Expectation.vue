@@ -6,7 +6,8 @@
        <!-- <YourEnvironment></YourEnvironment> -->
        <Apartments></Apartments>
        <ActivaDesarrollos></ActivaDesarrollos>
-       <AmenitiesComponent></AmenitiesComponent>
+      <!--<AmenitiesComponent></AmenitiesComponent> -->
+       <GalleryDesarrollos></GalleryDesarrollos>
        <LeadForm></LeadForm>
        <Gallery></Gallery>
        <Footer></Footer>
