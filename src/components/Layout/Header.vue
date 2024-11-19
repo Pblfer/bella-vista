@@ -93,7 +93,7 @@
     <div class="relative flex justify-center flex-col lg:flex-row md:pt-[4rem] pt-[4rem] xl:pt-[5rem]">
         <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/banner.jpg"
             alt="Bella vista puerto barrios"
-            class="relative m-auto object-cover md:object-center object-left -z-10 h-[30rem] md:h-auto" />
+            class="relative m-auto object-cover md:object-center object-center -z-10 h-[30rem] md:h-auto" />
     </div>
 
     <div class="relative flex justify-center flex-col lg:flex-row mb-10 z-10 mt-14">
