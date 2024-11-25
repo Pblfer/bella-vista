@@ -9,7 +9,7 @@
         />
       </div>
       <div class="mt-12 w-full text-center text-2xl text-primary">
-        <p class="font-badScript text-3xl px-12 lg:px-20 text-primary tracking-wider uppercase">
+        <p class=" text-3xl px-12 lg:px-20 text-primary tracking-wider uppercase">
           ¡Información enviada!
         </p>
         <p class="font-light px-12 mt-4 lg:px-20 text-white tracking-wider">
