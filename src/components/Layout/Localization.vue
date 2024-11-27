@@ -27,7 +27,7 @@
             <div
                 class="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 p-[8%] lg:px-[4%] lg:py-[0%] text-center lg:text-left text-secondary">
                 
-                <div class=" font-badScript text-6xl md:text-7xl xl:text-7xl font-bold text-secondary mb-0 mt-2">Ubicación</div>
+                <div class=" font-badScript text-6xl md:text-7xl xl:text-7xl font-bold text-secondary mb-4 xl:mb-6 mt-2">Ubicación</div>
                 <h4 class="text-sm md:text-base font-normal mt-4 mb-2 xl:mb-10">
                     En la mejor ubicación de Puerto Barrios  Colonia EX-UFCO
                 </h4>

@@ -2,15 +2,19 @@
   <div
     class="flex flex-col items-center justify-center content-center bg-primary text-secondary py-5 md:px-[1%] lg:px-[4%]"
     id="types">
-    <div class="w-full flex flex-col lg:mt-4 lg:pr-12">
-      <h2 class="text-lg ml-1 md:text-right text-third text-center">
-        Bella Vista - Puerto Barrios
-      </h2>
-      <p
-        class="font-badScript text-6xl md:text-7xl xl:text-7xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 lg:text-left text-center">
-        Apartamentos
-      </p>
-      <p class="mt-4 lg:max-w-[660px] w-[100%] px-[10%] lg:px-[0%] tracking-wide text-center text-2xl lg:text-left ">
+    <div class="w-full flex flex-col lg:mt-4">
+      <div class="flex flex-col-reverse md:flex-row place-items-center justify-between ">
+        <p
+          class="font-badScript text-6xl md:text-7xl xl:text-7xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 lg:text-left text-center mb-4 xl:mb-6">
+          Apartamentos
+        </p>
+        <h2 class="w-full text-lg mb-4 md:mb-0 ml-1 md:text-right text-center text-third ">
+          Bella Vista - Puerto Barrios
+        </h2>
+        
+    </div>
+
+      <p class="mt-4 lg:max-w-[660px] w-[100%] px-[10%] lg:px-[1%] tracking-wide text-center text-2xl lg:text-left ">
         Apartamentos de 2, 3 y 4 Habitaciones en Puesto Barrios.
       </p>
 
