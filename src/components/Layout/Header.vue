@@ -19,7 +19,7 @@
                     </div>
                     <div class="flex lg:hidden bg-third/5">
                         <button type="button" @click="showMenu = true"
-                            class="-m-2.5 inline-flex items-center justify-center rounded-sm p-2.5 text-white">
+                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
                             <span class="sr-only">Open main menu</span>
                             <svg class="h-10 w-10 text-primary ease-in-out duration-300 hover:text-white" fill="none"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -32,15 +32,16 @@
 
 
                         <a href="#" @click="toScroll('Amenidades')"
-                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[12px] px-6 hover:text-fifth  rounded-sm leading-6 text-white">Amenidades</a>
+                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[4%]  hover:text-fifth  rounded-md leading-6 text-white">Amenidades</a>
                         <a href="#" @click="toScroll('Ubicacion')"
-                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[12px] px-6 hover:text-fifth  rounded-sm leading-6 text-white">Ubicación</a>
+                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[4%] hover:text-fifth  rounded-md leading-6 text-white">Ubicación</a>
                         <a href="#" @click="toScroll('types')"
-                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[12px] px-6 hover:text-fifth  rounded-sm leading-6 text-white">Apartamentos</a>
+                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[4%] hover:text-fifth  rounded-md leading-6 text-white">Apartamentos</a>
                         <a href="#" @click="toScroll('respaldo')"
-                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[12px] px-6 hover:text-fifth rounded-sm leading-6 text-white">Respaldo</a>
+                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[4%] hover:text-fifth rounded-md leading-6 text-white">Respaldo</a>
+                            <div class=" border-r-2 mr-4">y</div>
                         <a href="#" @click="toScroll('cotizar')"
-                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 duration-600 bg-four hover:bg-four py-[12px] px-10 hover:text-fifth rounded-sm leading-6 text-white">Cotizar</a>
+                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 duration-600 bg-four hover:bg-four py-[10px] px-[4%]  hover:text-fifth rounded-md leading-6 text-white">Cotizar</a>
                     </div>
                 </nav>
                 <!-- Mobile menu, show/hide based on menu open state. -->
@@ -52,7 +53,7 @@
                         <div class="flex items-end justify-end">
 
                             <button @click="showMenu = false" type="button"
-                                class="-m-2.5 rounded-sm p-2.5 text-white/50 hover:text-white ease-in-out duration-300">
+                                class="-m-2.5 rounded-md p-2.5 text-white/50 hover:text-white ease-in-out duration-300">
                                 <span class="sr-only">Close menu</span>
                                 <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke-width="1"
                                     stroke="currentColor" aria-hidden="true">
@@ -71,15 +72,15 @@
                                 <div class="space-y-6 py-6 grid justify-center text-center mt-4 -ml-4 text-white">
 
                                     <a href="#" @click="toScroll('Amenidades')"
-                                        class="text-lg font-semibold  duration-600 hover:bg-four px-10 tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-sm py-2 leading-6 hover:text-white">Amenidades</a>
+                                        class="text-lg font-semibold  duration-600 hover:bg-four tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-md py-[10px] px-[4%]  leading-6 hover:text-white">Amenidades</a>
                                     <a href="#" @click="toScroll('Ubicacion')"
-                                        class="text-lg font-semibold  duration-600 hover:bg-four px-4 tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-sm py-2 leading-6 hover:text-white">Ubicación</a>
+                                        class="text-lg font-semibold  duration-600 hover:bg-four tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-md py-[10px] px-[4%]  leading-6 hover:text-white">Ubicación</a>
                                     <a href="#" @click="toScroll('types')"
-                                        class="text-lg font-semibold  duration-600 hover:bg-four px-4 tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-sm py-2 leading-6 hover:text-white">Apartamentos</a>
+                                        class="text-lg font-semibold  duration-600 hover:bg-four tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-md py-[10px] px-[4%]  leading-6 hover:text-white">Apartamentos</a>
                                     <a href="#" @click="toScroll('respaldo')"
-                                        class="text-lg font-semibold  duration-600 hover:bg-four px-10 tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-sm py-2 leading-6 hover:text-white">Respaldo</a>
+                                        class="text-lg font-semibold  duration-600 hover:bg-four tracking-wider ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 text-white rounded-md py-[10px] px-[4%]  leading-6 hover:text-white">Respaldo</a>
                                     <a href="#" @click="toScroll('cotizar')"
-                                        class="text-lg tracking-wide font-semibold  hover:shadow duration-600 bg-four shadow-lg ease-in-out duration-700 shadow-white/5 hover:bg-four py-[12px] px-10 hover:text-fifth rounded-sm leading-6 text-white">Cotizar</a>
+                                        class="text-lg tracking-wide font-semibold  hover:shadow duration-600 bg-four shadow-lg ease-in-out duration-700 shadow-white/5 hover:bg-four py-[10px] px-[4%]  hover:text-fifth rounded-md leading-6 text-white">Cotizar</a>
                                 </div>
                             </div>
                         </div>

@@ -28,7 +28,7 @@
                 class="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 p-[8%] lg:px-[4%] lg:py-[0%] text-center lg:text-left text-secondary">
                 
                 <div class=" font-badScript text-6xl md:text-7xl xl:text-7xl font-bold text-secondary mb-0 mt-2">Ubicación</div>
-                <h4 class="text-sm md:text-base font-normal mb-2 xl:mb-10">
+                <h4 class="text-sm md:text-base font-normal mt-4 mb-2 xl:mb-10">
                     En la mejor ubicación de Puerto Barrios  Colonia EX-UFCO
                 </h4>
 
@@ -43,7 +43,7 @@
                 <p class=" text-xl mb-2 md:mb-4">
                     brindando apartamentos diseñados para maximizar la funcionalidad y el confort. Con espacios bien optimizados y acabados de alta calidad, este es el lugar ideal para disfrutar de la comodidad que mereces y mejorar tu calidad de vida.
                 </p>
-                <button @click="toScroll('cotizar')" class="mb-2 px-12 py-2 bg-secondary text-white border-2 duration-600 ">Obtener cotización →</button>
+                <button @click="toScroll('cotizar')" class="mb-2 py-[10px] px-[8%]  bg-four text-white text-base md:text-lg border-0 rounded-md duration-600 ">Obtener cotización →</button>
 
             </div>
 

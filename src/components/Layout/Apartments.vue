@@ -22,7 +22,7 @@
               v-for="(type, index) in types"
               :key="index"
               :class="[ 
-                'flex items-center border-0 p-3 px-2 md:px-6 mx-1 rounded-lg cursor-pointer',
+                'flex items-center border-0 py-[10px] px-[4%]  mx-1 rounded-md cursor-pointer',
                 selected === index ? 'bg-four text-white' : 'bg-fifth text-secondary',
                 'hover:bg-four hover:text-white'
               ]"
