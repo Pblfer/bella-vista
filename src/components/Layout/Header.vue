@@ -28,20 +28,20 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="w-full content-end justify-end hidden lg:flex lg:gap-x-2 ">
+                    <div class="w-full content-end justify-end hidden lg:flex lg:gap-x-0 ">
 
 
                         <a href="#" @click="toScroll('Amenidades')"
-                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[4%]  hover:text-fifth  rounded-md leading-6 text-white">Amenidades</a>
+                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[2%]  hover:text-fifth  rounded-md leading-6 text-white">Amenidades</a>
                         <a href="#" @click="toScroll('Ubicacion')"
-                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[4%] hover:text-fifth  rounded-md leading-6 text-white">Ubicación</a>
+                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[2%] hover:text-fifth  rounded-md leading-6 text-white">Ubicación</a>
                         <a href="#" @click="toScroll('types')"
-                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[4%] hover:text-fifth  rounded-md leading-6 text-white">Apartamentos</a>
+                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[2%] hover:text-fifth  rounded-md leading-6 text-white">Apartamentos</a>
                         <a href="#" @click="toScroll('respaldo')"
-                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[4%] hover:text-fifth rounded-md leading-6 text-white">Respaldo</a>
-                            <div class=" border-r-2 mr-4">y</div>
+                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[2%] mr-4 hover:text-fifth rounded-md leading-6 text-white">Respaldo</a>
+                            <div class=" border-r-2 mr-4"></div>
                         <a href="#" @click="toScroll('cotizar')"
-                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 duration-600 bg-four hover:bg-four py-[10px] px-[4%]  hover:text-fifth rounded-md leading-6 text-white">Cotizar</a>
+                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 duration-600 bg-four hover:bg-four py-[10px] px-[5%] shadow-xl  hover:text-fifth rounded-md leading-6 text-white">Cotizar</a>
                     </div>
                 </nav>
                 <!-- Mobile menu, show/hide based on menu open state. -->
