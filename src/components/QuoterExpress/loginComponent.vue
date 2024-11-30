@@ -1,61 +1,44 @@
 <template>
   <div
     id="login"
-    class="flex h-screen min-h-full flex-col justify-center bg-primary bg-fixed p-4 py-32 sm:px-6 lg:px-8"
+    class="flex h-screen min-h-full flex-col justify-center bg-secondary bg-fixed p-4 py-32 sm:px-6 lg:px-8"
     style="
       background-image: url(https://owwny-b2b-base-files.s3.amazonaws.com/websites/#####/PatterBigV2%404x.png);
     "
   >
     <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
       <div
-        class="bg-white py-8 px-4 shadow-2xl shadow-four/40 hover:shadow-four/80 duration-500 ease-linear sm:px-10"
+        class="bg-none py-8 px-4 shadow-2xl border-2 duration-500 ease-linear sm:px-10"
       >
         <div class="sm:mx-auto sm:w-full sm:max-w-md">
           <img
             class="mx-auto h-40 w-auto p-2"
-            src="https://owwny-b2b-base-files.s3.amazonaws.com/websites/#####/Logo#####V2_320"
+            src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
             alt=""
           />
         </div>
         <div class="relative mt-8">
           <div class="absolute inset-0 flex items-center" aria-hidden="true">
-            <div class="w-full border-t border-four border-2" />
+            <div class="w-full border-t border-primary/40 border-2" />
           </div>
           <div class="relative flex justify-center">
           </div>
         </div>
         <div class="mt-8 grid grid-cols-1 gap-4">
-          <div>
-            <button
-              v-if="!loadingGoogle"
-              @click="loginWithFacebook"
-              href="#"
-              class="hover:white inline-flex w-full justify-center rounded-none bg-secondary py-4 px-4 text-sm font-light text-white duration-500 ease-linear hover:bg-primary hover:shadow-2xl hover:shadow-secondary/75"
-            >
-              <span class="sr-only">Sign in with Facebook</span>
-
-              <svg class="mr-3 mt-1 h-6 w-6" viewBox="0 0 512 512">
-                <path
-                  fill="currentColor"
-                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-                ></path>
-              </svg>
-              <p class="mt-0.5 text-lg tracking-wider">Ingresa con Facebook</p>
-            </button>
-          </div>
+     
 
           <div>
             <button
               v-if="!loadingGoogle"
               @click="loginWithGoogle"
               href=""
-              class="hover:white inline-flex w-full justify-center rounded-none bg-secondary py-4 px-4 text-sm font-light text-white duration-500 ease-linear hover:bg-primary hover:shadow-2xl hover:shadow-secondary/75"
+              class="hover:white inline-flex w-full justify-center rounded-none bg-primary/10 py-4 px-4 text-sm font-light text-white duration-500 ease-linear hover:bg-primary hover:text-secondary hover:shadow-2xl hover:shadow-secondary/75"
             >
               <span class="sr-only">Sign in with Google</span>
 
               <svg
                 aria-hidden="true"
-                class="mr-3 -ml-3 mt-1 h-6 w-6"
+                class="mr-3 -ml-3 mt-1.5 h-5 w-5"
                 viewBox="0 0 512 512"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,8 +72,21 @@
               <p class="mt-0.5 text-lg">Cargando...</p>
             </button>
           </div>
+          <div>
+            <button
+              v-if="!loadingGoogle"
+              @click="loginWithFacebook"
+              href="#"
+              class="hover:white inline-flex w-full justify-center rounded-none bg-primary/10 py-4 px-4 text-sm font-light text-white duration-500 ease-linear hover:bg-primary hover:text-secondary hover:shadow-2xl hover:shadow-secondary/75"
+            >
+              <span class="sr-only">Sign in with Facebook</span>
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="mr-3 -ml-3 mt-1 h-6 w-6" ><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+              <p class="mt-0.5 text-lg tracking-wider">Ingresa con Apple</p>
+            </button>
+          </div>
           <div class="flex justify-center">
-            <p class="font-light text-lg text-four mt-2">Inicia sesión para cotizar</p>
+            <p class="font-light text-sm text-primary mt-2">Inicia para cotizar en línea</p>
           </div>
         </div>
       </div>
@@ -108,6 +104,8 @@ import {
   FacebookAuthProvider,
   GoogleAuthProvider,
   signInWithRedirect,
+  signInWithPopup,
+  OAuthProvider
 } from "firebase/auth";
 
 
@@ -119,13 +117,37 @@ export default {
     }
   },
    methods: {
+    loginWithApple() {
+      const provider = new OAuthProvider('apple.com');
+      provider.addScope('email');
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          // This gives you a Google Access Token. You can use it to access the Google API.
+          const credential = OAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          // The signed-in user info.
+          this.loadingGoogle = true;
+          this.$store.commit("user/SEND_PROFILE_DATA", result.user);
+          this.checkUserProfile(result.user.email);
+        })
+        .catch((error) => {
+          // Handle Errors here.
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // The email of the user's account used.
+          const email = error.email;
+          // The AuthCredential type that was used.
+          const credential = OAuthProvider.credentialFromError(error);
+          // ...
+        });
+    },
     loginWithGoogle() {
       const provider = new GoogleAuthProvider();
       provider.addScope("https://www.googleapis.com/auth/userinfo.email");
-      signInWithRedirect(auth, provider)
+      signInWithPopup(auth, provider)
         .then((result) => {
           // This gives you a Google Access Token. You can use it to access the Google API.
-          const credential = GoogleAuthProvider.credentialFromResult(result);
+          const credential = GoogleAuthProvider.credentialFromResult(result.user.email);
           const token = credential.accessToken;
           // The signed-in user info.
           this.loadingGoogle = true;
@@ -188,7 +210,7 @@ export default {
   },
   async beforeMount() {
     const res = await apiProjects
-      .getProjectData("a3ad7146-6670-4f03-b486-b551a59f3699")
+      .getProjectData("6eadfdc5-ad7b-4037-b9bb-d47a84942211")
       .then((v) => {
         this.$store.commit("user/PROJECT_DATA", v[0]);
       });

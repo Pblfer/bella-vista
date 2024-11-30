@@ -1,155 +1,66 @@
 <template>
   <div>
-    <div>
-      <div>
-        <div class="mt-0 p-1">
-          <div class="flex">
-            <div class="flex w-full">
-              <div class="w-full">
-                <div class="mt-1">
-                  <label
-                    for="price"
-                    class="flex text-sm font-bold text-gray-700"
-                    >Reserva:</label
-                  >
-                  <div class="relative mt-1 w-full shadow-sm">
-                    <div
-                      class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
-                    >
-                      <span class="text-gray-500 sm:text-sm"> $. </span>
-                    </div>
-                    <input
-                      type="number"
-                      name="reserve"
-                      id="reserve"
-                      v-model="reserve"
-                      class="w-full border-gray-300 pl-7 focus:border-primary focus:ring-primary"
-                      aria-describedby="price-currency"
-                    />
-                    <div
-                      class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3"
-                    >
-                      <span class="text-primary sm:text-sm" id="price-currency">
-                        USD
-                      </span>
-                    </div>
-                  </div>
-                  <p class="mt-0.5 p-1 text-xs">
-                    La reserva mínima es de:
-                    {{ currencyFormater(getReservation) }}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="mt-1 p-1">
-          <div class="w-full grid-cols-1 gap-2 md:flex md:grid-cols-2">
-            <div class="mt-0 w-full md:ml-0">
-              <label for="price" class="block text-sm font-bold text-gray-700"
-                >Enganche (20%)</label
-              >
-              <div class="relative mt-1 shadow-sm">
-                <div
-                  class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
-                >
-                  <span class="text-gray-500 sm:text-sm"> $. </span>
-                </div>
-                <input
-                  type="number"
-                  name="price"
-                  id="price"
-                  v-model="deposit"
-                  class="block w-full border-gray-300 pl-7 pr-12 focus:border-primary focus:ring-primary sm:text-sm"
-                  aria-describedby="price-currency"
-                />
-                <div
-                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3"
-                >
-                  <span class="text-primary sm:text-sm" id="price-currency">
-                    USD
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="mt-4 md:mt-0">
-              <label for="months" class="block text-sm font-bold text-gray-700"
-                >Meses</label
-              >
-              <div class="relative mt-1 shadow-sm">
-                <div
-                  class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
-                >
-                  <CalendarIcon
-                    class="h-5 w-5 text-primary"
-                    aria-hidden="true"
-                  />
-                </div>
-                <input
-                  type="number"
-                  v-model="months"
-                  name="months"
-                  id="months"
-                  class="block w-full rounded-md border-gray-300 pl-10 focus:border-primary focus:ring-primary sm:text-sm"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-10 border-l-4 border-primary bg-transparent p-2">
-          <div class="flex w-full">
-            <div class="ml-2 w-full text-left">
-              <div class="flex">
-                <div class="flex-shrink-0">
-                  <CalendarIcon
-                    class="h-5 w-5 text-primary"
-                    aria-hidden="true"
-                  />
-                </div>
-                <div class="ml-2 flex-1 md:flex md:justify-between">
-                  <p class="text-sm text-primary">
-                    Tu cuota de enganche queda en:
-                    {{ currencyFormater(deposit / months) }} al mes.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="bg-four text-lg text-white px-4 py-2 tracking-wide mt-10">
+      Precios 
     </div>
-    <div class="mr-2 mt-6 flex justify-between md:mt-8">
-      <button @click="toStep(1)">
-        <ArrowLeftIcon
-          class="-mt-7 ml-4 h-6 w-6 text-primary"
-          aria-hidden="true"
-        />
-      </button>
-      <button
-        v-if="finalReserveInput == 0"
-        type="button"
-        disabled
-        class="mb-8 flex justify-center border border-transparent bg-primary/20 px-8 py-2 text-lg font-light tracking-wider text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:ml-3 sm:w-auto md:text-lg"
-      >
-        <RefreshIcon
-          class="mt- mr-2 mt-1 h-5 w-5 animate-spin"
-          aria-hidden="true"
-        />
-        Calculando...
-      </button>
-      <button
-        v-else
-        @click="toStep(3)"
-        type="button"
-        dis
-        class="font-base mb-8 flex justify-center border border-transparent bg-primary px-8 py-2 text-lg tracking-wider text-white shadow-lg shadow-four/30 hover:animate-none hover:bg-four focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:ml-3 sm:w-auto md:text-lg"
-      >
-        Financiamiento
-        <ArrowRightIcon class="mt- ml-2 mt-1 h-5 w-5" aria-hidden="true" />
-      </button>
+    <div class="p-2 mt-1">
+      <ul role="list" class="divide-y divide-four/20">
+        <li class="flex justify-between gap-x-6 py-2">
+            <div class="flex min-w-0 gap-x-4">
+
+              <div class="min-w-0 flex-auto">
+                <p class="text-base font-semibold text-gray-950">Precio sin impuestos:</p>
+              </div>
+            </div>
+            <div class=" shrink-0 sm:flex sm:flex-col sm:items-end">
+              <p class="text-base text-gray-900">{{ currencyFormater(viewProperty.price_base) }}</p>
+            </div>
+          </li>
+          <li class="flex justify-between gap-x-6 py-2">
+            <div class="flex min-w-0 gap-x-4">
+
+              <div class="min-w-0 flex-auto">
+                <p class="text-base font-semibold text-gray-950">Precio con impuestos:</p>
+              </div>
+            </div>
+            <div class=" shrink-0 sm:flex sm:flex-col sm:items-end">
+              <p class="text-base text-gray-900">{{ currencyFormater(viewProperty.price) }}</p>
+            </div>
+          </li>
+      </ul>
+    </div>
+    <div class="bg-four text-lg text-white px-4 py-2 tracking-wide mt-10">
+      Forma de pago 
+    </div>
+    <div class="p-2 mt-1">
+      <ul role="list" class="divide-y divide-four/20">
+        <!-- Enganche -->
+        <li class="flex justify-between gap-x-6 py-2">
+          <div>
+            <p class="text-base font-semibold text-gray-950 mt-2">Enganche:</p>
+          </div>
+          <div class="relative mt-1 shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+              <span class="text-secondary sm:text-base"> Q. </span>
+            </div>
+            <input type="number" name="price" id="price" v-model="deposit"
+              class="block w-full border-gray-300 bg-gray-100 text-right focus:border-primary focus:ring-primary sm:text-base" />
+          </div>
+        </li>
+        <!-- Reserva -->
+        <li class="flex justify-between gap-x-6 py-2">
+          <div>
+            <p class="text-base font-semibold text-gray-950 mt-4">Reserva:</p>
+          </div>
+          <div class="relative mt-1 shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+              <span class="text-secondary sm:text-base"> Q. </span>
+            </div>
+            <input type="number" name="reserve" id="reserve" v-model="reserve"
+              class="block w-full border-gray-300 bg-gray-100 text-right focus:border-primary focus:ring-primary sm:text-base" />
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -197,22 +108,19 @@ export default {
     resetReserve() {
       this.reserve = this.viewProperty.reservation;
     },
+
     currencyFormater(value) {
-      const res = value.toLocaleString("es-US", {
+      let newVal2 = Math.round(value)
+      const res = newVal2.toLocaleString("es-GT", {
         style: "currency",
-        currency: "USD",
+        currency: "GTQ",
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
       });
       return res;
     },
 
-    currencyFormater2(value) {
-      const convert = value * 7.81;
-      const res = convert.toLocaleString("es-GT", {
-        style: "currency",
-        currency: "GTQ",
-      });
-      return res;
-    },
+
   },
   watch: {
     months() {

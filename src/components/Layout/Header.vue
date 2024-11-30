@@ -1,7 +1,7 @@
 <template>
     <div id="Home">
         <div class="absolute w-full">
-            <header class=" fixed inset-x-0 z-50">
+            <header class=" fixed inset-x-0 z-30">
                 <nav class="bg-secondary mx-auto content-center flex items-center justify-end px-3 pt-[4%] pb-[4%] md:pt-[2%] md:pb-[2%] lg:px-14 w-full"
                     aria-label="Global">
 
@@ -90,7 +90,7 @@
         </div>
 
     </div>
-    <div class="relative flex justify-center flex-col lg:flex-row md:pt-[4rem] pt-[4rem] xl:pt-[5rem]">
+    <div class="relative flex justify-center flex-col lg:flex-row md:pt-[4rem] pt-[4rem] xl:pt-[6rem]">
         <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/banner.jpg"
             alt="Bella vista puerto barrios"
             class="relative m-auto object-cover md:object-center object-center -z-10 h-[30rem] md:h-auto" />

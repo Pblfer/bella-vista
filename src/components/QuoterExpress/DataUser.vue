@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex h-screen min-h-full flex-col justify-center bg-primary py-32 sm:px-6 lg:px-8"
+    class="flex h-screen min-h-full flex-col justify-center bg-secondary py-32 sm:px-6 lg:px-8"
   >
     <div class="mt-8 p-4 sm:mx-auto sm:w-full sm:max-w-md md:p-0">
       <div
@@ -8,10 +8,10 @@
       >
         <div class="flex">
           <div class="grid-cols-1 p-3">
-            <p class="text-2xl font-semibold text-white">
+            <p class="text-2xl font-semibold text-secondary">
               {{ userProfile.displayName }},
             </p>
-            <p class="-mt-1 text-2xl font-semibold text-white md:text-xl">
+            <p class="-mt-1 text-2xl font-semibold text-secondary md:text-xl">
               Ya eres parte de la red de Owwny
             </p>
           </div>
@@ -22,7 +22,7 @@
           >
             <label
               for="email"
-              class="absolute -top-2 left-2 -mt-px inline-block bg-primary px-3 text-sm font-semibold text-white"
+              class="absolute -top-2 left-2 -mt-px inline-block bg-primary px-3 text-sm font-semibold text-secondary"
               >Email</label
             >
             <input
@@ -30,7 +30,7 @@
               name="email"
               id="email"
               v-model="email"
-              class="block w-full border-0 bg-transparent p-0 tracking-wide text-white placeholder-white focus:ring-0 sm:text-sm"
+              class="block w-full border-0 bg-transparent p-0 tracking-wide text-secondary placeholder-white focus:ring-0 sm:text-sm"
             />
           </div>
 
@@ -39,7 +39,7 @@
           >
             <label
               for="phone"
-              class="absolute -top-2 left-2 -mt-px inline-block bg-primary px-3 text-sm font-semibold text-white"
+              class="absolute -top-2 left-2 -mt-px inline-block bg-primary px-3 text-sm font-semibold text-secondary"
               >Teléfono</label
             >
             <input
@@ -47,11 +47,11 @@
               name="phone"
               id="phone"
               v-model="phone"
-              class="block w-full border-0 bg-transparent p-0 text-white placeholder-gray-500 focus:ring-0 sm:text-sm"
+              class="block w-full border-0 bg-transparent p-0 text-secondary placeholder-gray-500 focus:ring-0 sm:text-sm"
             />
           </div>
           <p
-            class="mt-2 text-sm tracking-wider text-white"
+            class="mt-2 text-sm tracking-wider text-secondary"
             v-if="phone.length <= 7"
           >
             Ingresa un número válido sin espacios.
@@ -67,7 +67,7 @@
             <button
               v-else
               @click="createClientToCompanyRelation"
-              class="text flex w-full justify-center bg-white py-4 text-xl font-semibold tracking-wider text-primary shadow-2xl duration-300 ease-linear hover:bg-secondary hover:text-white hover:shadow-secondary"
+              class="text flex w-full justify-center bg-secondary py-4 text-xl font-semibold tracking-wider text-white shadow-2xl duration-300 ease-linear hover:bg-secondary hover:text-white hover:shadow-secondary"
             >
               <p v-if="!showLoading">Compartir datos</p>
               <svg

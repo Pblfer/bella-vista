@@ -1,187 +1,145 @@
 <template>
-  <div class="mt-4 p-1">
-    <Listbox as="div" v-model="selected">
-      <ListboxLabel class="ml-2 block text-sm font-bold text-gray-700">
-        Entidades disponibles:
-      </ListboxLabel>
-      <div class="mt-1 ml-2 block">
-        <ListboxButton
-          class="relative w-full cursor-default  border border-gray-300 bg-white py-2 pl-3 pr-10 text-left shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:text-sm"
-        >
-          <span class="block truncate">{{ selected.bankDetail.name }}</span>
-          <span
-            class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"
-          >
-            <SelectorIcon class="h-5 w-5 text-gray-400" aria-hidden="true" />
+  <div class="mt-0">
+    <div class="relative">
+      <div class="absolute inset-0 flex items-center" aria-hidden="true">
+        <div class="w-full border-t border-four/20"></div>
+      </div>
+
+    </div>
+
+    <div class="p-2 mt-1">
+      <ul role="list" class="divide-y divide-four/20">
+        <!-- Precio sin impuestos -->
+        <li class="flex justify-between gap-x-6 py-2">
+          <div>
+            <p class="text-base font-semibold text-gray-950 mt-2">Banco:</p>
+          </div>
+          <div class="text-base text-gray-900">
+            <Listbox as="div" v-model="selected">
+
+              <div class="-mt-1 ml-0 block">
+                <ListboxButton
+                  class="relative w-[13.5rem] cursor-default   border  bg-gray-100 py-2.5 pl-3 pr-10 text-left   sm:text-base">
+                  <span class="block truncate">{{ selected.bankDetail.name }}</span>
+                  <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                    <SelectorIcon class="h-5 w-5 text-secondary" aria-hidden="true" />
+                  </span>
+                </ListboxButton>
+
+                <transition leave-active-class="transition ease-in duration-100" leave-from-class="opacity-100"
+                  leave-to-class="opacity-0">
+                  <ListboxOptions
+                    class="absolute z-10 mt-1 max-h-60 w-2/3 overflow-auto  bg-white py-2 text-base  sm:text-base">
+                    <ListboxOption as="template" v-for="b in projectProfile[0].financingEntities" :key="b.id" :value="b"
+                      v-slot="{ active, selected }">
+        <li :class="[
+          active ? 'bg-four text-white' : 'text-secondary',
+          'relative cursor-default select-none py-2 pl-3 pr-9',
+        ]">
+          <span :class="[
+            selected ? 'font-semibold' : 'font-normal',
+            'block truncate',
+          ]">
+            {{ b.bankDetail.name }}
           </span>
-        </ListboxButton>
 
-        <transition
-          leave-active-class="transition ease-in duration-100"
-          leave-from-class="opacity-100"
-          leave-to-class="opacity-0"
-        >
-          <ListboxOptions
-            class="absolute z-10 mt-1 max-h-60 w-2/3 overflow-auto  bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
-          >
-            <ListboxOption
-              as="template"
-              v-for="b in projectProfile[0].financingEntities"
-              :key="b.id"
-              :value="b"
-              v-slot="{ active, selected }"
-            >
-              <li
-                :class="[
-                  active ? 'bg-primary text-white' : 'text-gray-900',
-                  'relative cursor-default select-none py-2 pl-3 pr-9',
-                ]"
-              >
-                <span
-                  :class="[
-                    selected ? 'font-semibold' : 'font-normal',
-                    'block truncate',
-                  ]"
-                >
-                  {{ b.bankDetail.name }}
-                </span>
-
-                <span
-                  v-if="selected"
-                  :class="[
-                    active ? 'text-white' : 'text-primary',
-                    'absolute inset-y-0 right-0 flex items-center pr-4',
-                  ]"
-                >
-                  <CheckIcon class="h-5 w-5" aria-hidden="true" />
-                </span>
-              </li>
-            </ListboxOption>
-          </ListboxOptions>
+          <span v-if="selected" :class="[
+            active ? 'text-white' : 'text-secondary',
+            'absolute inset-y-0 right-0 flex items-center pr-4',
+          ]">
+            <CheckIcon class="h-5 w-5" aria-hidden="true" />
+          </span>
+        </li>
+        </ListboxOption>
+        </ListboxOptions>
         </transition>
-        <div class="mt-4 ">
-              <label for="months" class="block text-sm font-bold text-gray-700"
-                >Años:</label
-              >
-              <div class="relative mt-1">
-                <div
-                  class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
-                >
-                  <CalendarIcon
-                    class="h-5 w-5 text-primary"
-                    aria-hidden="true"
-                  />
-                </div>
-                <input
-                  type="number"
-                  v-model="years"
-                  name="years"
-                  id="years"
-                  class="block w-auto border-gray-300 pl-10 focus:border-primary focus:ring-primary sm:text-sm"
-                />
-              </div>
-            </div>
-      </div>
+
+    </div>
     </Listbox>
-    <div class="mt-4 bg-green-900/10 p-2 md:ml-3">
-      <div class="flex">
-        <div class="flex-shrink-0">
-          <InformationCircleIcon
-            class="h-5 w-5 text-primary"
-            aria-hidden="true"
-          />
-        </div>
-        <div class="ml-3 flex-1 md:flex md:justify-between">
-          <p class="text-sm font-semibold text-primary">
-            La tasa de interes de la entidad es de:
-            {{ selected.monthly_interest_fee }}%
-          </p>
-        </div>
-      </div>
+  </div>
+  </li>
+  <li class="flex justify-between gap-x-6 py-2">
+    <div>
+      <p class="text-base font-semibold text-gray-950 mt-4">Años:</p>
     </div>
+    <div class="relative mt-1">
+      <div class="relative mt-1">
+        <div class="pointer-events-none absolute inset-y-0 left-0 text-right flex items-center pl-3">
+          <CalendarIcon class="h-5 w-5 text-secondary" aria-hidden="true" />
+        </div>
+        <input type="number" v-model="years" name="years" id="years"
+          class="block w-[13.5rem] border-gray-300 bg-gray-100 pl-10 text-right focus:border-secondary sm:text-base" />
+      </div>
 
-    <div class="mt-2 rounded-md bg-green-900/10 p-2 md:ml-3">
-      <div class="flex">
-        <div class="flex-shrink-0">
-          <CalendarIcon class="h-5 w-5 text-primary" aria-hidden="true" />
-        </div>
-        <div class="ml-3 flex-1 md:flex md:justify-between">
-          <p class="text-sm font-semibold text-primary">
-            El plazo máximo de la entidad es de:
-            {{ selected.max_financing_years }} años
-          </p>
-        </div>
+    </div>
+  </li>
+
+
+  </ul>
+  </div>
+
+  <div class="mt-4 border-secondary bg-none p-2 md:ml-3">
+    <div class="flex">
+      <div class="flex-shrink-0">
+        <InformationCircleIcon class="h-5 w-5 text-secondary" aria-hidden="true" />
+      </div>
+      <div class="ml-3 flex-1 md:flex md:justify-between">
+        <p class="text-sm font-semibold text-secondary">
+          La tasa de interes de la entidad es de:
+          {{ selected.monthly_interest_fee }}%
+        </p>
       </div>
     </div>
-    <div class="mt-6 border-l-4 border-primary bg-transparent p-4">
-      <div class="flex w-full">
-        <div class="ml-2 w-full text-left">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <CashIcon class="h-5 w-5 text-primary" aria-hidden="true" />
-            </div>
-            <div class="ml-2 flex-1 md:flex md:justify-between">
-              <p class="text-sm text-primary">
-                Tu cuota mensual de financiamiento queda en:
-                {{ currencyFormater(financingQuote) }} al mes.
-              </p>
-            </div>
+  </div>
+
+  <div class="mt-2 rounded-md border-secondary bg-none p-2 md:ml-3">
+    <div class="flex">
+      <div class="flex-shrink-0">
+        <CalendarIcon class="h-5 w-5 text-secondary" aria-hidden="true" />
+      </div>
+      <div class="ml-3 flex-1 md:flex md:justify-between">
+        <p class="text-sm font-semibold text-secondary">
+          El plazo máximo de la entidad es de:
+          {{ selected.max_financing_years }} años
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="mt-6 border-l-4 border-four  bg-blue-600/10 p-4">
+    <div class="flex w-full">
+      <div class="ml-1 w-full text-left">
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <CashIcon class="h-5 w-5 text-four" aria-hidden="true" />
+          </div>
+          <div class="ml-2 flex-1 md:flex md:justify-between">
+            <p class="text-base text-four">
+              Su cuota mensual de financiamiento queda en:
+              {{ currencyFormater(financingQuote) }} al mes.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="mt-4 border-l-4 border-primary bg-transparent p-2">
-          <div class="flex w-full">
-              <UserGroupIcon
-                    class="h-5 w-5 text-primary ml-4"
-                    aria-hidden="true"
-                  />
-            <div class="ml-2 w-full text-left">
-              <p class="text-sm font-normal tracking-normal text-primary">
-                Ingresos familiares requeridos:
 
-                {{
-                  currencyFormater(
-                    (finalDepositInput /
-                      projectProfile[0].initial_fee_month_fractionation) *
-                      3
-                  )
-                }}
-              </p>
-            </div>
-          </div>
-        </div>
 
-    <div class="mr-2 mt-6 flex justify-between md:mt-8">
-      <button @click="toStep(2)">
-        <ArrowLeftIcon
-          class="-mt-7 ml-4 h-6 w-6 text-primary"
-          aria-hidden="true"
-        />
-      </button>
-      <button
-        v-if="finalDepositInput == 0"
-        type="button"
-        disabled
-        class="mb-8 flex justify-center border border-transparent bg-primary/20 px-8 py-2 text-lg font-light tracking-wider text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:ml-3 sm:w-auto md:text-lg"
-      >
-        <RefreshIcon
-          class="mt- mr-2 mt-1 h-5 w-5 animate-spin"
-          aria-hidden="true"
-        />
-        Calculando...
-      </button>
-      <button
-        v-else
-        @click="getUserData()"
-        type="button"
-        class="mb-8 flex justify-center border border-transparent bg-primary px-8 py-2 text-lg font-normal tracking-wider text-white shadow-lg shadow-four/30 hover:animate-none hover:bg-four focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:ml-3 sm:w-auto md:text-lg"
-      >
-        <MailOpenIcon class="mr-2 mt-0.5 h-5 w-5" aria-hidden="true" />
-        Enviar por Mail
-      </button>
-    </div>
+  <div class="mr-2 mt-6 flex justify-between md:mt-8">
+    <button @click="toStep(2)">
+      <ArrowLeftIcon class="-mt-7 ml-4 h-6 w-6 text-secondary" aria-hidden="true" />
+    </button>
+    <button v-if="finalDepositInput == 0" type="button" disabled
+      class="mb-8 flex justify-center border border-transparent bg-primary/20 px-8 py-2 text-lg font-light tracking-wider text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:ml-3 sm:w-auto md:text-lg">
+      <RefreshIcon class="mt- mr-2 mt-1 h-5 w-5 animate-spin" aria-hidden="true" />
+      Calculando...
+    </button>
+    <button v-else @click="getUserData()" type="button"
+      class="mb-8 flex justify-center border border-transparent bg-secondary px-8 py-2 text-lg font-normal tracking-wider text-white shadow-lg shadow-four/30 hover:animate-none hover:bg-four focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:ml-3 sm:w-auto md:text-base">
+
+      Recibir por Whastapp
+    </button>
+  </div>
   </div>
 </template>
 
@@ -214,7 +172,7 @@ export default {
       randomId: "",
       dateCreatedQuote: "",
       actualSeller: [],
-      years:0
+      years: 0
     };
   },
   components: {
@@ -233,30 +191,24 @@ export default {
     RefreshIcon,
     UserGroupIcon
   },
-  watch:{
+  watch: {
     years() {
       setTimeout(() => {
         if (this.years > this.selected.max_financing_years) {
           this.years = this.selected.max_financing_years
-        } 
+        }
       }, 1000);
     },
   },
   methods: {
-    currencyFormater(value) {
-      const res = value.toLocaleString("es-US", {
-        style: "currency",
-        currency: "USD",
-      });
-      return res;
-    },
+
     toStep(s) {
       this.$store.commit("ui/CHANGE_TO_STEP", s);
     },
     currencyFormater(value) {
       const res = value.toLocaleString("es-GT", {
         style: "currency",
-        currency: "USD",
+        currency: "GTQ",
       });
       return res;
     },
@@ -381,8 +333,8 @@ export default {
         showIcon: true,
         hideProgressBar: false,
       });
-        //.then((res) => res.json())
-        //.then((res) => console.log(res));
+      //.then((res) => res.json())
+      //.then((res) => console.log(res));
     },
   },
   created() {

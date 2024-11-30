@@ -14,7 +14,7 @@
                 Apartamentos
               </p>
               <p class="mt-4 max-w-[660px] w-[90%] tracking-wide text-center text-2xl md:text-left ">
-                Apartamentos de 2, 3 y 4 Habitaciones en Puesto Barrios.
+                Apartamentos de 2, 3 y 4 Habitaciones en Puerto Barrios.
 
               </p>
               <div class="grid grid-cols gap-4 pt-8 w-full text-2xl tracking-wider justify-center md:justify-start">

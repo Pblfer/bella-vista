@@ -2,7 +2,7 @@
 
     <div class="bg-primarey md:mt-[1%] w-[100%] p-[4%] lg:p-[2%]" id="Amenidades">
         <div class="flex flex-col-reverse md:flex-row place-items-center justify-between px-[2%]">
-            <div class=" font-badScript text-6xl md:text-7xl xl:text-7xl font-bold text-secondary mb-6 xl:mb-10 mt-2">Amenidades</div>
+            <div class=" font-badScript text-6xl md:text-6xl xl:text-6xl font-bold text-secondary mb-6 xl:mb-10 mt-2">Amenidades</div>
             <h1 class="w-full text-lg mb-4 md:mb-0 ml-1 md:text-right text-center text-third ">
                 Bella Vista - Puerto Barrios
             </h1>

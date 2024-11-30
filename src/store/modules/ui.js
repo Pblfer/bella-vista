@@ -13,6 +13,7 @@ export default {
     filterPropeties: [],
     tourToggle: false,
     utms: [],
+    typeSelection: "Modelo A"
   }),
   getters: {},
   mutations: {
@@ -52,6 +53,9 @@ export default {
     },
     TOGGLE_TOUR(state, payload){
       state.tourToggle = payload
+    },
+    TYPE_SELECTION(state, payload){
+      state.typeSelection = payload
     }
   },
   actions: {},

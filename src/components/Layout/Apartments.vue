@@ -7,11 +7,11 @@
         Bella Vista - Puerto Barrios
       </h2>
       <p
-        class="font-badScript text-6xl md:text-7xl xl:text-7xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 lg:text-left text-center">
+        class="font-badScript text-6xl md:text-6xl xl:text-6xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 lg:text-left text-center">
         Apartamentos
       </p>
-      <p class="mt-4 lg:max-w-[660px] w-[100%] px-[10%] lg:px-[0%] tracking-wide text-center text-2xl lg:text-left ">
-        Apartamentos de 2, 3 y 4 Habitaciones en Puesto Barrios.
+      <p class="mt-7 lg:max-w-[660px] w-[100%] px-[10%] lg:px-[0%] tracking-wide text-center text-2xl lg:text-left ">
+        Apartamentos de 2, 3 y 4 Habitaciones en Puerto Barrios.
       </p>
 
       <!-- Lista de Tipos -->
@@ -22,7 +22,7 @@
               v-for="(type, index) in types"
               :key="index"
               :class="[ 
-                'flex items-center border-0 p-3 px-2 md:px-6 mx-1 rounded-lg cursor-pointer',
+                'flex items-center border-0 p-3 px-2 md:px-6 mx-1 rounded-sm cursor-pointer',
                 selected === index ? 'bg-four text-white' : 'bg-fifth text-secondary',
                 'hover:bg-four hover:text-white'
               ]"
@@ -39,11 +39,11 @@
       </div>
 
       <!-- Información del Tipo Seleccionado -->
-      <div class="mt-10 w-full flex flex-col items-center md:mt-4">
+      <div class="mt-10 w-full flex flex-col items-center md:mt-10">
         <p class="font-special text-a1 mt-1 text-xl font-[400] tracking-wider md:text-2xl lg:text-3xl">
           {{ types[selected].name }}
         </p>
-        <p class="font-normal text-base md:text-lg lg:text-xl tracking-widest mt-6">
+        <p class="font-normal text-base md:text-lg lg:text-xl tracking-widest mt-4">
           {{ types[selected].description }}
         </p>
         <img
@@ -64,7 +64,7 @@ export default {
       selected: 0,
       types: [
         {
-          name: "Tipo A",
+          name: "Modelo A",
           description: "2 habitaciones - 1 baño",
           variations: [
             {
@@ -74,7 +74,7 @@ export default {
           ],
         },
         {
-          name: "Tipo B",
+          name: "Modelo B",
           description: "2 habitaciones - 2 baños",
           variations: [
             {
@@ -84,7 +84,7 @@ export default {
           ],
         },
         {
-          name: "Tipo C",
+          name: "Modelo C",
           description: "3 habitaciones - 2 baños - Estudio",
           variations: [
             {
@@ -100,6 +100,7 @@ export default {
     updateSelection(index) {
       this.selected = index;
       this.selectedVariation = 0; // Reinicia variación al cambiar de tipo
+      this.$store.commit("ui/TYPE_SELECTION", type)
     },
   },
 };

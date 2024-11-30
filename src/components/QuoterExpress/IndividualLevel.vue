@@ -2,22 +2,31 @@
   <div class="mt-0 flex gap-0.5" v-for="p in properties" :key="p.id">
     <div
       @click="openQuoter(p), (selectedProperty = p)"
-      class="h-18 mt-0 w-24 border-2 border-secondary bg-transparent text-center font-thin text-white duration-300 ease-linear 
-      hover:border-0 hover:bg-secondary hover:font-normal hover:text-white hover:shadow hover:shadow-secondary md:w-24 lg:w-28 xl:w-28"
+      :class="p.status == 'Disponible' ? 'h-14 mt-0 w-24 border-2 border-none bg-four text-center font-thin text-white duration-300 ease-linear hover:border-0 hover:bg-secondary hover:font-black hover:text-white hover:shadow-lg hover:shadow-four md:w-24 lg:w-28 xl:w-28' 
+      :'h-14 mt-0 w-24 border-2 border-none bg-gray-200 cursor-not-allowed text-center font-thin text-gray-400 duration-300 ease-linear md:w-24 lg:w-28 xl:w-28'"
     >
-      <p
-        class="scroll-mt-1.5 mr-1.5 text-right text-xs font-thin tracking-wider md:mt-1.5 md:text-xs mt-1.5"
-      >
-        {{ p.construction_area.toFixed(0) }}m2
-      </p>
-      <p
-        class="mt-1.5 text-center text-sm font-bold tracking-wider md:mt-1.5 md:text-sm"
+      <div v-if="p.status == 'Disponible'">
+        <p
+        class="mt-1.5 text-center text-sm font-bold tracking-wider md:mt-2 md:text-base"
       >
         {{ p.unit_name }}
       </p>
       <p class="mt-0 text-center text-xs font-light">
         {{ p.reference }}
       </p>
+      </div>
+      
+
+    <div v-else>
+      <p
+        class="mt-1.5 text-center text-sm font-black tracking-wider md:mt-2.5 md:text-sm"
+      >
+        Reservado
+      </p>
+      <p class="mt-0 text-center text-xs font-light">
+        {{ p.reference }}
+      </p>
+    </div>
     </div>
   </div>
 </template>
@@ -32,7 +41,7 @@ export default {
   mounted() {
     const res = propertiesApi
       .getPropertiesByLevel(
-        "a3ad7146-6670-4f03-b486-b551a59f3699",
+        "92b7aac2-579d-44a4-899b-d9a6feaaa1f0",
         this.level,
         `${this.filterPropeties}`
       )
@@ -54,7 +63,7 @@ export default {
     filterPropeties() {
       const res = propertiesApi
         .getPropertiesByLevel(
-          "a3ad7146-6670-4f03-b486-b551a59f3699",
+          "92b7aac2-579d-44a4-899b-d9a6feaaa1f0",
           this.level,
           `${this.filterPropeties}`
         )
@@ -65,7 +74,8 @@ export default {
   },
   methods: {
     openQuoter(property) {
-      this.$store.commit("ui/TOGGLE_QUOTER", true);
+      if (property.status == "Disponible") {
+        this.$store.commit("ui/TOGGLE_QUOTER", true);
       this.$store.commit("user/PROPERTY_VIEW", property);
       this.$store.commit("user/UNIT_PROPERTY_PRICE", property.price);
       this.$store.commit("user/FINAL_RESERVE_INPUT", property.reservation);
@@ -75,6 +85,8 @@ export default {
           property.parkings_relation[0].price
         );
       }
+      }
+     
     },
   },
 };

@@ -1,5 +1,5 @@
 <template>
-  <div id="quoter" class="bg-primary">
+  <div id="quoter" class="bg-primary mb-24">
     <login-component class="h-full w-full" v-if="authContainerStep == 0" />
     <verification-component v-if="authContainerStep == 1" />
     <data-user v-if="authContainerStep == 2" />
@@ -21,13 +21,13 @@
 import { mapState } from "vuex"
 import clientApi from "@/graphql/client";
 import sellersApi from "@/graphql/sellers";
-import LevelUnitSelection from "./QuoterExpress/LevelUnitSelection.vue";
-import loginComponent from "./QuoterExpress/loginComponent.vue";
-import VerificationComponent from "./QuoterExpress/VerificationComponent.vue";
+import LevelUnitSelection from "../QuoterExpress/LevelUnitSelection.vue";
+import loginComponent from "../QuoterExpress/loginComponent.vue";
+import VerificationComponent from "../QuoterExpress/VerificationComponent.vue";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "@/services/firebase";
-import QuoterModal from './QuoterExpress/QuoterModal.vue';
-import DataUser from './QuoterExpress/DataUser.vue';
+import QuoterModal from '../QuoterExpress/QuoterModal.vue';
+import DataUser from '../QuoterExpress/DataUser.vue';
 
 export default {
   components: {
@@ -72,7 +72,7 @@ export default {
     },
   },
     mounted() {
-    const res = sellersApi.getSellersByProyect("a3ad7146-6670-4f03-b486-b551a59f3699").then((r) => {
+    const res = sellersApi.getSellersByProyect("92b7aac2-579d-44a4-899b-d9a6feaaa1f0").then((r) => {
         var randomSeller = Math.floor(Math.random() * r.length);
         this.randomSeller = r[randomSeller];
       });
@@ -86,7 +86,7 @@ export default {
         position: "bottom-right",
         showIcon: true,
         hideProgressBar: false,
-        toastBackgroundColor:"#5e7462"
+        toastBackgroundColor:"#122347"
       });
       }
     });
