@@ -51,15 +51,15 @@
 
           <div class="mt-10 flex justify-end md:mt-12">
             <button v-if="!showLoading && checkData == false"
-              class="mb-4 w-full rounded-sm cursor-help bg-a3 py-4 px-8 text-xl font-semibold tracking-wider text-white opacity-30 border md:text-xl">
+              class="mb-4 w-full rounded-md cursor-help bg-a3 py-[10px] px-[4%] text-base md:text-lg font-semibold tracking-wider text-white opacity-30 border ">
               Completa tus datos
             </button>
             <button @click="sendLead()" v-if="!showLoading && checkData != false"
-              class="mb-2 w-full bg-primary ease-in-out duration-700 ring-0 border-none focus:ring-0 py-4 px-8 text-xl font-semibold tracking-wider text-a1 hover:bg-four hover:text-white hover:shadow-none  md:text-xl">
+              class="mb-2 w-full bg-primary ease-in-out duration-700 ring-0 border-none focus:ring-0 py-[10px] px-[4%] text-base md:text-lg font-semibold tracking-wider text-a1 hover:bg-four hover:text-white hover:shadow-none">
               Solicitar información
             </button>
             <button v-if="showLoading"
-              class="disabled mb-2 flex w-full cursor-none touch-none rounded-full bg-secondary py-3 px-8 text-xl font-semibold tracking-wider text-primary md:text-xl">
+              class="disabled mb-2 flex w-full cursor-none touch-none rounded-full bg-secondary py-[10px] px-[4%]  text-base md:text-lg font-semibold tracking-wider text-primary ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="mr-2 mt-0.5 h-6 w-6 animate-spin">
                 <path stroke-linecap="round" stroke-linejoin="round"

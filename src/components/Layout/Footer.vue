@@ -55,7 +55,7 @@
     <div
       class="w-full md:w-[150px] flex justify-center gap-2 items-center mb-[2%] md:mb-0 row-span-10 relative mt-4 md:mt-0">
 
-      <a href="" target="_blank" class="text-primary bg-secondary p-[3%] rounded-full">
+      <a href="https://www.instagram.com/bellavistabarrios/" target="_blank" class="text-primary bg-secondary p-[3%] rounded-full">
         <span class="sr-only">Instagram</span>
         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path fill-rule="evenodd"
@@ -64,7 +64,7 @@
         </svg>
       </a>
 
-      <a href="" target="_blank" class="text-primary bg-secondary p-[3%] rounded-full">
+      <a href="https://www.facebook.com/profile.php?id=61558248053043" target="_blank" class="text-primary bg-secondary p-[3%] rounded-full">
         <span class="sr-only">Facebook</span>
         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path fill-rule="evenodd"

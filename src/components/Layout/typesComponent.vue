@@ -48,7 +48,7 @@
         <img class="w-full h-auto px-[0%] md:px-[12%] lg:px-[14%]" :src="selectedImage" alt=" ">
 
         <button @click="toScroll('cotizar')"
-          class="flex text-lg md:text-lg my-2 px-10 py-3 mt-4 bg-secondary ease-in-out duration-700 text-white  duration-600 rounded-sm shadow-lg hover:bg-four hover:shadow-none">
+          class="flex text-lg md:text-lg my-2 py-[10px] px-[4%]  mt-4 bg-secondary ease-in-out duration-700 text-white  duration-600 rounded-md shadow-lg hover:bg-four hover:shadow-none">
           Obtener cotización
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
             class="w-6 ml-2 mt-0.5 text-primary">
