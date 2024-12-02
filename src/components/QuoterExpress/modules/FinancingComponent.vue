@@ -6,7 +6,9 @@
       </div>
 
     </div>
-
+    <div class="bg-four text-lg text-white px-4 py-2 tracking-wide mt-0">
+      Financiamiento
+    </div>
     <div class="p-2 mt-1">
       <ul role="list" class="divide-y divide-four/20">
         <!-- Precio sin impuestos -->
@@ -199,6 +201,9 @@ export default {
         }
       }, 1000);
     },
+    selected() {
+      this.$store.commit("quoter/FINANCING_ENTITY_SELECTED", this.selected)
+    }
   },
   methods: {
 
@@ -249,7 +254,8 @@ export default {
       );
     },
     async postData(user) {
-      const url = "https://sq1.owwny.com/webhook/#####";
+      const url = "https://sq1.owwny.com/webhook-test/bella-vista-quoter-express";
+      const totalArea = (this.viewProperty.construction_area + this.getAreaParkings()).toFixed(2)
       const aditionalParking =
         this.selectedExtraParking.length == 0
           ? 0
@@ -266,6 +272,8 @@ export default {
         this.finalMonthInput);
       const familyIncoming = monthDeposit * 3;
       const fileUploadName = `${this.randomId}${user.phone}`;
+      const formatFinalDeposit = Number(this.finalDepositInput);
+      const formatFinalDepositWithReserve = (Number(this.finalDepositInput) + Number(this.finalReserveInput))
       let formData = new FormData();
       formData.append("dateCreated", this.dateCreatedQuote);
       formData.append("utm_source", this.utms.utm_source);
@@ -285,29 +293,63 @@ export default {
       formData.append("unitNumber", this.viewProperty.unit_name);
       formData.append("bedrooms", this.viewProperty.bedrooms);
       formData.append("bathrooms", this.viewProperty.bathrooms);
+      formData.append("UnitNameAndRooms", `${this.viewProperty.unit_name} - ${this.viewProperty.bedrooms}HAB.`);
+      formData.append("typology", this.viewProperty.typology);
       formData.append("level", this.viewProperty.level);
-      formData.append("livingArea", this.viewProperty.construction_area);
-      formData.append("unitPrice", this.viewProperty.price);
+      formData.append("livingArea", this.viewProperty.living_area);
+      formData.append("balconyArea", this.viewProperty.balcony_area);
+      formData.append("gardenArea", this.viewProperty.garden_area == null ? 0 : this.viewProperty.garden_area);
+      formData.append("warehouseArea", 0);
+      formData.append("parking1", `Parqueo: ${this.viewProperty.parkings_relation[0].unit_name}`);
+      formData.append("parking2", this.viewProperty.parkings_relation[1] == undefined ? "-" : `Parqueo: ${this.viewProperty.parkings_relation[1].unit_name}`);
+      formData.append("parking3", this.viewProperty.parkings_relation[2] == undefined ? "-" : `Parqueo: ${this.viewProperty.parkings_relation[2].unit_name}`);
+      formData.append("priceWithOutTaxes", this.currencyFormater(this.viewProperty.price_base));
+      formData.append("parkingArea", this.getAreaParkings())
+      formData.append("unitPrice", this.currencyFormater(this.viewProperty.price));
       formData.append("parkingsCount", totalParkings);
+      formData.append("totalArea", totalArea);
       formData.append("warehouseCount", totalWarehouses);
-      formData.append("reserveAmount", this.finalReserveInput);
-      formData.append("depositTotalAmount", this.finalDepositInput);
+      formData.append("reserveAmount", this.currencyFormater(this.finalReserveInput));
       formData.append("familyAmount", familyIncoming);
       formData.append("monthDepoistFractions", this.finalMonthInput);
-      formData.append("monthDepositAmount", monthDeposit);
+      formData.append("monthDepositAmount", this.currencyFormater(monthDeposit));
       formData.append("fileName", fileUploadName);
-      formData.append("financingEntitie", this.selected.bankDetail.name);
-      formData.append("SellerName", "Equipo de");
-      formData.append("SellerLastname", "ventas");
-      formData.append("SellerEmail", "info@#####.gt");
-      formData.append("SellerPhone", 23108600);
+      formData.append("SellerName", "");
+      formData.append("SellerLastname", "-");
+      formData.append("SellerEmail", "-");
+      formData.append("SellerPhone", "-");
       formData.append("interestEntitie", this.selected.monthly_interest_fee);
       formData.append("ref", this.viewProperty.reference);
+      formData.append("depositTotalAmount", this.currencyFormater(formatFinalDeposit));
+      formData.append("depositTotalAmountWithReserve", this.currencyFormater(formatFinalDepositWithReserve));
       formData.append(
         "financingYearSelected",
         this.years
       );
-      formData.append("financingMonthAmount", this.financingMonthAmount);
+      formData.append("financingEntitie", this.selected.bankDetail.name);
+      formData.append("financingPercent", this.selected.monthly_interest_fee);
+      formData.append("financingMaxYears", this.selected.max_financing_years);
+      formData.append("financingMonthAmount", this.currencyFormater(this.financingMonthAmount));
+      formData.append("financingAmount", this.currencyFormater(this.getFinancingAmount));
+      formData.append("financingIndividual30", this.currencyFormater(this.getIndividualFinancingAmount30));
+      formData.append("financingIndividual25", this.currencyFormater(this.getIndividualFinancingAmount25));
+      formData.append("financingIndividual20", this.currencyFormater(this.getIndividualFinancingAmount20));
+      formData.append("financingIndividual15", this.currencyFormater(this.getIndividualFinancingAmount15));
+      formData.append("financingIndividual10", this.currencyFormater(this.getIndividualFinancingAmount10));
+      formData.append("financingIndividual5", this.currencyFormater(this.getIndividualFinancingAmount5));
+      formData.append("financingMonth30", this.currencyFormater(this.financingMonth30));
+      formData.append("financingMonth25", this.currencyFormater(this.financingMonth25));
+      formData.append("financingMonth20", this.currencyFormater(this.financingMonth20));
+      formData.append("financingMonth15", this.currencyFormater(this.financingMonth15));
+      formData.append("financingMonth10", this.currencyFormater(this.financingMonth10));
+      formData.append("financingMonth5", this.currencyFormater(this.financingMonth5));
+      formData.append("familyIncome30", this.currencyFormater(this.financingMonth30 * 2));
+      formData.append("familyIncome25", this.currencyFormater(this.financingMonth25 * 2));
+      formData.append("familyIncome20", this.currencyFormater(this.financingMonth20 * 2));
+      formData.append("familyIncome15", this.currencyFormater(this.financingMonth15 * 2));
+      formData.append("familyIncome10", this.currencyFormater(this.financingMonth10 * 2));
+      formData.append("familyIncome5", this.currencyFormater(this.financingMonth5 * 2));
+    
       const request = new Request(url, {
         method: "POST",
         mode: "no-cors",
@@ -336,6 +378,15 @@ export default {
       //.then((res) => res.json())
       //.then((res) => console.log(res));
     },
+    getAreaParkings() {
+      const area = this.viewProperty.parkings_relation.reduce(
+        (accumulator, e) => {
+          return accumulator + e.area;
+        },
+        0
+      );
+      return area
+    }
   },
   created() {
     this.selected = this.projectProfile[0].financingEntities[0];
@@ -358,9 +409,35 @@ export default {
     ]),
     ...mapState("ui", ["utms"]),
     ...mapGetters("user", ["propertyTotalAmountWithTaxes"]),
+    ...mapGetters("quoter", ["getFinancingAmount"]),
+    financingMonth30(){
+      const res = this.getIndividualFinancingAmount30 + this.getIusiAmount + this.secureAmount
+      return res
+    },
+    financingMonth25(){
+      const res = this.getIndividualFinancingAmount25 + this.getIusiAmount + this.secureAmount
+      return res
+    },
+    financingMonth20(){
+      const res = this.getIndividualFinancingAmount20 + this.getIusiAmount + this.secureAmount
+      return res
+    },
+    financingMonth15(){
+      const res = this.getIndividualFinancingAmount15 + this.getIusiAmount + this.secureAmount
+      return res
+    },
+    financingMonth10(){
+      const res = this.getIndividualFinancingAmount10 + this.getIusiAmount + this.secureAmount
+      return res
+    },
+    financingMonth5(){
+      const res = this.getIndividualFinancingAmount5 + this.getIusiAmount + this.secureAmount
+      return res
+    },
+
     totalFinancing() {
       let total =
-        this.propertyTotalAmountWithTaxes -
+        this.viewProperty.price -
         this.finalDepositInput -
         this.finalReserveInput;
       const quote =
@@ -374,6 +451,23 @@ export default {
       this.$store.commit("user/TOTAL_FINANCING", res);
       return res;
     },
+    
+    getIusiAmount(){
+        if (this.getFinancingAmount == 0) {
+          return 0
+        } else {
+          const res = +((this.viewProperty.price/1.11)*0.7)*(0.009/12)
+          return res
+        }
+      },
+    getFinancingAmount() {
+      const res = ((this.viewProperty.price - (Number(this.finalDepositInput))))
+      return this.currencyFormater(res)
+    },
+    secureAmount(){
+        const res = ((((this.viewProperty.price - (Number(this.finalDepositInput)))) * 0.0035)/12);
+        return Number(res)
+      },
     financingQuote() {
       let total =
         this.propertyTotalAmountWithTaxes -
@@ -390,6 +484,51 @@ export default {
       this.$store.commit("user/FINANCING_MONTH_AMOUNT", val);
       return val;
     },
+    getIndividualFinancingAmount30() {
+        const tasaDecimal = this.selected.monthly_interest_fee / 100;
+        const tasaMensual = tasaDecimal / 12;
+        const numPagos = 30 * 12;
+    
+        const cuota = ((this.viewProperty.price - (Number(this.finalDepositInput) + Number(this.finalReserveInput))) * tasaMensual) / (1 - Math.pow(1 + tasaMensual, -numPagos));
+        return cuota;
+      },
+
+      getIndividualFinancingAmount25() {
+        const tasaDecimal = this.selected.monthly_interest_fee / 100;
+        const tasaMensual = tasaDecimal / 12;
+        const numPagos = 25 * 12;
+        const cuota = ((this.viewProperty.price - (Number(this.finalDepositInput) + Number(this.finalReserveInput))) * tasaMensual) / (1 - Math.pow(1 + tasaMensual, -numPagos));
+        return cuota;
+      },
+
+      getIndividualFinancingAmount20() {
+        const tasaDecimal = this.selected.monthly_interest_fee / 100;
+        const tasaMensual = tasaDecimal / 12;
+        const numPagos = 20 * 12;
+        const cuota = ((this.viewProperty.price - (Number(this.finalDepositInput) + Number(this.finalReserveInput))) * tasaMensual) / (1 - Math.pow(1 + tasaMensual, -numPagos));
+        return cuota;
+      },
+      getIndividualFinancingAmount15() {
+        const tasaDecimal = this.selected.monthly_interest_fee / 100;
+        const tasaMensual = tasaDecimal / 12;
+        const numPagos = 15 * 12;
+        const cuota = ((this.viewProperty.price - (Number(this.finalDepositInput) + Number(this.finalReserveInput))) * tasaMensual) / (1 - Math.pow(1 + tasaMensual, -numPagos));
+        return cuota;
+      },
+      getIndividualFinancingAmount10() {
+        const tasaDecimal = this.selected.monthly_interest_fee / 100;
+        const tasaMensual = tasaDecimal / 12;
+        const numPagos = 10 * 12;
+        const cuota = ((this.viewProperty.price - (Number(this.finalDepositInput) + Number(this.finalReserveInput))) * tasaMensual) / (1 - Math.pow(1 + tasaMensual, -numPagos));
+        return cuota;
+      },
+      getIndividualFinancingAmount5() {
+        const tasaDecimal = this.selected.monthly_interest_fee / 100;
+        const tasaMensual = tasaDecimal / 12;
+        const numPagos = 5 * 12;
+        const cuota = ((this.viewProperty.price - (Number(this.finalDepositInput) + Number(this.finalReserveInput))) * tasaMensual) / (1 - Math.pow(1 + tasaMensual, -numPagos));
+        return cuota;
+      },
   },
   mounted() {
     const t = new Date();

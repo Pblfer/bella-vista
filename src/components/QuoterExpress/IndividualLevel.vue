@@ -21,7 +21,7 @@
       <p
         class="mt-1.5 text-center text-sm font-black tracking-wider md:mt-2.5 md:text-sm"
       >
-        Reservado
+        Vendido
       </p>
       <p class="mt-0 text-center text-xs font-light">
         {{ p.reference }}

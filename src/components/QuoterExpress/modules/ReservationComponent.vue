@@ -30,7 +30,7 @@
       </ul>
     </div>
     <div class="bg-four text-lg text-white px-4 py-2 tracking-wide mt-10">
-      Forma de pago 
+      Enganche
     </div>
     <div class="p-2 mt-1">
       <ul role="list" class="divide-y divide-four/20">
@@ -61,6 +61,24 @@
           </div>
         </li>
       </ul>
+    </div>
+    
+  </div>
+  <div class="mt-0 border-l-4 border-four  bg-blue-600/10 p-4 mb-4">
+    <div class="flex w-full">
+      <div class="ml-1 w-full text-left">
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <CashIcon class="h-5 w-5 text-four" aria-hidden="true" />
+          </div>
+          <div class="ml-2 flex-1 md:flex md:justify-between">
+            <p class="text-base text-four">
+              Su cuota mensual de enganche queda en:
+               {{ currencyFormater((deposit) / months ) }} a {{ months }} meses.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

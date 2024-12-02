@@ -84,6 +84,7 @@ export const getPropertiesByLevel = async (projectId, level, typology) => {
         living_area
         balcony_area
         construction_area
+        garden_area
         level
         tower
         status
@@ -93,6 +94,7 @@ export const getPropertiesByLevel = async (projectId, level, typology) => {
           unit_name
           price
           price_base
+          area
         }
   }
 }

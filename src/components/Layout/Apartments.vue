@@ -22,15 +22,15 @@
               v-for="(type, index) in types"
               :key="index"
               :class="[ 
-                'flex items-center border-0 p-3 px-2 md:px-6 mx-1 rounded-sm cursor-pointer',
+                'flex items-center justify-tex-center border-0 p-3 px-2 md:px-6 mx-1 rounded-sm cursor-pointer',
                 selected === index ? 'bg-four text-white' : 'bg-fifth text-secondary',
                 'hover:bg-four hover:text-white'
               ]"
-              @click="updateSelection(index)">
+              @click="updateSelection(index, type)">
               
               <label
                 for="type"
-                class="ml-2 block text-base md:text-lg lg:text-xl font-normal leading-6 tracking-wider">
+                class="px-4 block text-sm md:text-lg lg:text-xl font-normal text-center leading-6 tracking-wider">
                 {{ type.name }}
               </label>
             </div>
@@ -97,10 +97,10 @@ export default {
     };
   },
   methods: {
-    updateSelection(index) {
+    updateSelection(index, type) {
+      this.$store.commit("ui/TYPE_SELECTION", `${type.name}`)
       this.selected = index;
       this.selectedVariation = 0; // Reinicia variación al cambiar de tipo
-      this.$store.commit("ui/TYPE_SELECTION", type)
     },
   },
 };

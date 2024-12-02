@@ -5,7 +5,7 @@
        <Localization></Localization>
        <!-- <YourEnvironment></YourEnvironment> -->
        <Apartments></Apartments>
-       <!-- <QuoterExpress /> -->
+      <QuoterExpress />
        <ActivaDesarrollos></ActivaDesarrollos>
       <!--<AmenitiesComponent></AmenitiesComponent> -->
        <GalleryDesarrollos></GalleryDesarrollos>

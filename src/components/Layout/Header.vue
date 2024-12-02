@@ -41,7 +41,7 @@
                             class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg duration-600 hover:shadow-white/5 hover:bg-four py-[10px] px-[1.7%] xl:px-[2%] mr-4 hover:text-fifth rounded-md leading-6 text-white">Respaldo</a>
                             <div class=" border-r-2 mr-4"></div>
                         <a href="#" @click="toScroll('cotizar')"
-                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 duration-600 bg-four hover:bg-four py-[10px] px-[5%] shadow-xl  hover:text-fifth rounded-md leading-6 text-white">Cotizar</a>
+                            class="text-lg tracking-wide font-semibold ease-in-out duration-700 hover:shadow-lg hover:shadow-white/5 duration-600 bg-four hover:bg-four py-[10px] px-[4%] shadow-xl  hover:text-fifth rounded-md leading-6 text-white">Cotizar</a>
                     </div>
                 </nav>
                 <!-- Mobile menu, show/hide based on menu open state. -->
