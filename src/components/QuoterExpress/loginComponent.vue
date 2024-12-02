@@ -75,7 +75,7 @@
           <div>
             <button
               v-if="!loadingGoogle"
-              @click="loginWithFacebook"
+              @click="loginWithApple"
               href="#"
               class="hover:white inline-flex w-full justify-center rounded-none bg-primary/10 py-4 px-4 text-sm font-light text-white duration-500 ease-linear hover:bg-primary hover:text-secondary hover:shadow-2xl hover:shadow-secondary/75"
             >
