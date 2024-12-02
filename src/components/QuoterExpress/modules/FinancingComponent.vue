@@ -254,6 +254,7 @@ export default {
       );
     },
     async postData(user) {
+      console.log(user)
       const url = "https://sq1.owwny.com/webhook/bella-vista-quoter-express";
       const totalArea = (this.viewProperty.construction_area + this.getAreaParkings()).toFixed(2)
       const aditionalParking =
@@ -285,7 +286,7 @@ export default {
       formData.append("first_name", this.firstName);
       formData.append("email", user.email);
       formData.append("complete_name", user.displayName);
-      formData.append("phone", user.phone);
+      formData.append("phone", `${Number(user.area_code)}${user.phone}`);
       formData.append("proyectId", this.viewProperty.proyect_id);
       formData.append("companyId", this.projectProfile[0].company_id)
       formData.append("planeImgUrl", this.viewProperty.base_plane);

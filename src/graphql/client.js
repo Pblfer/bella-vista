@@ -10,6 +10,7 @@ export const getClient = async (email) => {
         displayName
         email
         phone
+        area_code
         companyRelations(where: {companyId: {_eq: "ba55bc08-0f55-40e2-9476-95a4b8c88eaa"}}) {
           id
           sellerProfile{
