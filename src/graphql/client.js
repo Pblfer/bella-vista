@@ -10,7 +10,7 @@ export const getClient = async (email) => {
         displayName
         email
         phone
-        companyRelations(where: {companyId: {_eq: "93c5b728-8f87-4603-b67a-abc323dbe134"}}) {
+        companyRelations(where: {companyId: {_eq: "ba55bc08-0f55-40e2-9476-95a4b8c88eaa"}}) {
           id
           sellerProfile{
             email

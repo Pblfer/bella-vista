@@ -210,7 +210,7 @@ export default {
   },
   async beforeMount() {
     const res = await apiProjects
-      .getProjectData("6eadfdc5-ad7b-4037-b9bb-d47a84942211")
+      .getProjectData("92b7aac2-579d-44a4-899b-d9a6feaaa1f0")
       .then((v) => {
         this.$store.commit("user/PROJECT_DATA", v[0]);
       });

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex h-screen min-h-full flex-col justify-center bg-primary py-32 sm:px-6 lg:px-8"
+    class="flex h-screen min-h-full flex-col justify-center bg-secondary py-32 sm:px-6 lg:px-8"
   >
     <div class="mt-8 p-4 sm:mx-auto sm:w-full sm:max-w-md md:p-0">
       <div
@@ -8,11 +8,11 @@
       >
         <div class="flex">
           <div class="grid-cols-1 p-3">
-            <p class="text-2xl font-semibold text-white">
+            <p class="text-2xl font-semibold text-secondary">
               {{ userProfile.displayName }},
             </p>
-            <p class="-mt-1 text-2xl font-semibold text-white md:text-xl">
-              Completa tu perfil
+            <p class="-mt-1 text-2xl font-semibold text-secondary md:text-lg">
+              Completa tus datos
             </p>
           </div>
         </div>
@@ -22,7 +22,7 @@
           >
             <label
               for="email"
-              class="absolute -top-2 left-2 -mt-px inline-block bg-primary px-3 text-sm font-semibold text-white"
+              class="absolute -top-2 left-2 -mt-px inline-block bg-primary px-3 text-sm font-semibold text-secondary"
               >Email</label
             >
             <input
@@ -30,16 +30,27 @@
               name="email"
               id="email"
               v-model="email"
-              class="block w-full border-0 bg-transparent p-0 text-white placeholder-gray-500 focus:ring-0 sm:text-sm"
+              class="block w-full border-0 bg-transparent p-0 text-secondary placeholder-gray-500 focus:ring-0 sm:text-sm"
             />
           </div>
 
-          <div
-            class="relative mt-6 border border-secondary px-4 py-4 shadow-sm focus-within:border-primary focus-within:ring-4 focus-within:ring-secondary"
+          <div class="flex gap-4">
+            <div class="w-1/2 mt-6 border border-third">
+              <vue3-country-intl
+                    v-model="areaCode"
+                    :onlyValue="true"
+                    placeholder=""
+                    autocomplete="on"
+                  ></vue3-country-intl>
+            </div>
+            
+                  <div
+            class="relative mt-6 border border-third px-4 w-full py-4 shadow-sm focus-within:border-primary focus-within:ring-4 focus-within:ring-secondary"
           >
+           
             <label
               for="phone"
-              class="absolute -top-2 left-2 -mt-px inline-block bg-primary px-3 text-sm font-semibold text-white"
+              class="absolute -top-2 left-2 -mt-px inline-block bg-primary px-3 text-sm font-semibold text-third"
               >Teléfono</label
             >
             <input
@@ -47,16 +58,17 @@
               name="phone"
               id="phone"
               v-model="phone"
-              class="block w-full border-0 bg-transparent p-0 text-white placeholder-gray-500 focus:ring-0 sm:text-sm"
+              class="block w-full border-0 bg-transparent p-0 text-four placeholder-gray-500 focus:ring-0 sm:text-sm"
             />
           </div>
+            </div> 
+          
           <p
-            class="mt-2 text-sm tracking-wider text-white"
+            class="mt-2 text-sm tracking-wider text-secondary"
             v-if="phone.length <= 7"
           >
             Ingresa un número válido sin espacios.
           </p>
-
           <div class="mt-8">
             <button
               v-if="validateFields"
@@ -67,7 +79,7 @@
             <button
               v-else
               @click="createClient"
-              class="text flex w-full justify-center bg-white py-4 text-xl font-semibold tracking-wider text-primary shadow-2xl duration-300 ease-linear hover:bg-secondary hover:text-white hover:shadow-secondary"
+              class="text flex w-full justify-center bg-secondary py-4 text-xl font-semibold tracking-wider text-primary shadow-2xl duration-300 ease-linear hover:bg-secondary hover:text-white hover:shadow-none shadow-secondary"
             >
               <p v-if="!showLoading">Continuar</p>
               <svg
@@ -198,9 +210,35 @@ export default {
     this.showLoading = false;
     this.email = "";
     this.phone = "";
+    this.areaCode = 502
   },
   mounted() {
     this.getRandomSeller();
   },
 };
 </script>
+
+<style lang="css">
+.vue-country-intl-input .country-intl-label {
+  border-color: #122347 !important;
+  height: 4rem !important;
+  background-color: #ffffff !important;
+  color: #122347 !important;
+  border-color: #122347 !important;
+  border-radius: 0px !important;
+  border: none !important;
+}
+.vue-country-intl-input .country-intl-label {
+  height: 3.4rem !important;
+  padding-top: 15px !important;
+  border: none !important;
+}
+.vue-country-intl-input {
+  height: 3.5rem !important;
+  border: none !important;
+}
+.vue-country-intl-input .dropdown-flag {
+  top: 8px !important;
+  border: none !important;
+}
+</style>

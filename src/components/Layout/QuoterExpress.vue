@@ -47,6 +47,15 @@ export default {
     ...mapState("user", ["userProfile", "firstName", "projectProfile"]),
   },
   methods: {
+    toScroll(v) {
+            const myEl = document.getElementById(v);
+            this.$smoothScroll({
+                scrollTo: myEl,
+                duration: 1000,
+                offset: 10,
+            });
+            this.showMenu = false;
+        },
     async checkUserProfile(email) {
       const res = await clientApi.getClient(email).then((v) => {
         if (v.length == 0) {
@@ -64,7 +73,7 @@ export default {
     async createClientToCompanyRelation() {
       const res = await clientApi.createClientRelationToCompany(
         this.userProfile.email,
-        "93c5b728-8f87-4603-b67a-abc323dbe134",
+        "ba55bc08-0f55-40e2-9476-95a4b8c88eaa",
         this.randomSeller.email
       ).then((v)=>{
          //console.log("Realtion Created")
@@ -80,6 +89,7 @@ export default {
       if (user) {
         this.$store.commit("user/SEND_PROFILE_DATA", user.providerData[0]);
         this.checkUserProfile(user.providerData[0].email);
+        this.toScroll('quoter')
         this.$moshaToast(`Ahora puedes cotizar.`, {
         type: "success",
         transition: "slide",

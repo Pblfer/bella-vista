@@ -11,7 +11,7 @@
             <p class="text-2xl font-semibold text-secondary">
               {{ userProfile.displayName }},
             </p>
-            <p class="-mt-1 text-2xl font-semibold text-secondary md:text-xl">
+            <p class="-mt-1 text-2xl font-semibold text-secondary md:text-lg">
               Ya eres parte de la red de Owwny
             </p>
           </div>
@@ -34,12 +34,23 @@
             />
           </div>
 
-          <div
-            class="relative mt-6 border border-secondary px-4 py-4 shadow-sm focus-within:border-primary focus-within:ring-4 focus-within:ring-secondary"
+          <div class="flex gap-4">
+            <div class="w-1/2 mt-6 border border-third">
+              <vue3-country-intl
+                    v-model="areaCode"
+                    :onlyValue="true"
+                    placeholder=""
+                    autocomplete="on"
+                  ></vue3-country-intl>
+            </div>
+            
+                  <div
+            class="relative mt-6 border border-third px-4 w-full py-4 shadow-sm focus-within:border-primary focus-within:ring-4 focus-within:ring-secondary"
           >
+           
             <label
               for="phone"
-              class="absolute -top-2 left-2 -mt-px inline-block bg-primary px-3 text-sm font-semibold text-secondary"
+              class="absolute -top-2 left-2 -mt-px inline-block bg-primary px-3 text-sm font-semibold text-third"
               >Teléfono</label
             >
             <input
@@ -47,9 +58,10 @@
               name="phone"
               id="phone"
               v-model="phone"
-              class="block w-full border-0 bg-transparent p-0 text-secondary placeholder-gray-500 focus:ring-0 sm:text-sm"
+              class="block w-full border-0 bg-transparent p-0 text-four placeholder-gray-500 focus:ring-0 sm:text-sm"
             />
           </div>
+            </div> 
           <p
             class="mt-2 text-sm tracking-wider text-secondary"
             v-if="phone.length <= 7"
@@ -67,7 +79,7 @@
             <button
               v-else
               @click="createClientToCompanyRelation"
-              class="text flex w-full justify-center bg-secondary py-4 text-xl font-semibold tracking-wider text-white shadow-2xl duration-300 ease-linear hover:bg-secondary hover:text-white hover:shadow-secondary"
+              class="text flex w-full justify-center bg-secondary py-4 text-xl font-semibold tracking-wider text-white shadow-2xl duration-300 ease-linear hover:bg-secondary hover:text-white hover:shadow-none shadow-secondary"
             >
               <p v-if="!showLoading">Compartir datos</p>
               <svg
@@ -174,6 +186,7 @@ export default {
     this.showLoading = false;
     this.email = "";
     this.phone = "";
+    this.areaCode = 502
   },
   beforeMount() {
     this.getRandomSeller();
