@@ -1,7 +1,7 @@
 <template>
   <div
     id="login"
-    class="flex h-screen min-h-full flex-col justify-center bg-four bg-fixed p-4 py-32 sm:px-6 lg:px-8"
+    class="flex h-screen min-h-full flex-col justify-center bg-secondary bg-fixed p-4 py-32 sm:px-6 lg:px-8"
    
   >
  
