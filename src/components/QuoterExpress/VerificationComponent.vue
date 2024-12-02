@@ -218,7 +218,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .vue-country-intl-input .country-intl-label {
   border-color: #122347 !important;
   height: 4rem !important;

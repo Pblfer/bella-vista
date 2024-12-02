@@ -1,12 +1,11 @@
 <template>
   <div
     id="login"
-    class="flex h-screen min-h-full flex-col justify-center bg-secondary bg-fixed p-4 py-32 sm:px-6 lg:px-8"
-    style="
-      background-image: url(https://owwny-b2b-base-files.s3.amazonaws.com/websites/#####/PatterBigV2%404x.png);
-    "
+    class="flex h-screen min-h-full flex-col justify-center bg-four bg-fixed p-4 py-32 sm:px-6 lg:px-8"
+   
   >
-    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
+ 
+    <div class="mt-14 sm:mx-auto sm:w-full sm:max-w-sm bg-secondary">
       <div
         class="bg-none py-8 px-4 shadow-2xl border-2 duration-500 ease-linear sm:px-10"
       >
@@ -16,7 +15,10 @@
             src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/BELLA+VISTA+Logo.png"
             alt=""
           />
-        </div>
+        </div> <p class="mt-6 text-center text-5xl font-badScript font-semibold tracking-wider text-primary md:text-center">
+        Cotizador
+      </p>
+       
         <div class="relative mt-8">
           <div class="absolute inset-0 flex items-center" aria-hidden="true">
             <div class="w-full border-t border-primary/40 border-2" />
@@ -86,7 +88,7 @@
             </button>
           </div>
           <div class="flex justify-center">
-            <p class="font-light text-sm text-primary mt-2">Inicia para cotizar en línea</p>
+            <p class="font-light text-sm text-primary mt-2 tracking-wider">Inicia para cotizar en línea</p>
           </div>
         </div>
       </div>
