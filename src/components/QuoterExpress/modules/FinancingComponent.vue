@@ -254,7 +254,7 @@ export default {
       );
     },
     async postData(user) {
-      const url = "https://sq1.owwny.com/webhook-test/bella-vista-quoter-express";
+      const url = "https://sq1.owwny.com/webhook/bella-vista-quoter-express";
       const totalArea = (this.viewProperty.construction_area + this.getAreaParkings()).toFixed(2)
       const aditionalParking =
         this.selectedExtraParking.length == 0
