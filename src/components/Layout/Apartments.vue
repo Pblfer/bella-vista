@@ -47,7 +47,7 @@
           {{ types[selected].description }}
         </p>
         <img
-          class="w-full h-auto px-[0%] md:px-[16%] lg:px-[17%] ease-linear duration-300"
+          class="w-[70%] object-cover ease-linear duration-300 mx-10"
           :src="types[selected].variations[selectedVariation].img"
           alt="elemento apartamentos" />
       </div>
@@ -69,7 +69,7 @@ export default {
           variations: [
             {
               type: "Flex",
-              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo-a.png",
+              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/APTO+-+A.png",
             },
           ],
         },
@@ -79,7 +79,7 @@ export default {
           variations: [
             {
               type: "Flex",
-              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+b.png",
+              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/APTO+-+B.png",
             },
           ],
         },
@@ -89,7 +89,7 @@ export default {
           variations: [
             {
               type: "Balcon",
-              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/tipo+c.png",
+              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/APTO+-+C.png",
             },
           ],
         },

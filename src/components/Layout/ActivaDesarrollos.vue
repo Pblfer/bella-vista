@@ -13,14 +13,6 @@
                     su valor con el tiempo.
                 </p>
             </div>
-            <div class="">
-               
-                
-
-                 
-                
-<!-- End Slider -->
-            </div>
             <div class="relative hidden">
                 <swiper :modules="modules" :slidesPerView="1" :centeredSlides="false" :spaceBetween="8" :freeMode="true"
                     :pagination="{
@@ -38,23 +30,14 @@
                     <swiper-slide><img
                             src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/pagina-web-platina.png"
                             alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
-
-
                 </swiper>
                 <div class="w-full flex justify-center items-center -mt-14 z-50">
                     <button @click="toScroll('cotizar')"
                         class="mb-2 px-14 py-2 bg-secondary text-white text-xl md:text-2xl border-0 duration-600 z-50">
                         Óptima Centro de Negocios</button>
-
                 </div>
-
-
-
             </div>
-
         </div>
-
-
     </div>
     <div>
 
@@ -146,9 +129,18 @@ export default {
 <style lang="css">
 .swiper-button-prev,
 .swiper-button-next {
-    background-color: #000 !important;
-    padding: 2.5%;
-    color: #ffffff;
-    font-size: 12px;
+    background-color: #000000 !important;
+    width: 38px!important;
+    height: 38px!important;
+    color: #ffffff!important;
+    font-size: 8px;
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+    
+    width: 18px!important;
+    height: 18px!important;
+    color: #ffffff!important;
+    font-size: 18px!important;
+    padding-left:5px!important;
 }
 </style>

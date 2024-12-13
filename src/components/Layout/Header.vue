@@ -91,6 +91,7 @@
         </div>
 
     </div>
+    <!-------------
     <div class="relative flex justify-center flex-col lg:flex-row md:pt-[4rem] pt-[4rem] xl:pt-[6rem]">
         <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/banner.jpg"
             alt="Bella vista puerto barrios"
@@ -121,7 +122,7 @@
             </div>
         </div>
     </div>
-
+------------->
 </template>
 
 <script>
