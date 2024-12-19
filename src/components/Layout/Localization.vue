@@ -28,26 +28,26 @@
                 class="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 p-[8%] lg:px-[4%] lg:py-[0%] text-center lg:text-left text-secondary">
                 
                 <div class=" font-badScript text-6xl md:text-6xl xl:text-6xl font-bold text-secondary mb-0 mt-2">Ubicación</div>
-                <h4 class="text-sm md:text-xl mt-5 font-normal mb-2 xl:mb-4">
+                <h4 class="text-sm md:text-xl mt-6 font-normal mb-2 xl:mb-4">
                     En la mejor ubicación de Puerto Barrios  Colonia EX-UFCO
                 </h4>
 
                 
-                <p class=" text-xl mb-2 md:mb-4">
+                <p class="text-lg mb-2 md:mb-4">
                     Descubre un nuevo estilo de vida en el proyecto residencial Bella Vista, ubicado estratégicamente en
                     <span class="font-bold">la Colonia ExUFCO</span> de Puerto Barrios. Este desarrollo inmobiliario combina modernidad, accesibilidad
                     y seguridad para ofrecer un entorno perfecto para ti y tu familia.
 
                 </p>
                 
-                <p class=" text-xl mb-2 md:mb-4">
+                <p class="text-lg mb-2 md:mb-4">
                     brindando apartamentos diseñados para maximizar la funcionalidad y el confort. Con espacios bien optimizados y acabados de alta calidad, este es el lugar ideal para disfrutar de la comodidad que mereces y mejorar tu calidad de vida.
                 </p>
-                <button @click="toScroll('cotizar')" class="mb-2 px-12 py-2.5 bg-four text-white text-xl duration-600 ">Obtener cotización →</button>
+                <button @click="toScroll('cotizar')" class="mb-2 px-12 py-2.5 bg-four text-white text-lg duration-600 mt-4">Obtener cotización →</button>
 
             </div>
 
-            <div class="w-full flex justify-center lg:w-1/2 overflow-hidden">
+            <div class="w-full flex justify-center lg:w-1/2 overflow-hidden rounded-lg">
                 <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Mapa.png"
                     alt=" " class=" h-auto object-cover " />
             </div>

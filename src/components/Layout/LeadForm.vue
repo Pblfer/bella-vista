@@ -149,7 +149,7 @@ export default {
 
 .vue-country-intl-input .country-intl-label {
   border-color: #16232d !important;
-  height: 2.4rem !important;
+  height: 2.6rem !important;
   background-color: #122347 !important;
   color: #ffffff !important;
   border-radius: 0px !important;

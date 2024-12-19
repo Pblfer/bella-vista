@@ -2,145 +2,96 @@
     <div id="respaldo" class="bg-primary p-[5%] pt-[5%] pb-[0%]">
         <div class="flex flex-col lg:flex-col">
             <div
-                class="flex flex-col justify-center items-center lg:items-center w-full  p-[8%] lg:px-[4%] lg:py-[0%] text-center md:text-left text-secondary">
+                class="flex flex-col mb-6 justify-center items-center lg:items-center w-full  p-[8%] lg:px-[4%] lg:py-[0%] text-center md:text-left text-secondary">
 
-                <div class="w-full font-badScript text-6xl md:text-6xl xl:text-6xl font-bold mb-2 text-center lg:text-left">Activa Desarrollos
+                <div
+                    class="w-full font-badScript text-5xl md:text-6xl xl:text-6xl font-bold mb-2 text-center lg:text-left">
+                    Activa Desarrollos
                 </div>
-                <p class=" text-xl mb-0 mt-3 text-center lg:text-left">
+                <p class=" text-lg mb-0 text-center lg:text-left mt-6">
                     Con una trayectoria sólida en el desarrollo de proyectos inmobiliarios de alta calidad, ACTIVA
                     Desarrollos se especializa en residencias que enriquecen la vida de sus habitantes. Nos enfocamos en
                     integrar sostenibilidad y modernidad en cada diseño, asegurando una inversión sólida que incrementa
                     su valor con el tiempo.
                 </p>
-            </div>
-            <div class="relative hidden">
-                <swiper :modules="modules" :slidesPerView="1" :centeredSlides="false" :spaceBetween="8" :freeMode="true"
-                    :pagination="{
-                        type: 'fraction',
-                    }" :navigation="true" :virtual="true" class="mySwiper" @swiper="setSwiperRef">
-                    <swiper-slide><img
-                            src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/pagina-web-la-serenisima.jpg"
-                            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
-                    <swiper-slide><img
-                            src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/pagina-web-nazarenos.jpg"
-                            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
-                    <swiper-slide><img
-                            src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/pagina-web-optima.png"
-                            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
-                    <swiper-slide><img
-                            src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/pagina-web-platina.png"
-                            alt=" " class="relative m-auto object-cover -z-10 " /></swiper-slide>
-                </swiper>
-                <div class="w-full flex justify-center items-center -mt-14 z-50">
-                    <button @click="toScroll('cotizar')"
-                        class="mb-2 px-14 py-2 bg-secondary text-white text-xl md:text-2xl border-0 duration-600 z-50">
-                        Óptima Centro de Negocios</button>
+                <div class="flex md:justify-start justify-center w-full">
+                    <a href="https://www.desarrollosactiva.com/" target="_blank" class="mb-2 px-12 py-2.5 bg-none text-secondary bg-secondary/10 text-xl duration-600 mt-4">Ver sitio web →</a>
                 </div>
+               
             </div>
+
         </div>
     </div>
-    <div>
 
-        <p class="append-buttons hidden">
-            <button @click="prepend()" class="prepend-2-slides">
-                Prepend 2 Slides
-            </button>
-            <button @click="slideTo(1)" class="prepend-slide">Slide 1</button>
-            <button @click="slideTo(250)" class="slide-250">Slide 250</button>
-            <button @click="slideTo(500)" class="slide-500">Slide 500</button>
-            <button @click="append()" class="append-slides">Append Slide</button>
-        </p>
+    <div>
+      <ul
+        role="list"
+        class="grid grid-cols-2 gap-x-1 gap-y-1 sm:grid-cols-3 sm:gap-x-0 lg:grid-cols-0 xl:gap-x-1"
+      >
+        <li class="relative" v-for="(i, index) in images" :key="index">
+          <div
+            class="group aspect-h-7 aspect-w-10 block w-full overflow-hidden bg-gray-50"
+          >
+            <img
+              :src="i.url"
+              alt="Elemento apartamentos, plaza berlín"
+              class="pointer-events-none object-cover"
+            />
+            <div class="absolute bottom-0 inset-0 hover:bg-secondary/50 bg-opacity-0 group-hover:bg-opacity-70 transition-opacity duration-300 flex items-center justify-center">
+                                
+                <!-- Contenido principal -->
+                <div class="absolute inset-0 bg-cover bg-center rounded-lg" style="background-image: url('https://via.placeholder.com/150');"></div>
+                
+                <!-- Texto que aparece en hover -->
+                <p class="absolute text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {{i.title}}
+                </p>
+
+
+            </div>
+          </div>
+        </li>
+  
+        <!-- More files... -->
+      </ul>
     </div>
+
 </template>
 <script>
-import { ref } from 'vue';
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue';
-
-// Import Swiper styles
-import 'swiper/css';
-
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/virtual';
-
-
-
-// import Swiper core and required modules
-import { Pagination, Navigation, Virtual } from 'swiper/modules';
 
 export default {
-    components: {
-        Swiper,
-        SwiperSlide,
-    },
-    setup() {
-        // Create array with 500 slides
-        const slides = ref(
-            Array.from({ length: 500 }).map((_, index) => `Slide ${index + 1}`)
-        );
-        let swiperRef = null;
-        let appendNumber = 100;
-        let prependNumber = 1;
 
-        const setSwiperRef = (swiper) => {
-            swiperRef = swiper;
-        };
-        const slideTo = (index) => {
-            swiperRef.slideTo(index - 1, 0);
-        };
-        const append = () => {
-            slides.value = [...slides.value, 'Slide ' + ++appendNumber];
-        };
-        const prepend = () => {
-            slides.value = [
-                `Slide ${prependNumber - 2}`,
-                `Slide ${prependNumber - 1}`,
-                ...slides.value,
-            ];
-            prependNumber -= 2;
-            swiperRef.slideTo(swiperRef.activeIndex + 2, 0);
-        };
+    data() {
         return {
-            slides,
-            swiperRef: null,
-            appendNumber,
-            prependNumber,
-            setSwiperRef,
-            slideTo,
-            append,
-            prepend,
-            modules: [Pagination, Navigation, Virtual],
+            images:[
+                  {text:"", title:"Residenciales los Apóstoles", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/apostoles_1.png"},
+                  {text:"", title:"Residenciales los Apóstoles", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/apostoles_4.png"},
+                  {text:"", title:"Residenciales los Apóstoles", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/apostoles_3.jpeg"},
+                  {text:"", title:"Óptima centro de negocios", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/optima_1.jpg"},
+                  {text:"", title:"Óptima centro de negocios", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/optima_2.jpg"},
+                  {text:"", title:"La Serenísima complejo residencial", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/serenisima_1.jpg"},  
+                  {text:"", title:"La Serenísima complejo residencial", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/serenisima_2.jpg"},
+                  {text:"", title:"La Serenísima complejo residencial", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/serenisima_4.jpg"},    
+                  {text:"", title:"La Serenísima complejo residencial", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/serenisima_3.jpg"},   
+                  {text:"", title:"Platina centro de negocios", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/platina_2.jpg"},
+                  {text:"", title:"Platina centro de negocios", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/platina_3.jpg"},   
+                  {text:"", title:"Platina centro de negocios", url:"https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/platina_1.jpg"},
+              ]
         };
     },
     methods: {
-    toScroll(v) {
-      this.showMenu = false
-      const myEl = document.getElementById(v)
-      this.$smoothScroll({
-        scrollTo: myEl,
-        duration: 1000,
-        offset: -50,
-      })
-    },
-  }
+        toScroll(v) {
+            this.showMenu = false
+            const myEl = document.getElementById(v)
+            this.$smoothScroll({
+                scrollTo: myEl,
+                duration: 1000,
+                offset: -50,
+            })
+        },
+    }
 };
 </script>
-<style lang="css">
-.swiper-button-prev,
-.swiper-button-next {
-    background-color: #000000 !important;
-    width: 38px!important;
-    height: 38px!important;
-    color: #ffffff!important;
-    font-size: 8px;
-}
-.swiper-button-prev:after, .swiper-button-next:after{
-    
-    width: 18px!important;
-    height: 18px!important;
-    color: #ffffff!important;
-    font-size: 18px!important;
-    padding-left:5px!important;
-}
-</style>
+
+
+  

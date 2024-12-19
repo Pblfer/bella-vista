@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center justify-center content-center bg-primary text-secondary py-5 md:px-[1%] lg:px-[4%]"
+    class="flex flex-col items-center justify-center content-center bg-primary text-secondary py-5 md:px-[1%] lg:px-[6%]"
     id="types">
     <div class="w-full flex flex-col lg:mt-4 lg:pr-12">
       <h2 class="text-lg ml-1 md:text-right text-third text-center">
@@ -39,7 +39,7 @@
       </div>
 
       <!-- Información del Tipo Seleccionado -->
-      <div class="mt-10 w-full flex flex-col items-center md:mt-10">
+      <div class="mt-10 w-full flex flex-col items-center md:mt-16">
         <p class="font-special text-a1 mt-1 text-xl font-[400] tracking-wider md:text-2xl lg:text-3xl">
           {{ types[selected].name }}
         </p>
@@ -47,10 +47,12 @@
           {{ types[selected].description }}
         </p>
         <img
-          class="w-[70%] object-cover ease-linear duration-300 mx-10"
+          class="md:w-[80%] w-[100%] object-cover ease-linear duration-300 md:mx-10 mx-2 mt-4"
           :src="types[selected].variations[selectedVariation].img"
           alt="elemento apartamentos" />
+          <button @click="toScroll('cotizar')" class="mb-2 px-12 py-2.5 bg-four text-white text-lg duration-600 mt-8">Cotizar apartamento →</button>
       </div>
+      
     </div>
   </div>
 </template>
@@ -102,7 +104,17 @@ export default {
       this.selected = index;
       this.selectedVariation = 0; // Reinicia variación al cambiar de tipo
     },
+    toScroll(v) {
+            this.showMenu = false
+            const myEl = document.getElementById(v)
+            this.$smoothScroll({
+                scrollTo: myEl,
+                duration: 1000,
+                offset: -50,
+            })
+        },
   },
+  
 };
 </script>
 

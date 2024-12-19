@@ -1,95 +1,48 @@
 <template>
-  <div class="mb-14 pt-14" id="">
+  <div class="mb-14 pt-14">
     <div class="bg-white">
       <main class="isolate">
-      
-        <div class="relative w-full mt-10 ">
-                <img class="w-full h-[26rem] md:h-[44rem] object-cover duration-700 ease-in-out" :src="activeImage.url"
-                    alt="Elemento apartamentos zona 13" />
-                <div class="absolute left-0 text-xs text-white -mt-[1.1rem] pl-2 md:pl-4">
-                    Imágenes con fines ilustrativos.
-                </div>
-                <div class=" bottom-0 absolute -ml-6  w-full ">
-                    <div class="w-full m-4 mx-0 md:m-5 flex justify-center gap-1 md:gap-4">
-
-                        <div @click="activeImage = img" :class="`h-12 w-12 border-4 rounded-none object-cover shadow-sm md:h-20 md:w-20 ${borderSelection(
-                            img.id
-                        )}`" v-for="img in imagesData" :key="img.index">
-
-                            <img class="h-full w-full object-cover" :src="img.url"
-                                alt="Apartamentos Bella Vista" />
-
-                        </div>
-                    </div>
-                </div>
+        <!-- Contenedor Principal -->
+        <div class="relative w-full md:mt-10 mt-6 h-[32rem] md:h-[57rem]">
+          <!-- Transición de Imágenes -->
+          <transition-group name="fade" tag="div" class="absolute inset-0">
+            <img
+              v-for="img in [activeImage]"
+              :key="img.id"
+              :src="img.url"
+              class="absolute w-full h-full object-cover duration-700 ease-in-out"
+              alt="Imagen principal del carrusel"
+            />
+          </transition-group>
+          <div
+            class="absolute left-0 text-xs text-white -mt-[1.1rem] pl-2 md:pl-4"
+            aria-hidden="true"
+          >
+            Imágenes con fines ilustrativos.
+          </div>
+        </div>
+            <!-- Miniaturas -->
+            <div class="block right-0 bottom-0 w-full  bg-secondary">
+            <div class="flex justify-center gap-1 md:gap-4 p-4">
+              <div
+                v-for="img in imagesData"
+                :key="img.id"
+                class="cursor-pointer transition-transform duration-300 border-none transform hover:scale-105"
+                @click="setActiveImage(img.id)"
+              >
+                <img
+                  :class="borderSelection(img.id)"
+                  class="h-12 w-12 md:h-20 md:w-20  border-2 rounded-sm shadow-lg object-cover"
+                  :src="img.url"
+                  :alt="'Miniatura ' + img.id"
+                />
+              </div>
             </div>
-
-
-
-
-<!----------------
-        <div class="grid md:flex md:gap-3 justify-center mt-10 font-din">
-          <button
-            @click="amenitieSelected = 0"
-            :class="
-              amenitieSelected == 0
-                ? 'py-2 px-6 mt-4 border-b-4 border-primary text-xl ease-in-out duration-700 font-bold tracking-tight text-gray-900 lg:text-2xl uppercase'
-                : 'py-2 px-6 mt-4 border-b-4 border-white ease-in-out duration-500  text-xl font-bold tracking-tight text-gray-900 lg:text-2xl uppercase'
-            "
-          >
-            ATRIO
-          </button>
-          <button
-            @click="amenitieSelected = 1"
-            :class="
-              amenitieSelected == 1
-                ? 'py-2 px-6 mt-4 border-b-4 border-primary text-xl ease-in-out duration-700 font-bold tracking-tight text-gray-900 lg:text-2xl uppercase'
-                : 'py-2 px-6 mt-4 border-b-4 border-white ease-in-out duration-500  text-xl font-bold tracking-tight text-gray-900 lg:text-2xl uppercase'
-            "
-          >
-            ROOF TOP FIREPITS
-          </button>
-          <button
-            @click="amenitieSelected = 2"
-            :class="
-              amenitieSelected == 2
-                ? 'py-2 px-6 mt-4 border-b-4 border-primary text-xl ease-in-out duration-700 font-bold tracking-tight text-gray-900 lg:text-2xl uppercase'
-                : 'py-2 px-6 mt-4 border-b-4 border-white ease-in-out duration-500  text-xl font-bold tracking-tight text-gray-900 lg:text-2xl uppercase'
-            "
-          >
-            CHILL LOUNGE
-          </button>
-          <button
-            @click="amenitieSelected = 3"
-            :class="
-              amenitieSelected == 3
-                ? 'py-2 px-6 mt-4 border-b-4 border-primary text-xl ease-in-out duration-700 font-bold tracking-tight text-gray-900 lg:text-2xl uppercase'
-                : 'py-2 px-6 mt-4 border-b-4 border-white ease-in-out duration-500  text-xl font-bold tracking-tight text-gray-900 lg:text-2xl uppercase'
-            "
-          >
-            GRILL GAZEBO
-          </button>
-        </div>
-
-        
-        <div class="mt-12 sm:mt-4 xl:mx-auto xl:max-w-12xl xl:px-6">
-          <img
-            :src="amenities[amenitieSelected].img"
-            alt=""
-            class="md:aspect-[5/2] aspect-[3/2] w-full object-cover xl:rounded-t-3xl"
-          />
-        </div>
-        -------------------->
-
-        
-
-
-
+          </div>
       </main>
     </div>
   </div>
 </template>
-
 
 <script>
 export default {
@@ -97,29 +50,42 @@ export default {
     return {
       activeImage: {
         id: 1,
-        url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/banner.jpg",
+        url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-3.jpg",
       },
       imagesData: [
-        {
+      {
           id: 1,
-          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-1.jpg",
-        },
-        {
-          id: 2,
-          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-2.jpg",
-        },
-        {
-          id: 3,
           url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-3.jpg",
         },
+
         {
-          id: 4,
+          id: 2,
           url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-7.jpg",
         },
        
+        {
+          id: 3,
+          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-8-enhanced.jpg",
+        },
+        
+        {
+          id: 4,
+          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-9-enhanced.jpg",
+        },
+
+        {
+          id: 5,
+          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-5-enhanced.jpg",
+        },
+
+        {
+          id: 6,
+          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Render-4-enhanced.jpg",
+        },
+        
       ],
-      interval: null
-    }
+      interval: null,
+    };
   },
   mounted() {
     this.startRotation();
@@ -129,32 +95,51 @@ export default {
   },
   methods: {
     borderSelection(id) {
-      return id === this.activeImage.id ? 'border-primary' : 'border-none';
+      return id === this.activeImage.id
+        ? "border-primary ring-2 ring-primary"
+        : "border-transparent";
     },
     setActiveImage(id) {
-      this.activeImage = this.imagesData.find(image => image.id === id);
+      this.activeImage = this.imagesData.find((image) => image.id === id);
+      this.stopRotation(); // Detenemos la rotación si el usuario selecciona manualmente.
+      this.startRotation(); // Reiniciamos el intervalo.
     },
     startRotation() {
       this.interval = setInterval(() => {
-        const currentIndex = this.imagesData.findIndex(image => image.id === this.activeImage.id);
+        const currentIndex = this.imagesData.findIndex(
+          (image) => image.id === this.activeImage.id
+        );
         const nextIndex = (currentIndex + 1) % this.imagesData.length;
         this.activeImage = this.imagesData[nextIndex];
-      }, 6000); // Cambia la imagen cada 3 segundos
+      }, 6000); // Cambia cada 6 segundos
     },
     stopRotation() {
       clearInterval(this.interval);
     },
-    toScroll(v){
-            const myEl =  document.getElementById(v)
-            this.$smoothScroll({
-              scrollTo: myEl,
-              duration: 1000,
-              offset: 10,
-            })
-            this.showMenu = false
-          }
-  }
-}
+  },
+};
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+/* Transiciones suaves */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Ajuste de posición */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+</style>
