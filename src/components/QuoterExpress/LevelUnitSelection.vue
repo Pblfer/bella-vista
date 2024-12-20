@@ -75,6 +75,7 @@
             'w-auto px-8 py-4 border text-center rounded-sm hover:bg-four hover:text-white ease-in-out duration-700 hover:shadow-lg'">
           <p class="font-semibold text-lg">MODELO A</p>
           <p class="text-sm tracking-wide">2 Habitaciones, 1 Baño</p>
+          <p class="text-xs tracking-wider mt-0.5">Desde 60m2</p>
         </button>
         <button @click="typeSelected('Modelo B')"
           :class="typeSelection == 'Modelo B' ?
@@ -82,6 +83,7 @@
             'w-auto px-8 py-4 border text-center rounded-sm hover:bg-four hover:text-white ease-in-out duration-700 hover:shadow-lg'">
           <p class="font-semibold text-lg">MODELO B</p>
           <p class="text-sm tracking-wide">2 Habitaciones, 2 Baños</p>
+          <p class="text-xs tracking-wider mt-0.5">Desde 60m2 a 89m2</p>
         </button>
         <button @click="typeSelected('Modelo C')"
           :class="typeSelection == 'Modelo C' ?
@@ -89,6 +91,7 @@
             'w-auto px-8 py-4 border text-center rounded-sm hover:bg-four hover:text-white ease-in-out duration-700 hover:shadow-lg'">
           <p class="font-semibold text-lg">MODELO C</p>
           <p class="text-sm tracking-wide">3 Habitaciones, 2 Baños y Estudio</p>
+          <p class="text-xs tracking-wider mt-0.5">Desde 86m2 a 90m2</p>
         </button>
       </div>
     </div>
@@ -97,7 +100,7 @@
   <div class="flex grid-cols-1 gap-0">
     <div
       class="md:-mt-8 -mt-8 w-[12rem] border-0 border-four bg-local bg-top object-contain md:w-[14rem] md:bg-top lg:w-[36rem] xl:w-[38rem]">
-      <img class="md:h-auto h-[46rem] w-auto object-cover md:rounded-2xl"
+      <img class="md:h-auto h-[46rem] w-auto object-cover md:rounded-r-2xl"
         src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/sideQuoter.jpg"
         alt="bella vista barrios" />
     </div>

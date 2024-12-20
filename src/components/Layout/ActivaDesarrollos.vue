@@ -40,10 +40,10 @@
             <div class="absolute bottom-0 inset-0 hover:bg-secondary/50 bg-opacity-0 group-hover:bg-opacity-70 transition-opacity duration-300 flex items-center justify-center">
                                 
                 <!-- Contenido principal -->
-                <div class="absolute inset-0 bg-cover bg-center rounded-lg" style="background-image: url('https://via.placeholder.com/150');"></div>
+                <div class="absolute inset-0 bg-cover bg-center rounded-lg" ></div>
                 
                 <!-- Texto que aparece en hover -->
-                <p class="absolute text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="absolute text-white text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {{i.title}}
                 </p>
 
@@ -51,8 +51,7 @@
             </div>
           </div>
         </li>
-  
-        <!-- More files... -->
+
       </ul>
     </div>
 

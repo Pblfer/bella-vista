@@ -31,7 +31,7 @@
                 <transition leave-active-class="transition ease-in duration-100" leave-from-class="opacity-100"
                   leave-to-class="opacity-0">
                   <ListboxOptions
-                    class="absolute z-10 mt-1 max-h-60 w-2/3 overflow-auto  bg-white py-2 text-base  sm:text-base">
+                    class="absolute z-10 mt-1 max-h-60 w-[13.5rem] overflow-auto  bg-white py-2 text-base  sm:text-base">
                     <ListboxOption as="template" v-for="b in projectProfile[0].financingEntities" :key="b.id" :value="b"
                       v-slot="{ active, selected }">
         <li :class="[

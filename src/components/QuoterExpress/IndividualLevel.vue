@@ -2,17 +2,27 @@
   <div class="mt-0 flex gap-0.5" v-for="p in properties" :key="p.id">
     <div
       @click="openQuoter(p), (selectedProperty = p)"
-      :class="p.status == 'Disponible' ? 'h-14 mt-0 w-24 border-2 border-none bg-four text-center font-thin text-white duration-300 ease-linear hover:border-0 hover:bg-secondary hover:font-black hover:text-white hover:shadow-lg hover:shadow-four md:w-24 lg:w-28 xl:w-28' 
+      :class="p.status == 'Disponible' ? 'h-14 mt-0 w-24 border-2 border-none bg-four/90 text-center font-thin text-white duration-300 ease-linear hover:border-0 hover:bg-secondary hover:font-black hover:text-white hover:shadow-lg hover:shadow-four md:w-24 lg:w-28 xl:w-28' 
       :'h-14 mt-0 w-24 border-2 border-none bg-gray-200 cursor-not-allowed text-center font-thin text-gray-400 duration-300 ease-linear md:w-24 lg:w-28 xl:w-28'"
     >
       <div v-if="p.status == 'Disponible'">
+        <div class="flex justify-between mt-1 text-white/70">
+          <p class="text-left text-xs font-thin ml-2">
+            {{ p.reference }}
+          </p>
+          <p class="text-right text-xs font-thin mr-2">
+            {{ (p.typology).slice(-1) }}
+          </p>
+
+        </div>
+        
         <p
-        class="mt-1.5 text-center text-sm font-bold tracking-wider md:mt-2 md:text-base"
+        class="mt-0 text-center text-sm font-bold tracking-wider md:-mt-0.5 md:text-base"
       >
         {{ p.unit_name }}
       </p>
-      <p class="mt-0 text-center text-xs font-light">
-        {{ p.reference }}
+      <p class="-mt-1 text-center text-xs font-light text-white/70">
+        {{ p.construction_area }} m2
       </p>
       </div>
       

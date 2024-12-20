@@ -22,7 +22,7 @@
               v-for="(type, index) in types"
               :key="index"
               :class="[ 
-                'flex items-center justify-tex-center border-0 p-3 px-2 md:px-6 mx-1 rounded-sm cursor-pointer',
+                'grid items-center justify-text-center border-0 p-3 px-2 md:px-6 mx-1 rounded-sm cursor-pointer',
                 selected === index ? 'bg-four text-white' : 'bg-fifth text-secondary',
                 'hover:bg-four hover:text-white'
               ]"
@@ -33,7 +33,11 @@
                 class="px-4 block text-sm md:text-lg lg:text-xl font-normal text-center leading-6 tracking-wider">
                 {{ type.name }}
               </label>
+              <div class="text-center">
+                <p class="text-xs tracking-wider mt-0.5">{{type.des}}</p>
+              </div>
             </div>
+            
           </div>
         </fieldset>
       </div>
@@ -68,6 +72,7 @@ export default {
         {
           name: "Modelo A",
           description: "2 habitaciones - 1 baño",
+          des: "Desde 60m2",
           variations: [
             {
               type: "Flex",
@@ -78,20 +83,24 @@ export default {
         {
           name: "Modelo B",
           description: "2 habitaciones - 2 baños",
+          des: "Desde 60m2 a 89m2",
           variations: [
             {
               type: "Flex",
               img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/APTO+-+B.png",
+              des: "Desde 60m2 a 89m2",
             },
           ],
         },
         {
           name: "Modelo C",
           description: "3 habitaciones - 2 baños - Estudio",
+          des: "Desde 86m2 a 90m2",
           variations: [
             {
               type: "Balcon",
               img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/APTO+-+C.png",
+              des: "Desde 86m2 a 90m2",
             },
           ],
         },

@@ -30,14 +30,14 @@
       </ul>
     </div>
     <div class="bg-four text-lg text-white px-4 py-2 tracking-wide mt-10">
-      Enganche
+      Enganche (10%)
     </div>
     <div class="p-2 mt-1">
       <ul role="list" class="divide-y divide-four/20">
         <!-- Enganche -->
         <li class="flex justify-between gap-x-6 py-2">
           <div>
-            <p class="text-base font-semibold text-gray-950 mt-2">Enganche:</p>
+            <p class="text-base font-semibold text-gray-950 mt-2">Enganche</p>
           </div>
           <div class="relative mt-1 shadow-sm">
             <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">

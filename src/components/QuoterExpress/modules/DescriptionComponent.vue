@@ -70,42 +70,7 @@
             </div>
           </li>
 
-          <li class="flex justify-between gap-x-6 py-2">
-            <div class="flex min-w-0 gap-x-4">
-
-              <div class="min-w-0 flex-auto">
-                <p class="text-base font-semibold text-gray-950">Parqueos de vehículo:</p>
-              </div>
-            </div>
-            <div class=" shrink-0 sm:flex sm:flex-col sm:items-end">
-              <p class="text-base text-gray-900">{{ getCarParking(viewProperty.parkings_relation) }}</p>
-            </div>
-          </li>
-
-          <li class="flex justify-between gap-x-6 py-2">
-            <div class="flex min-w-0 gap-x-4">
-
-              <div class="min-w-0 flex-auto">
-                <p class="text-base font-semibold text-gray-950">Parqueos de motocicleta:</p>
-              </div>
-            </div>
-            <div class=" shrink-0 sm:flex sm:flex-col sm:items-end">
-              <p class="text-base text-gray-900">{{ getCycleParking(viewProperty.parkings_relation) }}</p>
-            </div>
-          </li>
-
-          <li class="flex justify-between gap-x-6 py-2">
-            <div class="flex min-w-0 gap-x-4">
-
-              <div class="min-w-0 flex-auto">
-                <p class="text-base font-semibold text-gray-950">Area de parqueos:</p>
-              </div>
-            </div>
-            <div class=" shrink-0 sm:flex sm:flex-col sm:items-end">
-              <p class="text-base text-gray-900">{{ getAreaParkings(viewProperty.parkings_relation) }} m2</p>
-            </div>
-          </li>
-
+        
 
           <li class="flex justify-between gap-x-6 py-2">
             <div class="flex min-w-0 gap-x-4">
@@ -130,8 +95,44 @@
               <p class="text-base text-gray-900">{{ viewProperty.balcony_area }} m2</p>
             </div>
           </li>
+          <li class="flex justify-between gap-x-6 py-2">
+            <div class="flex min-w-0 gap-x-4">
+
+              <div class="min-w-0 flex-auto">
+                <p class="text-base font-semibold text-gray-950">Parqueos de vehículo:</p>
+              </div>
+            </div>
+            <div class=" shrink-0 sm:flex sm:flex-col sm:items-end">
+              <p class="text-base text-gray-900">{{ getCarParking(viewProperty.parkings_relation) }}</p>
+            </div>
+          </li>
 
           <li class="flex justify-between gap-x-6 py-2">
+            <div class="flex min-w-0 gap-x-4">
+
+              <div class="min-w-0 flex-auto">
+                <p class="text-base font-semibold text-gray-950">Parqueos de motocicleta:</p>
+              </div>
+            </div>
+            <div class=" shrink-0 sm:flex sm:flex-col sm:items-end">
+              <p class="text-base text-gray-900">{{ getCycleParking(viewProperty.parkings_relation) }}</p>
+            </div>
+          </li>
+
+          <li class="flex justify-between gap-x-6 py-2 ">
+            <div class="flex min-w-0 gap-x-4">
+
+              <div class="min-w-0 flex-auto">
+                <p class="text-base font-semibold text-gray-950">Area de parqueos:</p>
+              </div>
+            </div>
+            <div class=" shrink-0 sm:flex sm:flex-col sm:items-end">
+              <p class="text-semibold text-gray-900">{{ getAreaParkings(viewProperty.parkings_relation) }} m2</p>
+            </div>
+          </li>
+
+
+          <li class="flex justify-between gap-x-6 py-2 bg-secondary/5">
             <div class="flex min-w-0 gap-x-4">
 
               <div class="min-w-0 flex-auto">
