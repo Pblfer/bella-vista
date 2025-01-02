@@ -1,11 +1,11 @@
 <template>
-  <div class="mb-14 pt-0" id="amenities">
+  <div class="mb-0 pt-0" id="amenities">
     <div class="bg-white">
       <main class="isolate">
       
-        <div class="w-full mt-10 ">
+        <div class="w-full mt-0 ">
                 <img class="w-full h-[26rem] md:h-[44rem] object-cover duration-700 ease-in-out" :src="activeImage.url"
-                    alt="Elemento apartamentos zona 13" />
+                    alt="Bella vista barrios, club residencial" />
                 <div class="absolute left-0 text-xs text-white -mt-[1.1rem] pl-2 md:pl-4">
                     Imágenes con fines ilustrativos.
                 </div>
@@ -17,7 +17,7 @@
                         )}`" v-for="img in imagesData" :key="img.index">
 
                             <img class="h-full w-full object-cover" :src="img.url"
-                                alt="Apartamentos zona 13 plaza berlín" />
+                                alt="Apartamentos bella vista barrios, club residencial" />
 
                         </div>
                     </div>

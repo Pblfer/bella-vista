@@ -1,11 +1,12 @@
 <template>
-  <div class="bg-primary md:mt-2 w-full p-6 lg:p-4" id="Amenidades">
+  <div class="bg-gray-100 md:mt-0 w-full p-6 lg:p-14" id="Amenidades">
     <!-- Títulos -->
-    <div class="flex flex-col-reverse md:flex-row items-center justify-between px-4">
-      <h2 class="font-badScript text-5xl md:text-6xl font-bold text-secondary mb-6 mt-2">Amenidades</h2>
-      <h3 class="w-full text-lg md:text-right text-center text-third mb-4 md:mb-0">
+    <div class="grid items-center justify-between px-16">
+      <h3 class="w-full text-sm md:text-start text-center text-third mb-4 md:mb-0 ml-2">
         Bella Vista - Puerto Barrios
       </h3>
+      <h2 class=" text-5xl md:text-5xl font-bold text-secondary mb-6 mt-0">Amenidades</h2>
+     
     </div>
 
     <!-- Carrusel en Móvil -->
@@ -36,8 +37,8 @@
 
     <!-- Modal Carrusel -->
     <div v-if="showPopup" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-      <div class="relative w-full max-w-5xl">
-        <button @click="closePopup" class="absolute top-4 right-6 text-white text-7xl z-50">&times;</button>
+      <div class="relative w-full max-w-2xl">
+        <button @click="closePopup" class="absolute top-4 right-6 text-white bg-secondary/90 w-16 rounded-lg text-6xl z-50">&times;</button>
         <swiper :initialSlide="currentIndex" :autoplay="{ delay: 3000, disableOnInteraction: false }"
           :pagination="{ clickable: true }" :navigation="true" :modules="modules" class="mySwiper">
           <swiper-slide v-for="(image, index) in images" :key="index">
@@ -45,7 +46,7 @@
               <img :src="image.src" :alt="image.alt" class="w-full h-auto object-cover rounded-lg" />
               <div class="absolute bottom-0 left-0 w-full bg-secondary/90 text-white text-center py-4">
                 <p class="font-bold text-2xl">{{ image.title }}</p>
-                <p class="text-lg mb-4">{{ image.description }}</p>
+                <p class="text-lg mb-4 px-4">{{ image.description }}</p>
               </div>
             </div>
           </swiper-slide>
@@ -72,14 +73,14 @@ export default {
   data() {
     return {
       images: [
-        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/pool_v1.jpg", alt: "Piscinas", title: "Piscinas", description: "Pensadas para combinar funcionalidad, confort y estética, estas áreas se convierten en uno de los principales atractivos del club residencial." },
-        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/green_v1.jpg", alt: "Áreas verdes", title: "Áreas verdes", description: " Son el corazón del bienestar, ofreciendo un lugar donde la naturaleza y la vida cotidiana se encuentran." },
-        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/playground_v1.jpg", alt: "Juegos infantiles", title: "Juegos infantiles", description: "Espacios diseñados para estimular la imaginación." },
-        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/events.jpg", alt: "Áreas para eventos", title: "Áreas para eventos", description: "Áreas al aire libre con jardines cuidadosamente diseñados y vistas excepcionales." },
+        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/B_PoolV3.jpg", alt: "Piscinas", title: "Piscinas", description: "Relájate y dale un chapuzón al día en nuestra piscina. Ya sea para refrescarte o disfrutar con familia y amigos, este es el lugar perfecto para desconectarte bajo el sol de Puerto Barrios." },
+        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/B_GreenAreaV3.jpg", alt: "Áreas verdes", title: "Áreas verdes", description: "Espacios llenos de naturaleza para respirar aire fresco, pasear o simplemente relajarte. Aquí siempre tendrás un rincón para disfrutar de la tranquilidad." },
+        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/B_PlayGroundV3.jpg", alt: "Juegos infantiles", title: "Juegos infantiles", description: "Para los más pequeños, diversión sin fin. Un área pensada para que ellos jueguen, se diviertan y creen recuerdos inolvidables." },
+        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/B_eventsV4.jpg", alt: "Áreas para eventos", title: "Áreas para eventos", description: "Tu lugar para celebrar esos momentos especiales. Desde cumpleaños hasta reuniones familiares, este espacio está listo para que lo llenes de vida y alegría." },
         { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/gym_v2.jpg", alt: "Gimnasio y Pilates", title: "Gimnasio y Pilates", description: "Centro diseñado para promover un estilo de vida saludable, con instalaciones modernas." },
-        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/rooftop_v1.jpg", alt: "Terrazas", title: "Terrazas", description: "Diseñados para disfrutar de momentos únicos al aire libre, con vistas espectaculares." },
-        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/bbq_v1.jpg", alt: "Churrasqueras", title: "Churrasqueras", description: "Diseñada para ser el punto de encuentro perfecto para reuniones familiares y sociales." },
-        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/ludoteca_v1.jpg", alt: "Ludoteca", title: "Ludoteca", description: "Áreas para manualidades, dibujo y pintura donde los niños pueden expresar su creatividad." }
+        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/B_TerraceV3.jpg", alt: "Terrazas", title: "Terrazas", description: "Un espacio para disfrutar de las vistas y relajarte con la brisa marina. Ideal para compartir un café, leer un libro o simplemente desconectarte." },
+        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/B_bbqV3.jpg", alt: "Churrasqueras", title: "Churrasqueras", description: "¿Qué mejor plan que un asado al aire libre? Nuestras churrasqueras están listas para esas reuniones donde la comida y las risas no pueden faltar." },
+        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/ludoteca_v1.jpg", alt: "Área para niños", title: "Área para niños", description: "Un rincón mágico para los más pequeños de la casa, donde la imaginación y el aprendizaje van de la mano. Perfecto para que los niños disfruten mientras exploran y se divierten." }
       ],
       showPopup: false,
       currentIndex: 0,
@@ -107,13 +108,13 @@ export default {
 };
 </script>
 
-<style >
+<style>
 /* Transición entre imágenes */
 .swiper-container {
   width: 100%;
   height: 100%;
   top: 12rem;
-  
+
 }
 
 .swiper-button-prev,

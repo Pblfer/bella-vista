@@ -3,11 +3,11 @@
     class="flex flex-col items-center justify-center content-center bg-primary text-secondary py-5 md:px-[1%] lg:px-[6%]"
     id="types">
     <div class="w-full flex flex-col lg:mt-4 lg:pr-12">
-      <h2 class="text-lg ml-1 md:text-right text-third text-center">
+      <h2 class="text-sm ml-1 md:text-start text-third text-center">
         Bella Vista - Puerto Barrios
       </h2>
       <p
-        class="font-badScript text-6xl md:text-6xl xl:text-6xl font-bold md:ml-0 -ml-7 tracking-tight mt-4 lg:text-left text-center">
+        class="text-5xl md:text-5xl xl:text-5xl font-bold md:ml-0 -ml-7 tracking-tight mt-2 lg:text-left text-center">
         Apartamentos
       </p>
       <p class="mt-7 lg:max-w-[660px] w-[100%] px-[10%] lg:px-[0%] tracking-wide text-center text-2xl lg:text-left ">

@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-14 pt-14">
+  <div class="mb-0 pt-14">
     <div class="bg-white">
       <main class="isolate">
         <!-- Contenedor Principal -->

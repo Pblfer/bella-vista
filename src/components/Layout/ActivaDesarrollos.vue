@@ -5,7 +5,7 @@
                 class="flex flex-col mb-6 justify-center items-center lg:items-center w-full  p-[8%] lg:px-[4%] lg:py-[0%] text-center md:text-left text-secondary">
 
                 <div
-                    class="w-full font-badScript text-5xl md:text-6xl xl:text-6xl font-bold mb-2 text-center lg:text-left">
+                    class="w-full  text-5xl md:text-5xl xl:text-5xl font-bold mb-2 text-center lg:text-left">
                     Activa Desarrollos
                 </div>
                 <p class=" text-lg mb-0 text-center lg:text-left mt-6">

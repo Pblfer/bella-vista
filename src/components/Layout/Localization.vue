@@ -23,12 +23,12 @@
         </div>
     </div>
 ----->
-    <div class="flex flex-col lg:flex-row md:mt-[4%] w-[100%] p-[4%] lg:p-[2%] " id="Ubicacion">
+    <div class="flex flex-col lg:flex-row md:mt-[0%] w-[100%] p-[4%] lg:p-[2%] bg-gray-100" id="Ubicacion">
             <div
                 class="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 p-[8%] lg:px-[4%] lg:py-[0%] text-center lg:text-left text-secondary">
                 
-                <div class=" font-badScript text-6xl md:text-6xl xl:text-6xl font-bold text-secondary mb-0 mt-2">Ubicación</div>
-                <h4 class="text-sm md:text-xl mt-6 font-normal mb-2 xl:mb-4">
+                <div class=" font- text-5xl md:text-5xl xl:text-5xl font-bold text-secondary mb-0 mt-2">Ubicación</div>
+                <h4 class="text-base md:text-xl mt-6 font-normal mb-2 xl:mb-4">
                     En la mejor ubicación de Puerto Barrios  Colonia EX-UFCO
                 </h4>
 
