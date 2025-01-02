@@ -1,5 +1,5 @@
 <template>
-    <div id="respaldo" class="bg-primary p-[5%] pt-[5%] pb-[0%]">
+    <div id="respaldo" class="bg-white p-[5%] pt-[3%] pb-[0%]">
         <div class="flex flex-col lg:flex-col">
             <div
                 class="flex flex-col mb-6 justify-center items-center lg:items-center w-full  p-[8%] lg:px-[4%] lg:py-[0%] text-center md:text-left text-secondary">
@@ -14,7 +14,7 @@
                     integrar sostenibilidad y modernidad en cada diseño, asegurando una inversión sólida que incrementa
                     su valor con el tiempo.
                 </p>
-                <div class="flex md:justify-start justify-center w-full">
+                <div class="flex md:justify-start justify-center w-full mb-4">
                     <a href="https://www.desarrollosactiva.com/" target="_blank" class="mb-2 px-12 py-2.5 bg-none text-secondary bg-secondary/10 text-xl duration-600 mt-4">Ver sitio web →</a>
                 </div>
                
@@ -26,7 +26,7 @@
     <div>
       <ul
         role="list"
-        class="grid grid-cols-2 gap-x-1 gap-y-1 sm:grid-cols-3 sm:gap-x-0 lg:grid-cols-0 xl:gap-x-1"
+        class="grid grid-cols-2 gap-x-1 gap-y-1 sm:grid-cols-3 sm:gap-x-1 lg:grid-cols-0 xl:gap-x-1"
       >
         <li class="relative" v-for="(i, index) in images" :key="index">
           <div

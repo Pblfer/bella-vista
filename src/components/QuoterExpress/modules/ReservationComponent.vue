@@ -30,7 +30,7 @@
       </ul>
     </div>
     <div class="bg-four text-lg text-white px-4 py-2 tracking-wide mt-10">
-      Enganche (10%)
+      Enganche (12%)
     </div>
     <div class="p-2 mt-1">
       <ul role="list" class="divide-y divide-four/20">

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full py-[1%] lg:py-[0.5%]">
+  <div class="w-full py-[0.5%] lg:py-[0.5%]">
     <div class="galeria w-full relative h-full">
 
       <swiper :slidesPerView="4" :spaceBetween="8" :freeMode="true" :navigation="true" :autoplay="{

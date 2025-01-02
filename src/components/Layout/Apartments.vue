@@ -2,7 +2,7 @@
   <div
     class="flex flex-col items-center justify-center content-center bg-primary text-secondary py-5 md:px-[1%] lg:px-[6%]"
     id="types">
-    <div class="w-full flex flex-col lg:mt-4 lg:pr-12">
+    <div class="w-full flex flex-col lg:mt-4 lg:pr-12 pt-10">
       <h2 class="text-sm ml-1 md:text-start text-third text-center">
         Bella Vista - Puerto Barrios
       </h2>

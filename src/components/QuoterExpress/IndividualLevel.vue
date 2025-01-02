@@ -2,11 +2,11 @@
   <div class="mt-0 flex gap-0.5" v-for="p in properties" :key="p.id">
     <div
       @click="openQuoter(p), (selectedProperty = p)"
-      :class="p.status == 'Disponible' ? 'h-14 mt-0 w-24 border-2 border-none bg-four/90 text-center font-thin text-white duration-300 ease-linear hover:border-0 hover:bg-secondary hover:font-black hover:text-white hover:shadow-lg hover:shadow-four md:w-24 lg:w-28 xl:w-28' 
-      :'h-14 mt-0 w-24 border-2 border-none bg-gray-200 cursor-not-allowed text-center font-thin text-gray-400 duration-300 ease-linear md:w-24 lg:w-28 xl:w-28'"
+      :class="p.status == 'Disponible' ? 'h-14 mt-0 w-24 border-2 border-none bg-gray-200 text-center font-thin text-gray-900 duration-300 ease-linear hover:border-0 hover:bg-secondary hover:font-black hover:text-white hover:shadow-lg hover:shadow-four md:w-24 lg:w-28 xl:w-28' 
+      :'h-14 mt-0 w-24 border-2 border-none bg-red-100 cursor-not-allowed text-center font-thin text-red-700 duration-300 ease-linear md:w-24 lg:w-28 xl:w-28'"
     >
       <div v-if="p.status == 'Disponible'">
-        <div class="flex justify-between mt-1 text-white/70">
+        <div class="flex justify-between mt-1 ">
           <p class="text-left text-xs font-thin ml-2">
             {{ p.reference }}
           </p>
@@ -21,7 +21,7 @@
       >
         {{ p.unit_name }}
       </p>
-      <p class="-mt-1 text-center text-xs font-light text-white/70">
+      <p class="-mt-1 text-center text-xs font-light ">
         {{ p.construction_area }} m2
       </p>
       </div>

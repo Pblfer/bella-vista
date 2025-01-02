@@ -321,6 +321,7 @@ export default {
       formData.append("SellerPhone", "-");
       formData.append("interestEntitie", this.selected.monthly_interest_fee);
       formData.append("ref", this.viewProperty.reference);
+      formData.append("depositPercent", "12%");
       formData.append("depositTotalAmount", this.currencyFormater(formatFinalDeposit));
       formData.append("depositTotalAmountWithReserve", this.currencyFormater(formatFinalDepositWithReserve));
       formData.append(
@@ -332,6 +333,8 @@ export default {
       formData.append("financingMaxYears", this.selected.max_financing_years);
       formData.append("financingMonthAmount", this.currencyFormater(this.financingMonthAmount));
       formData.append("financingAmount", this.currencyFormater(this.getFinancingAmount));
+      formData.append("iusiAmount", this.currencyFormater(this.getIusiAmount));
+      formData.append("secureAmount", this.currencyFormater(this.secureAmount));
       formData.append("financingIndividual30", this.currencyFormater(this.getIndividualFinancingAmount30));
       formData.append("financingIndividual25", this.currencyFormater(this.getIndividualFinancingAmount25));
       formData.append("financingIndividual20", this.currencyFormater(this.getIndividualFinancingAmount20));
