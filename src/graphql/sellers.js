@@ -4,11 +4,12 @@ import graphqlClient from "@/services/apolloClient";
 export const getSellersByProyect = async (projectId) => {
   const response = await graphqlClient.query({
     query: gql`
-      {
-  users(where: {proyect_member: {Project: {id: {_eq: "${projectId}"}}}, roll: {_eq: "SELLER"}, _and: {InternalUser: {_eq: true}}}) {
+     {
+  users(where: {proyect_member: {proyect_id: {_eq: "${projectId}"}}, _and: {InternalUser: {_eq: true}, _and: {email: {_neq: "support@owwny.com"}}}}) {
     email
   }
 }
+
 
     `,
   });
