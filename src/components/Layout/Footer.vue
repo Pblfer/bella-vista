@@ -18,8 +18,10 @@
       <div class="flex justify-center gap-2 mb-2">
       <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/amg.jpg" class="h-12"
         alt="fha">
+        <a href="https://www.desarrollosactiva.com/" target="_blank">
       <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/activa.jpg" class="h-12"
         alt="fha">
+      </a>
       </div>
       
     </div>
@@ -28,9 +30,8 @@
       <div class="flex justify-center gap-2 mt-1">
         <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/fha2.jpg" class="h-12"
         alt="fha">
-      <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/bi.jpg" class="h-12"
-        alt="fha">
-
+          <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/bi.jpg" class="h-12"
+          alt="fha">
       </div>
      
     </div>
@@ -64,7 +65,7 @@
         </svg>
       </a>
 
-      <a href="https://www.facebook.com/profile.php?id=61558248053043" target="_blank" class="text-primary bg-secondary p-[3%] rounded-full">
+      <a href="https://www.facebook.com/share/1AkNCA41Xi/?mibextid=wwXIfr" target="_blank" class="text-primary bg-secondary p-[3%] rounded-full">
         <span class="sr-only">Facebook</span>
         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path fill-rule="evenodd"
