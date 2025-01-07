@@ -30,7 +30,7 @@
               
               <label
                 for="type"
-                class="px-4 block text-sm md:text-lg lg:text-xl font-normal text-center leading-6 tracking-wider">
+                class="px-4 block text-xs md:text-lg lg:text-xl font-normal text-center leading-6 tracking-wider">
                 {{ type.name }}
               </label>
               <div class="text-center">
