@@ -139,7 +139,7 @@
     <button v-else @click="getUserData()" type="button"
       class="mb-8 flex justify-center border border-transparent bg-secondary px-8 py-2 text-lg font-normal tracking-wider text-white shadow-lg shadow-four/30 hover:animate-none hover:bg-four focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:ml-3 sm:w-auto md:text-base">
 
-      Recibir por Whastapp
+      Recibir por Whatsapp
     </button>
   </div>
   </div>

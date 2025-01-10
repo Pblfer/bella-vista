@@ -5,7 +5,7 @@
       <h3 class="w-full text-sm md:text-start text-center text-third mb-4 md:mb-0 ml-2">
         Bella Vista - Puerto Barrios
       </h3>
-      <h2 class=" text-5xl md:text-5xl font-bold text-secondary mb-6 mt-0">Amenidades</h2>
+      <h2 class="font-badScript text-5xl md:text-6xl font-bold text-secondary mb-6 mt-4 md:mb-6 md:mt-8">Amenidades</h2>
      
     </div>
 
@@ -75,7 +75,7 @@ export default {
       images: [
         { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/B_PoolV3.jpg", alt: "Piscinas", title: "Piscinas", description: "Relájate y dale un chapuzón al día en nuestra piscina. Ya sea para refrescarte o disfrutar con familia y amigos, este es el lugar perfecto para desconectarte bajo el sol de Puerto Barrios." },
         { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/B_GreenAreaV3.jpg", alt: "Áreas verdes", title: "Áreas verdes", description: "Espacios llenos de naturaleza para respirar aire fresco, pasear o simplemente relajarte. Aquí siempre tendrás un rincón para disfrutar de la tranquilidad." },
-        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/SliderKids.jpg", alt: "Juegos infantiles", title: "Juegos infantiles", description: "Para los más pequeños, diversión sin fin. Un área pensada para que ellos jueguen, se diviertan y creen recuerdos inolvidables." },
+        { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/juego-inf.jpg", alt: "Juegos infantiles", title: "Juegos infantiles", description: "Para los más pequeños, diversión sin fin. Un área pensada para que ellos jueguen, se diviertan y creen recuerdos inolvidables." },
         { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/B_EventsV5.jpg", alt: "Áreas para eventos", title: "Áreas para eventos", description: "Tu lugar para celebrar esos momentos especiales. Desde cumpleaños hasta reuniones familiares, este espacio está listo para que lo llenes de vida y alegría." },
         { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/gym_v2.jpg", alt: "Gimnasio y Pilates", title: "Gimnasio y Pilates", description: "Centro diseñado para promover un estilo de vida saludable, con instalaciones modernas." },
         { src: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/B_TerraceV3.jpg", alt: "Terrazas", title: "Terrazas", description: "Un espacio para disfrutar de las vistas y relajarte con la brisa marina. Ideal para compartir un café, leer un libro o simplemente desconectarte." },

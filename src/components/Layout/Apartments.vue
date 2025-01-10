@@ -7,7 +7,7 @@
         Bella Vista - Puerto Barrios
       </h2>
       <p
-        class="text-5xl md:text-5xl xl:text-5xl font-bold md:ml-0 -ml-7 tracking-tight mt-2 lg:text-left text-center">
+        class="font-badScript text-5xl md:text-6xl font-bold md:ml-0 -ml-7 tracking-tight mt-6 md:mt-8 lg:text-left text-center">
         Apartamentos
       </p>
       <p class="mt-7 lg:max-w-[660px] w-[100%] px-[10%] lg:px-[0%] tracking-wide text-center text-2xl lg:text-left ">

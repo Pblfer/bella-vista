@@ -111,7 +111,7 @@ export default {
         );
         const nextIndex = (currentIndex + 1) % this.imagesData.length;
         this.activeImage = this.imagesData[nextIndex];
-      }, 6000); // Cambia cada 6 segundos
+      }, 3000); 
     },
     stopRotation() {
       clearInterval(this.interval);
