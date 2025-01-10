@@ -2,7 +2,7 @@
   <div
     class="flex flex-col items-center justify-center content-center bg-primary text-secondary py-5 md:px-[1%] lg:px-[6%]"
     id="types">
-    <div class="w-full flex flex-col lg:mt-4 lg:pr-12 pt-10">
+    <div class="w-[96%] md:w-full flex flex-col lg:mt-4 lg:pr-12 pt-10">
       <h2 class="text-sm ml-1 md:text-start text-third text-center">
         Bella Vista - Puerto Barrios
       </h2>
@@ -16,13 +16,13 @@
 
       <!-- Lista de Tipos -->
       <div class="w-full">
-        <fieldset class="mt-6">
-          <div class="flex flex-row items-center justify-center lg:justify-start">
+        <fieldset class="mt-6 flex justify-center">
+          <div class="w-[100%] grid md:flex gap-2 flex-col md:flex-row items-center  lg:justify-start ">
             <div
               v-for="(type, index) in types"
               :key="index"
               :class="[ 
-                'grid items-center justify-text-center border-0 p-3 px-2 md:px-6 mx-1 rounded-sm cursor-pointer',
+                'w-[100%] items-center justify-text-center p-3 md:px-6 mx-1 cursor-pointer px-8 py-4 border text-center rounded-sm hover:bg-four hover:text-white ease-in-out duration-700 hover:shadow-lg',
                 selected === index ? 'bg-four text-white' : 'bg-fifth text-secondary',
                 'hover:bg-four hover:text-white'
               ]"
@@ -30,7 +30,7 @@
               
               <label
                 for="type"
-                class="px-4 block text-xs md:text-lg lg:text-xl font-normal text-center leading-6 tracking-wider">
+                class="w-[100%] px-4 block text-lg lg:text-xl font-normal text-center leading-6 tracking-wider">
                 {{ type.name }}
               </label>
               <div class="text-center">

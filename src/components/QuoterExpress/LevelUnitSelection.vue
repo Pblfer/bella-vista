@@ -93,6 +93,14 @@
           <p class="text-sm tracking-wide">3 Habitaciones, 2 Baños y Estudio</p>
           <p class="text-xs tracking-wider mt-0.5">Desde 86m2 a 90m2</p>
         </button>
+        <button @click="typeSelected('PH')"
+          :class="typeSelection == 'PH' ?
+            'w-auto px-8 py-4 border text-center rounded-sm bg-four text-white shadow-lg ease-in-out duration-700 hover:shadow-lg' :
+            'w-auto px-8 py-4 border text-center rounded-sm hover:bg-four hover:text-white ease-in-out duration-700 hover:shadow-lg'">
+          <p class="font-semibold text-lg">PH</p>
+          <p class="text-sm tracking-wide">Vendido</p>
+
+        </button>
       </div>
     </div>
   </div>
