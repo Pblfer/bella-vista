@@ -14,7 +14,7 @@
     "apollo-link-context": "^1.0.20",
     "apollo-link-http": "^1.5.17",
     "apollo-link-ws": "^1.0.20",
-    "firebase": "^9.9.4",
+    "firebase": "^11.2.0",
     "mosha-vue-toastify": "^1.0.23",
     "swiper": "^11.1.15",
     "vue": "^3.2.32",
