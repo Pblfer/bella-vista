@@ -50,9 +50,9 @@ export default {
 
         "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Narazarenos-5.jpg",
         "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Narazarenos-3.jpg",
-        "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-3.JPG",
-        "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-2.JPG",
-        "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-1.JPG",
+        "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-3.jpeg",
+        "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-2.jpeg",
+        "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-1.jpeg",
         "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/serenisima-.jpg",
         // "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/serenisima-2.jpg",
         // "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/serenisima-1.jpg",

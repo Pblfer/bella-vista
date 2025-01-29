@@ -118,15 +118,15 @@ export default {
         },
         {
           id: 5,
-          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-1.JPG",
+          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-1.jpeg",
         },
         {
           id: 6,
-          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-2.JPG",
+          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-2.jpeg",
         },
         {
           id: 7,
-          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-3.JPG",
+          url: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-3.jpeg",
         }
       ],
       interval: null

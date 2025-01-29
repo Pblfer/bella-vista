@@ -44,10 +44,10 @@
           <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/Narazarenos-3.jpg"
             alt=" " class="carrucel object-cover " /></swiper-slide>
         <swiper-slide>
-          <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-3.JPG"
+          <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-3.jpeg"
             alt=" " class="carrucel object-cover " /></swiper-slide>
         <swiper-slide>
-          <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-2.JPG"
+          <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/los-apostoles-2.jpeg"
             alt=" " class="carrucel object-cover " /></swiper-slide>
         <swiper-slide>
           <img src="https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/serenisima-.jpg"
