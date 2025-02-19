@@ -76,7 +76,7 @@ export default {
           variations: [
             {
               type: "Flex",
-              img: "https://owwny-b2b-base-files.s3-accelerate.amazonaws.com/projects/92b7aac2-579d-44a4-899b-d9a6feaaa1f0/planes/TipoAV4.jpg.jpeg",
+              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/A_v5.jpg",
             },
           ],
         },
@@ -87,7 +87,7 @@ export default {
           variations: [
             {
               type: "Flex",
-              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/APTO+-+B.png",
+              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/B_v5.jpg",
               des: "Desde 60m2 a 89m2",
             },
           ],
@@ -99,7 +99,7 @@ export default {
           variations: [
             {
               type: "Balcon",
-              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/APTO+-+C.png",
+              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/C_v5.jpg",
               des: "Desde 86m2 a 90m2",
             },
           ],
