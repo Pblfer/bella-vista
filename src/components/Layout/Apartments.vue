@@ -76,7 +76,7 @@ export default {
           variations: [
             {
               type: "Flex",
-              img: "https://owwny-b2b-base-files.s3.us-east-1.amazonaws.com/websites/bella-vista/APTO+-+A.png",
+              img: "https://owwny-b2b-base-files.s3-accelerate.amazonaws.com/projects/92b7aac2-579d-44a4-899b-d9a6feaaa1f0/planes/TipoAV4.jpg.jpeg",
             },
           ],
         },
